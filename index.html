@@ -274,6 +274,176 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/17/GitHub-Pages-Hexo-阿里云域名无法访问解决方案/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Chenfei Jovany Rong">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="夏月谈">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/05/17/GitHub-Pages-Hexo-阿里云域名无法访问解决方案/" itemprop="url">GitHub Pages + Hexo + 阿里云域名无法访问解决方案</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-17T16:40:59+08:00">
+                2019-05-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/05/17/GitHub-Pages-Hexo-阿里云域名无法访问解决方案/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/05/17/GitHub-Pages-Hexo-阿里云域名无法访问解决方案/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>购入了阿里云域名（<em>英文.com</em>），且有自己的GitHub Pages个人网站。在GitHub中配置了<strong>Custom Domain</strong>为刚刚购买的域名（<em>英文.com</em>），但通过该域名无法访问个人网站，且直接访问github.io也自动跳转到域名而失效。</p>
+<h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>等待域名实名制审核成功，收到手机短信提醒后，在域名控制台中新增2条解析记录，分别如下配置。</p>
+<table>
+<thead>
+<tr>
+<th>记录类型</th>
+<th>主机记录</th>
+<th>解析线路</th>
+<th>记录值</th>
+<th>MX优先级</th>
+<th>TTL</th>
+<th>状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CNAME</td>
+<td>@</td>
+<td>默认</td>
+<td><em>英文.com</em></td>
+<td>–</td>
+<td>10分钟</td>
+<td>正常</td>
+</tr>
+<tr>
+<td>CNAME</td>
+<td>www</td>
+<td>默认</td>
+<td><em>英文.com</em></td>
+<td>–</td>
+<td>10分钟</td>
+<td>正常</td>
+</tr>
+</tbody>
+</table>
+<p>在Hexo的博客根目录下source文件夹中，新建CNAME文件（没有后缀名且必须大写），使用文本编辑器打开，输入 <strong><em>英文.com</em></strong> 。</p>
+<p>重新部署Hexo。</p>
+<p>等待域名解析完成后，即可使用新域名访问个人网站。</p>
+
+          
+        
+      
+    </div>
+    <div>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/16/EasyOM-1-0-1更新说明/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -449,7 +619,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -462,7 +632,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">标签</span>
                 
               </div>
