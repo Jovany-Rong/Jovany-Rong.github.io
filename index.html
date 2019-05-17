@@ -677,17 +677,17 @@
   
   <script type="text/javascript">
     var GUEST = ['nick','mail','link'];
-    var guest = 'nick,mail,link';
+    var guest = 'nick,mail';
     guest = guest.split(',').filter(item=>{
       return GUEST.indexOf(item)>-1;
     });
     new Valine({
         el: '#comments' ,
         verify: false,
-        notify: false,
+        notify: true,
         appId: 'WiM216tvokY0PK63MYb6a5Q1-gzGzoHsz',
         appKey: 'JHbx1xYW6yJ4smpQNIzHgits',
-        placeholder: 'Just go go',
+        placeholder: '留下评论再走嘛～',
         avatar:'mm',
         guest_info:guest,
         pageSize:'10' || 10,
