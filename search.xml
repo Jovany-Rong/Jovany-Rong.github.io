@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[EasyOM 1.0.1更新说明]]></title>
+    <url>%2F2019%2F05%2F16%2FEasyOM-1-0-1%E6%9B%B4%E6%96%B0%E8%AF%B4%E6%98%8E%2F</url>
+    <content type="text"><![CDATA[作者： 戎 晨飞（Jovany Rong） 一、更新内容一览 修复了在Windows 6.1平台（包括Windows 7系列和Windows Server 2008系列等操作系统）中，有空置光驱时会造成硬盘检查崩溃的问题； 新增整体运维报告输出功能，在首页点击“Check”按钮进行整体运维结束时，程序自动产生html格式的运维报告和eom格式的加密报文（eom报文供提交时使用），使运维结果更具可读性； 提升了在目标数据库过大时，数据库运维的性能，使其更不容易出现卡死的情况； 多处错误修复和文本优化。 二、更新适用对象本次更新推荐所有EasyOM用户更新。 三、更新方式1) 通过程序内关于-&gt;关于EasyOM中的Update按钮下载最新版本；2) 直接点击此处获取更新。 四、其他说明对本次更新及EasyOM工具有任何意见或建议，请联系技术及质量管理部。]]></content>
+      <tags>
+        <tag>EasyOM</tag>
+        <tag>更新说明</tag>
+        <tag>运维</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+</search>
