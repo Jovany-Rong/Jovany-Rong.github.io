@@ -1,14 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Coding Pages绑定阿里云域名无法使用二级域名访问解决方案]]></title>
+    <url>%2F2019%2F05%2F18%2FCoding-Pages%E7%BB%91%E5%AE%9A%E9%98%BF%E9%87%8C%E4%BA%91%E5%9F%9F%E5%90%8D%E6%97%A0%E6%B3%95%E4%BD%BF%E7%94%A8%E4%BA%8C%E7%BA%A7%E5%9F%9F%E5%90%8D%E8%AE%BF%E9%97%AE%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%2F</url>
+    <content type="text"><![CDATA[问题描述在腾讯云开发者平台（原Coding.net平台）部署Pages静态网页，在设置中绑定了阿里云顶级域名ABC.com。在阿里云域名控制台中，ABC.com域名有两条解析记录，分别通过主机记录的 @和www解析到Pages应用访问地址（Username.coding.me）。 解析完成后，通过顶级域名ABC.com能够正常访问到我们的Pages应用，但通过二级域名www.ABC.com访问时报404错误。 原因分析与GitHub平台不同，腾讯云开发者平台Pages应用支持绑定多个域名，但不支持自动绑定顶级域名下的二级域名，需要手动增加二级域名的绑定才能生效。 解决方法在Pages设置中增加二级域名www.ABC.com的绑定。稍待片刻，即可正常访问应用。]]></content>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Coding</tag>
+        <tag>腾讯云开发者平台</tag>
+        <tag>域名</tag>
+        <tag>问题解决</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[GitHub Pages + Hexo + 阿里云域名无法访问解决方案]]></title>
     <url>%2F2019%2F05%2F17%2FGitHub-Pages-Hexo-%E9%98%BF%E9%87%8C%E4%BA%91%E5%9F%9F%E5%90%8D%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AE%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%2F</url>
     <content type="text"><![CDATA[问题描述购入了阿里云域名（英文.com），且有自己的GitHub Pages个人网站。在GitHub中配置了Custom Domain为刚刚购买的域名（英文.com），但通过该域名无法访问个人网站，且直接访问github.io也自动跳转到域名而失效。 解决方法等待域名实名制审核成功，收到手机短信提醒后，在域名控制台中新增2条解析记录，分别如下配置。 记录类型 主机记录 解析线路 记录值 MX优先级 TTL 状态 CNAME @ 默认 英文.com – 10分钟 正常 CNAME www 默认 英文.com – 10分钟 正常 在Hexo的博客根目录下source文件夹中，新建CNAME文件（没有后缀名且必须大写），使用文本编辑器打开，输入 英文.com 。 重新部署Hexo。 等待域名解析完成后，即可使用新域名访问个人网站。]]></content>
       <tags>
         <tag>Hexo</tag>
-        <tag>GitHub</tag>
         <tag>域名</tag>
         <tag>问题解决</tag>
+        <tag>GitHub</tag>
       </tags>
   </entry>
   <entry>
