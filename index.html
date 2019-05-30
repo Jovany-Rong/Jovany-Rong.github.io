@@ -449,110 +449,20 @@
       
         
           
-            <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本文将介绍部署Hexo博客并启用NexT主题后一些进阶的美化技巧。美化后具体效果可以参考本站。</p>
-<p>在本文中，<strong>站点配置文件</strong>指的是博客根目录下的 <strong>_config.yml</strong> 文件，<strong>主题配置文件</strong>指的是博客根目录下 <strong>themes/next/_config.yml</strong> 文件。</p>
-<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ul>
-<li>切换主题风格</li>
-<li>配置菜单</li>
-<li>配置动态背景</li>
-<li>添加页眉GitHub页面跳转</li>
-<li>配置RSS</li>
-<li>修改文章底部标签样式</li>
-<li>添加文章末尾“本文结束”说明</li>
-<li>修改代码块样式</li>
-<li>配置侧边栏社交图标</li>
-<li>配置首页文章阴影效果</li>
-<li>添加网站底部字数统计</li>
-<li>配置网站图标</li>
-<li>添加文章字数统计</li>
-<li>隐藏底部Hexo、NexT信息</li>
-<li>配置友情链接</li>
-<li>配置文章底部版权信息</li>
-<li>配置站内搜索</li>
-<li>配置Live2D动画效果</li>
-</ul>
-<h2 id="切换主题风格"><a href="#切换主题风格" class="headerlink" title="切换主题风格"></a>切换主题风格</h2><p>安装NexT主题后，默认的主题风格为Muse。如要切换主题风格，打开主题配置文件，找到如下配置。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># Schemes</span><br><span class="line">scheme: Muse  //默认主题</span><br><span class="line">#scheme: Mist</span><br><span class="line">#scheme: Pisces</span><br><span class="line">#scheme: Gemini</span><br></pre></td></tr></table></figure>
-<p>注释掉当前的scheme，将需要切换的主题风格取消注释，重新生成博客后即可完成切换。</p>
-<h2 id="配置菜单"><a href="#配置菜单" class="headerlink" title="配置菜单"></a>配置菜单</h2><p>NexT主题默认只有两个菜单，<strong>首页</strong>和<strong>归档</strong>。</p>
-<p>如果需要添加，在主题配置文件中，查找“<strong>menu:</strong>”配置项，将需要的菜单项取消注释。</p>
-<p>如果需要添加的菜单项不在配置文件的预设菜单项中，则按照统一格式添加自定义菜单项，从<strong>Font Awesome</strong>网站寻找合适的图标，将图标名称写在“<strong>||</strong>”后。</p>
-<p>完成菜单项的配置后，接下来需要添加新菜单项的页面。此处以 <strong><em>标签</em></strong> 菜单项为例。</p>
-<p>打开终端定位到博客根目录，使用如下命令创建菜单项页面。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page &quot;tags&quot;</span><br></pre></td></tr></table></figure>
-<p>然后编辑博客根目录下 <strong>source/<em>tags</em>/index.md</strong> 文件，在其头信息中添加以下信息。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">type: &quot;tags&quot;</span><br></pre></td></tr></table></figure>
-<h2 id="配置动态背景"><a href="#配置动态背景" class="headerlink" title="配置动态背景"></a>配置动态背景</h2><p>在主题配置文件中，查找“<strong>canvas_nest:</strong>”配置项，将其值配置为<strong>true</strong>即可。</p>
-<h2 id="添加页眉GitHub页面跳转"><a href="#添加页眉GitHub页面跳转" class="headerlink" title="添加页眉GitHub页面跳转"></a>添加页眉GitHub页面跳转</h2><p>前往<a href="http://tholman.com/github-corners/" target="_blank" rel="noopener">GitHub Corners</a>网站，选择一款喜欢的挂饰，并拷贝其代码。</p>
-<p>打开博客根目录下 <strong>themes/next/layout/_layout.swig</strong> 文件，定位到如下代码。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;headband&quot;&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure>
-<p>在其下方添加上挂饰的代码。</p>
-<h2 id="配置RSS"><a href="#配置RSS" class="headerlink" title="配置RSS"></a>配置RSS</h2><p>打开终端定位到博客根目录，使用如下命令安装相关依赖。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-generator-feed</span><br></pre></td></tr></table></figure>
-<p>打开站点配置文件，并定位到如下代码。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># Extensions</span><br><span class="line">## Plugins: http://hexo.io/plugins/</span><br></pre></td></tr></table></figure>
-<p>在其下方添加如下代码。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">plugins: hexo-generate-feed</span><br></pre></td></tr></table></figure>
-<p>在主题配置文件中，查找“<strong>rss:</strong>”配置项，将其值配置为 <strong>/atom.xml</strong> 即可。</p>
-<h2 id="修改文章底部标签样式"><a href="#修改文章底部标签样式" class="headerlink" title="修改文章底部标签样式"></a>修改文章底部标签样式</h2><p>打开博客根目录下 <strong>themes/next/layout/_macro/post.swig</strong> 文件，查找“<strong>rel=”tag”&gt;#</strong>”。</p>
-<p>将“<strong>#</strong>”替换为如下代码。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;i class=&quot;fa fa-tag&quot;&gt;&lt;/i&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="添加文章末尾“本文结束”说明"><a href="#添加文章末尾“本文结束”说明" class="headerlink" title="添加文章末尾“本文结束”说明"></a>添加文章末尾“本文结束”说明</h2><p>打开博客根目录下 <strong>themes/next/layout/_macro/</strong> 目录，在其中新建 <strong>passage-end-tag.swig</strong> 文件。</p>
-<p>使用文本编辑器在该文件中添加如下内容。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div&gt;</span><br><span class="line">    &#123;% if not is_index %&#125;</span><br><span class="line">        &lt;div style=&quot;text-align:center;color: #ccc;font-size:14px;&quot;&gt;-------------本文结束&lt;i class=&quot;fa fa-paw&quot;&gt;&lt;/i&gt;感谢您的阅读-------------&lt;/div&gt;</span><br><span class="line">    &#123;% endif %&#125;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
-<p>打开博客根目录下 <strong>themes/next/layout/_macro/post.swig</strong> 文件，在其 <strong>post-body</strong> 和 <strong>post-footer</strong> 之间（一般为 <strong>END POST BODY</strong> 段落后）添加如下代码。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div&gt;</span><br><span class="line">  &#123;% if not is_index %&#125;</span><br><span class="line">    &#123;% include &apos;passage-end-tag.swig&apos; %&#125;</span><br><span class="line">  &#123;% endif %&#125;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
-<p>在主题配置文件中，在任意行添加如下内容。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># 文章末尾添加“本文结束”标记</span><br><span class="line">passage_end_tag:</span><br><span class="line">  enabled: true</span><br></pre></td></tr></table></figure>
-<h2 id="修改代码块样式"><a href="#修改代码块样式" class="headerlink" title="修改代码块样式"></a>修改代码块样式</h2><p>打开博客根目录下 <strong>themes/next/source/css/_custom/custom.styl</strong> 文件，添加如下代码。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">code &#123;</span><br><span class="line">    color: #ff7600;</span><br><span class="line">    background: #fbf7f8;</span><br><span class="line">    margin: 2px;</span><br><span class="line">&#125;</span><br><span class="line">// 大代码块的自定义样式</span><br><span class="line">.highlight, pre &#123;</span><br><span class="line">    margin: 5px 0;</span><br><span class="line">    padding: 5px;</span><br><span class="line">    border-radius: 3px;</span><br><span class="line">&#125;</span><br><span class="line">.highlight, code, pre &#123;</span><br><span class="line">    border: 1px solid #d6d6d6;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="配置侧边栏社交图标"><a href="#配置侧边栏社交图标" class="headerlink" title="配置侧边栏社交图标"></a>配置侧边栏社交图标</h2><p>在主题配置文件中，搜索“<strong>social:</strong>”，对其取消注释，并添加自己的社交账号，从<strong>Font Awesome</strong>网站寻找合适的图标，将图标名称写在“<strong>||</strong>”后。完成后配置示例如下。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"># Social Links.</span><br><span class="line"># Usage: `Key: permalink || icon`</span><br><span class="line"># Key is the link label showing to end users.</span><br><span class="line"># Value before `||` delimeter is the target permalink.</span><br><span class="line"># Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.</span><br><span class="line">social:</span><br><span class="line">  GitHub: https://github.com/Jovany-Rong || github</span><br><span class="line">  E-Mail: mailto:amphliegg@gmail.com || envelope</span><br><span class="line">  知乎: https://www.zhihu.com/people/rong-chen-fei/activities || book-open</span><br><span class="line">  TapTap: https://www.taptap.com/user/4323230 || gamepad  </span><br><span class="line">  #Google: https://plus.google.com/yourname || google</span><br><span class="line">  #Twitter: https://twitter.com/yourname || twitter</span><br><span class="line">  #FB Page: https://www.facebook.com/yourname || facebook</span><br><span class="line">  #VK Group: https://vk.com/yourname || vk</span><br><span class="line">  #StackOverflow: https://stackoverflow.com/yourname || stack-overflow</span><br><span class="line">  #YouTube: https://youtube.com/yourname || youtube</span><br><span class="line">  #Instagram: https://instagram.com/yourname || instagram</span><br><span class="line">  #Skype: skype:yourname?call|chat || skype</span><br><span class="line"></span><br><span class="line">social_icons:</span><br><span class="line">  enable: true</span><br><span class="line">  icons_only: false</span><br><span class="line">  transition: false</span><br></pre></td></tr></table></figure>
-<h2 id="配置首页文章阴影效果"><a href="#配置首页文章阴影效果" class="headerlink" title="配置首页文章阴影效果"></a>配置首页文章阴影效果</h2><p>打开博客根目录下 <strong>themes/next/source/css/_custom/custom.styl</strong> 文件，添加如下代码。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">// 主页文章添加阴影效果</span><br><span class="line"> .post &#123;</span><br><span class="line">   margin-top: 60px;</span><br><span class="line">   margin-bottom: 60px;</span><br><span class="line">   padding: 25px;</span><br><span class="line">   -webkit-box-shadow: 0 0 5px rgba(202, 203, 203, .5);</span><br><span class="line">   -moz-box-shadow: 0 0 5px rgba(202, 203, 204, .5);</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
-<h2 id="添加网站底部字数统计"><a href="#添加网站底部字数统计" class="headerlink" title="添加网站底部字数统计"></a>添加网站底部字数统计</h2><p>打开终端定位到博客根目录，使用如下命令安装相关依赖。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-wordcount --save</span><br></pre></td></tr></table></figure>
-<p>打开博客根目录下 <strong>themes/next/layout/_partials/footer.swig</strong> 文件，在末尾添加如下代码。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;theme-info&quot;&gt;</span><br><span class="line">  &lt;div class=&quot;powered-by&quot;&gt;&lt;/div&gt;</span><br><span class="line">  &lt;span class=&quot;post-count&quot;&gt;博客全站共&#123;&#123; totalcount(site) &#125;&#125;字&lt;/span&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="配置网站图标"><a href="#配置网站图标" class="headerlink" title="配置网站图标"></a>配置网站图标</h2><p>首先准备好自己需要用到的图标，共需要准备16 x 16及32 x 32两种规格的图标。图标可以从第三方网站（如<a href="https://www.iconfont.cn/" target="_blank" rel="noopener">阿里巴巴矢量图标库</a>等)中下载。</p>
-<p>将图片保存在博客根目录下 <strong>themes/next/source/images/</strong> 目录中。</p>
-<p>在主题配置文件中，搜索“<strong>favicon:</strong>”，将其中的 <strong>small</strong> 参数和 <strong>medium</strong> 参数值分别设为16 x 16及32 x 32两种规格图标的相对路径。</p>
-<h2 id="添加文章字数统计"><a href="#添加文章字数统计" class="headerlink" title="添加文章字数统计"></a>添加文章字数统计</h2><p>该功能需要用到<strong>添加网站底部字数统计</strong>中安装的依赖，安装过程在此不赘述。</p>
-<p>在主题配置文件中，搜索“<strong>post_wordcount:</strong>”，配置修改为如下所示。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># Post wordcount display settings</span><br><span class="line"># Dependencies: https://github.com/willin/hexo-wordcount</span><br><span class="line">post_wordcount:</span><br><span class="line">  item_text: true</span><br><span class="line">  wordcount: true</span><br><span class="line">  min2read: true</span><br><span class="line">  totalcount: true</span><br><span class="line">  separated_meta: true</span><br></pre></td></tr></table></figure>
-<h2 id="隐藏底部Hexo、NexT信息"><a href="#隐藏底部Hexo、NexT信息" class="headerlink" title="隐藏底部Hexo、NexT信息"></a>隐藏底部Hexo、NexT信息</h2><p>打开博客根目录下 <strong>themes/next/layout/_partials/footer.swig</strong> 文件，注释掉以下这段代码。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--</span><br><span class="line">&lt;span class=&quot;post-meta-divider&quot;&gt;|&lt;/span&gt;</span><br><span class="line"></span><br><span class="line">&#123;% if theme.footer.powered %&#125;</span><br><span class="line">  &lt;div class=&quot;powered-by&quot;&gt;&#123;#</span><br><span class="line">  #&#125;&#123;&#123; __(&apos;footer.powered&apos;, &apos;&lt;a class=&quot;theme-link&quot; target=&quot;_blank&quot; href=&quot;https://hexo.io&quot;&gt;Hexo&lt;/a&gt;&apos;) &#125;&#125;&#123;#</span><br><span class="line">#&#125;&lt;/div&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% if theme.footer.powered and theme.footer.theme.enable %&#125;</span><br><span class="line">  &lt;span class=&quot;post-meta-divider&quot;&gt;|&lt;/span&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% if theme.footer.theme.enable %&#125;</span><br><span class="line">  &lt;div class=&quot;theme-info&quot;&gt;&#123;#</span><br><span class="line">  #&#125;&#123;&#123; __(&apos;footer.theme&apos;) &#125;&#125; &amp;mdash; &#123;#</span><br><span class="line">  #&#125;&lt;a class=&quot;theme-link&quot; target=&quot;_blank&quot; href=&quot;https://github.com/iissnan/hexo-theme-next&quot;&gt;&#123;#</span><br><span class="line">    #&#125;NexT.&#123;&#123; theme.scheme &#125;&#125;&#123;#</span><br><span class="line">  #&#125;&lt;/a&gt;&#123;% if theme.footer.theme.version %&#125; v&#123;&#123; theme.version &#125;&#125;&#123;% endif %&#125;&#123;#</span><br><span class="line">#&#125;&lt;/div&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% if theme.footer.custom_text %&#125;</span><br><span class="line">  &lt;div class=&quot;footer-custom&quot;&gt;&#123;#</span><br><span class="line">  #&#125;&#123;&#123; theme.footer.custom_text &#125;&#125;&#123;#</span><br><span class="line">#&#125;&lt;/div&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br><span class="line">--&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="配置友情链接"><a href="#配置友情链接" class="headerlink" title="配置友情链接"></a>配置友情链接</h2><p>在主题配置文件中，搜索“<strong>Blog rolls</strong>”，如下配置，即可添加友情链接。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># Blog rolls</span><br><span class="line">links_icon: link</span><br><span class="line">links_title: 友情链接</span><br><span class="line">#links_layout: block</span><br><span class="line">links_layout: inline</span><br><span class="line"></span><br><span class="line">#links中配置成自己需要的友情链接地址</span><br><span class="line">links: </span><br><span class="line">  GitHub: https://github.com/</span><br><span class="line">  南京国图信息产业有限公司: http://www.gtmap.cn/</span><br><span class="line">  南京国图协同办公平台: http://oa.gtis.com.cn/</span><br></pre></td></tr></table></figure>
-<h2 id="配置文章底部版权信息"><a href="#配置文章底部版权信息" class="headerlink" title="配置文章底部版权信息"></a>配置文章底部版权信息</h2><p>打开博客根目录下 <strong>themes/next/layout/_macro/</strong> 目录，在其中新建 <strong>my-copyright.swig</strong> 文件。</p>
-<p>使用文本编辑器在该文件中添加如下内容。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">&#123;% if page.copyright %&#125;</span><br><span class="line">&lt;div class=&quot;my_post_copyright&quot;&gt;</span><br><span class="line">  &lt;script src=&quot;//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">  </span><br><span class="line">  &lt;!-- JS库 sweetalert 可修改路径 --&gt;</span><br><span class="line">  &lt;script src=&quot;https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">  &lt;script src=&quot;https://unpkg.com/sweetalert/dist/sweetalert.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">  &lt;p&gt;&lt;span&gt;本文标题:&lt;/span&gt;&lt;a href=&quot;&#123;&#123; url_for(page.path) &#125;&#125;&quot;&gt;&#123;&#123; page.title &#125;&#125;&lt;/a&gt;&lt;/p&gt;</span><br><span class="line">  &lt;p&gt;&lt;span&gt;文章作者:&lt;/span&gt;&lt;a href=&quot;/&quot; title=&quot;访问 &#123;&#123; theme.author &#125;&#125; 的个人博客&quot;&gt;&#123;&#123; theme.author &#125;&#125;&lt;/a&gt;&lt;/p&gt;</span><br><span class="line">  &lt;p&gt;&lt;span&gt;发布时间:&lt;/span&gt;&#123;&#123; page.date.format(&quot;YYYY年MM月DD日 - HH:MM&quot;) &#125;&#125;&lt;/p&gt;</span><br><span class="line">  &lt;p&gt;&lt;span&gt;最后更新:&lt;/span&gt;&#123;&#123; page.updated.format(&quot;YYYY年MM月DD日 - HH:MM&quot;) &#125;&#125;&lt;/p&gt;</span><br><span class="line">  &lt;p&gt;&lt;span&gt;原始链接:&lt;/span&gt;&lt;a href=&quot;&#123;&#123; url_for(page.path) &#125;&#125;&quot; title=&quot;&#123;&#123; page.title &#125;&#125;&quot;&gt;&#123;&#123; page.permalink &#125;&#125;&lt;/a&gt;</span><br><span class="line">    &lt;span class=&quot;copy-path&quot;  title=&quot;点击复制文章链接&quot;&gt;&lt;i class=&quot;fa fa-clipboard&quot; data-clipboard-text=&quot;&#123;&#123; page.permalink &#125;&#125;&quot;  aria-label=&quot;复制成功！&quot;&gt;&lt;/i&gt;&lt;/span&gt;</span><br><span class="line">  &lt;/p&gt;</span><br><span class="line">  &lt;p&gt;&lt;span&gt;许可协议:&lt;/span&gt;&lt;i class=&quot;fa fa-creative-commons&quot;&gt;&lt;/i&gt; &lt;a rel=&quot;license&quot; href=&quot;https://creativecommons.org/licenses/by-nc-nd/4.0/&quot; target=&quot;_blank&quot; title=&quot;Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)&quot;&gt;署名-非商业性使用-禁止演绎 4.0 国际&lt;/a&gt; 转载请保留原文链接及作者。&lt;/p&gt;  </span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;script&gt; </span><br><span class="line">    var clipboard = new Clipboard(&apos;.fa-clipboard&apos;);</span><br><span class="line">    $(&quot;.fa-clipboard&quot;).click(function()&#123;</span><br><span class="line">      clipboard.on(&apos;success&apos;, function()&#123;</span><br><span class="line">        swal(&#123;   </span><br><span class="line">          title: &quot;&quot;,   </span><br><span class="line">          text: &apos;复制成功&apos;,</span><br><span class="line">          icon: &quot;success&quot;, </span><br><span class="line">          showConfirmButton: true</span><br><span class="line">          &#125;);</span><br><span class="line">    &#125;);</span><br><span class="line">    &#125;);  </span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
-<p>打开博客根目录下 <strong>themes/next/source/css/_common/components/post/</strong> 目录，在其中新建 <strong>my-copyright.styl</strong> 文件。</p>
-<p>使用文本编辑器在该文件中添加如下内容。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line">.my_post_copyright &#123;</span><br><span class="line">  width: 85%;</span><br><span class="line">  max-width: 45em;</span><br><span class="line">  margin: 2.8em auto 0;</span><br><span class="line">  padding: 0.5em 1.0em;</span><br><span class="line">  border: 1px solid #d3d3d3;</span><br><span class="line">  font-size: 0.93rem;</span><br><span class="line">  line-height: 1.6em;</span><br><span class="line">  word-break: break-all;</span><br><span class="line">  background: rgba(255,255,255,0.4);</span><br><span class="line">&#125;</span><br><span class="line">.my_post_copyright p&#123;margin:0;&#125;</span><br><span class="line">.my_post_copyright span &#123;</span><br><span class="line">  display: inline-block;</span><br><span class="line">  width: 5.2em;</span><br><span class="line">  color: #b5b5b5;</span><br><span class="line">  font-weight: bold;</span><br><span class="line">&#125;</span><br><span class="line">.my_post_copyright .raw &#123;</span><br><span class="line">  margin-left: 1em;</span><br><span class="line">  width: 5em;</span><br><span class="line">&#125;</span><br><span class="line">.my_post_copyright a &#123;</span><br><span class="line">  color: #808080;</span><br><span class="line">  border-bottom:0;</span><br><span class="line">&#125;</span><br><span class="line">.my_post_copyright a:hover &#123;</span><br><span class="line">  color: #a3d2a3;</span><br><span class="line">  text-decoration: underline;</span><br><span class="line">&#125;</span><br><span class="line">.my_post_copyright:hover .fa-clipboard &#123;</span><br><span class="line">  color: #000;</span><br><span class="line">&#125;</span><br><span class="line">.my_post_copyright .post-url:hover &#123;</span><br><span class="line">  font-weight: normal;</span><br><span class="line">&#125;</span><br><span class="line">.my_post_copyright .copy-path &#123;</span><br><span class="line">  margin-left: 1em;</span><br><span class="line">  width: 1em;</span><br><span class="line">  +mobile()&#123;display:none;&#125;</span><br><span class="line">&#125;</span><br><span class="line">.my_post_copyright .copy-path:hover &#123;</span><br><span class="line">  color: #808080;</span><br><span class="line">  cursor: pointer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>打开博客根目录下 <strong>themes/next/layout/_macro/post.swig</strong> 文件，定位到如下代码。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;% if theme.wechat_subscriber.enabled and not is_index %&#125;</span><br><span class="line">  &lt;div&gt;</span><br><span class="line">    &#123;% include &apos;wechat-subscriber.swig&apos; %&#125;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
-<p>在其上方添加如下代码。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div&gt;</span><br><span class="line">      &#123;% if not is_index %&#125;</span><br><span class="line">        &#123;% include &apos;my-copyright.swig&apos; %&#125;</span><br><span class="line">      &#123;% endif %&#125;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
-<p>打开博客根目录下 <strong>themes/next/source/css/_common/components/post/post.styl</strong> 文件，在其末尾添加如下代码。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@import &quot;my-post-copyright&quot;</span><br></pre></td></tr></table></figure>
-<p>打开站点配置文件，搜索 <strong>URL</strong> ，配置为如下所示。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># URL</span><br><span class="line">## If your site is put in a subdirectory, set url as &apos;http://yoursite.com/child&apos; and root as &apos;/child/&apos;</span><br><span class="line">url: https://wenmobo.github.io/  //你的网站地址</span><br><span class="line">root: /</span><br><span class="line">permalink: :year/:month/:day/:title/</span><br><span class="line">permalink_defaults:</span><br></pre></td></tr></table></figure>
-<p>以后写的Markdown文章头信息中，添加 <strong>copyright: true</strong> 即可。</p>
-<h2 id="配置站内搜索"><a href="#配置站内搜索" class="headerlink" title="配置站内搜索"></a>配置站内搜索</h2><p>打开终端定位到博客根目录，使用如下命令安装相关依赖。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-search --save</span><br></pre></td></tr></table></figure>
-<p>再安装另一个依赖。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
-<p>在站点配置文件中，添加如下内容。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  limit: 10000</span><br></pre></td></tr></table></figure>
-<p>在主题配置文件中，搜索 <strong>local_search:</strong> 配置项，将 <strong>enable</strong> 参数配置为 <strong>true</strong> 即可。</p>
-<h2 id="配置Live2D动画效果"><a href="#配置Live2D动画效果" class="headerlink" title="配置Live2D动画效果"></a>配置Live2D动画效果</h2><p>打开终端定位到博客根目录，使用如下命令安装相关依赖。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-helper-live2d</span><br></pre></td></tr></table></figure>
-<p>自己制作或从<a href="https://github.com/xiazeyu/live2d-widget-models.git" target="_blank" rel="noopener">第三方</a>下载需要的Live2D动画。</p>
-<p>下载好之后将所有动画模板拷贝到博客根目录下node_modules目录中。</p>
-<p>在站点配置文件中，添加如下配置。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">live2d:</span><br><span class="line">  enable: true</span><br><span class="line">  pluginModelPath: assets/</span><br><span class="line">  model:</span><br><span class="line">    use: live2d-widget-model-epsilon2_1  #模板目录，在node_modules里</span><br><span class="line">  display:</span><br><span class="line">    position: right</span><br><span class="line">    width: 150 </span><br><span class="line">    height: 300</span><br><span class="line">  mobile:</span><br><span class="line">    show: false  #是否在手机进行显示</span><br></pre></td></tr></table></figure>
-          
+          前言本文将介绍部署Hexo博客并启用NexT主题后一些进阶的美化技巧。美化后具体效果可以参考本站。
+在本文中，站点配置文件指的是博客根目录下的 _config.yml 文件，主题配置文件指的是博客根目录下 themes/next/_config.yml 文件。
+目录
+切换主题风格
+配置菜单
+配置动态
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/05/29/Hexo-NexT进阶美化攻略/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -740,12 +650,16 @@
       
         
           
-            <h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>在腾讯云开发者平台（原Coding.net平台）部署Pages静态网页，在设置中绑定了阿里云顶级域名<em>ABC.com</em>。在阿里云域名控制台中，<em>ABC.com</em>域名有两条解析记录，分别通过主机记录的 <strong>@</strong>和<strong>www</strong>解析到Pages应用访问地址（<em>Username</em>.coding.me）。</p>
-<p>解析完成后，通过顶级域名<em>ABC.com</em>能够正常访问到我们的Pages应用，但通过二级域名www.<em>ABC.com</em>访问时报404错误。</p>
-<h2 id="原因分析"><a href="#原因分析" class="headerlink" title="原因分析"></a>原因分析</h2><p>与GitHub平台不同，腾讯云开发者平台Pages应用支持绑定多个域名，但不支持自动绑定顶级域名下的二级域名，需要手动增加二级域名的绑定才能生效。</p>
-<h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>在Pages设置中增加二级域名www.<em>ABC.com</em>的绑定。稍待片刻，即可正常访问应用。</p>
-
-          
+          问题描述在腾讯云开发者平台（原Coding.net平台）部署Pages静态网页，在设置中绑定了阿里云顶级域名ABC.com。在阿里云域名控制台中，ABC.com域名有两条解析记录，分别通过主机记录的 @和www解析到Pages应用访问地址（Username.coding.me）。
+解析完成后，通过顶
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/05/18/Coding-Pages绑定阿里云域名无法使用二级域名访问解决方案/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -933,46 +847,16 @@
       
         
           
-            <h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>购入了阿里云域名（<em>英文.com</em>），且有自己的GitHub Pages个人网站。在GitHub中配置了<strong>Custom Domain</strong>为刚刚购买的域名（<em>英文.com</em>），但通过该域名无法访问个人网站，且直接访问github.io也自动跳转到域名而失效。</p>
-<h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>等待域名实名制审核成功，收到手机短信提醒后，在域名控制台中新增2条解析记录，分别如下配置。</p>
-<table>
-<thead>
-<tr>
-<th>记录类型</th>
-<th>主机记录</th>
-<th>解析线路</th>
-<th>记录值</th>
-<th>MX优先级</th>
-<th>TTL</th>
-<th>状态</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>CNAME</td>
-<td>@</td>
-<td>默认</td>
-<td><em>英文.com</em></td>
-<td>–</td>
-<td>10分钟</td>
-<td>正常</td>
-</tr>
-<tr>
-<td>CNAME</td>
-<td>www</td>
-<td>默认</td>
-<td><em>英文.com</em></td>
-<td>–</td>
-<td>10分钟</td>
-<td>正常</td>
-</tr>
-</tbody>
-</table>
-<p>在Hexo的博客根目录下source文件夹中，新建CNAME文件（没有后缀名且必须大写），使用文本编辑器打开，输入 <strong><em>英文.com</em></strong> 。</p>
-<p>重新部署Hexo。</p>
-<p>等待域名解析完成后，即可使用新域名访问个人网站。</p>
-
-          
+          问题描述购入了阿里云域名（英文.com），且有自己的GitHub Pages个人网站。在GitHub中配置了Custom Domain为刚刚购买的域名（英文.com），但通过该域名无法访问个人网站，且直接访问github.io也自动跳转到域名而失效。
+解决方法等待域名实名制审核成功，收到手机短信提醒
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/05/17/GitHub-Pages-Hexo-阿里云域名无法访问解决方案/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1160,18 +1044,18 @@
       
         
           
-            <p><em>作者： 戎 晨飞（Jovany Rong）</em></p>
-<h2 id="一、更新内容一览"><a href="#一、更新内容一览" class="headerlink" title="一、更新内容一览"></a>一、更新内容一览</h2><ol>
-<li>修复了在Windows 6.1平台（包括Windows 7系列和Windows Server 2008系列等操作系统）中，有空置光驱时会造成硬盘检查崩溃的问题；</li>
-<li>新增整体运维报告输出功能，在首页点击“Check”按钮进行整体运维结束时，程序自动产生html格式的运维报告和eom格式的加密报文（eom报文供提交时使用），使运维结果更具可读性；</li>
-<li>提升了在目标数据库过大时，数据库运维的性能，使其更不容易出现卡死的情况；</li>
-<li>多处错误修复和文本优化。</li>
-</ol>
-<h2 id="二、更新适用对象"><a href="#二、更新适用对象" class="headerlink" title="二、更新适用对象"></a>二、更新适用对象</h2><p>本次更新推荐所有EasyOM用户更新。</p>
-<h2 id="三、更新方式"><a href="#三、更新方式" class="headerlink" title="三、更新方式"></a>三、更新方式</h2><p>1) 通过程序内<strong>关于</strong>-&gt;<strong>关于EasyOM</strong>中的<strong>Update</strong>按钮下载最新版本；<br>2) 直接<a href="https://218.94.2.162:8087/svn/软件工程中心/8-实施工具代码/02-release/02-CS/Operation_Management/EasyOM/Latest" title="EasyOM 1.0.1" target="_blank" rel="noopener"><strong><em>点击此处</em></strong></a>获取更新。</p>
-<h2 id="四、其他说明"><a href="#四、其他说明" class="headerlink" title="四、其他说明"></a>四、其他说明</h2><p>对本次更新及EasyOM工具有任何意见或建议，请联系<strong>技术及质量管理部</strong>。</p>
-
-          
+          作者： 戎 晨飞（Jovany Rong）
+一、更新内容一览
+修复了在Windows 6.1平台（包括Windows 7系列和Windows Server 2008系列等操作系统）中，有空置光驱时会造成硬盘检查崩溃的问题；
+新增整体运维报告输出功能，在首页点击“Check”按钮进行整体运维结束时，程
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/05/16/EasyOM-1-0-1更新说明/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
