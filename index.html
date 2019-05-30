@@ -21,6 +21,18 @@
   <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
   <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
 
+  <script>
+    (function(){
+        if(''){
+            if (prompt('请输入密码') !== ''){
+                alert('密码错误');
+                history.back();
+            }
+        }
+    })();
+  </script>
+
+
 
 
 
@@ -108,7 +120,7 @@
     root: '/',
     scheme: 'Gemini',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -353,7 +365,19 @@
             
 
             
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2019-05-30T16:47:39+08:00">
+                2019-05-30
+              </time>
             
           </span>
 
@@ -411,7 +435,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  3.1k
+                  3k
                 </span>
               
 
@@ -449,14 +473,8 @@
 
       
         
-          
-          前言本文将介绍部署Hexo博客并启用NexT主题后一些进阶的美化技巧。美化后具体效果可以参考本站。
-在本文中，站点配置文件指的是博客根目录下的 _config.yml 文件，主题配置文件指的是博客根目录下 themes/next/_config.yml 文件。
-目录
-切换主题风格
-配置菜单
-配置动态
-          ...
+          <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本文将介绍部署Hexo博客并启用NexT主题后一些进阶的美化技巧。美化后具体效果可以参考本站。</p>
+<p>在本文中，<strong>站点配置文件</strong>指的是博客根目录下的 <strong>_config.yml</strong> 文件，<strong>主题配置文件</strong>指的是博客根目录下 <strong>themes/next/_config.yml</strong> 文件。</p>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2019/05/29/Hexo-NexT进阶美化攻略/#more" rel="contents">
@@ -554,7 +572,19 @@
             
 
             
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2019-05-30T16:46:04+08:00">
+                2019-05-30
+              </time>
             
           </span>
 
@@ -650,10 +680,8 @@
 
       
         
-          
-          问题描述在腾讯云开发者平台（原Coding.net平台）部署Pages静态网页，在设置中绑定了阿里云顶级域名ABC.com。在阿里云域名控制台中，ABC.com域名有两条解析记录，分别通过主机记录的 @和www解析到Pages应用访问地址（Username.coding.me）。
-解析完成后，通过顶
-          ...
+          <h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>在腾讯云开发者平台（原Coding.net平台）部署Pages静态网页，在设置中绑定了阿里云顶级域名<em>ABC.com</em>。在阿里云域名控制台中，<em>ABC.com</em>域名有两条解析记录，分别通过主机记录的 <strong>@</strong>和<strong>www</strong>解析到Pages应用访问地址（<em>Username</em>.coding.me）。</p>
+<p>解析完成后，通过顶级域名<em>ABC.com</em>能够正常访问到我们的Pages应用，但通过二级域名www.<em>ABC.com</em>访问时报404错误。</p>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2019/05/18/Coding-Pages绑定阿里云域名无法使用二级域名访问解决方案/#more" rel="contents">
@@ -751,7 +779,19 @@
             
 
             
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2019-05-30T16:47:19+08:00">
+                2019-05-30
+              </time>
             
           </span>
 
@@ -847,10 +887,7 @@
 
       
         
-          
-          问题描述购入了阿里云域名（英文.com），且有自己的GitHub Pages个人网站。在GitHub中配置了Custom Domain为刚刚购买的域名（英文.com），但通过该域名无法访问个人网站，且直接访问github.io也自动跳转到域名而失效。
-解决方法等待域名实名制审核成功，收到手机短信提醒
-          ...
+          <h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>购入了阿里云域名（<em>英文.com</em>），且有自己的GitHub Pages个人网站。在GitHub中配置了<strong>Custom Domain</strong>为刚刚购买的域名（<em>英文.com</em>），但通过该域名无法访问个人网站，且直接访问github.io也自动跳转到域名而失效。</p>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2019/05/17/GitHub-Pages-Hexo-阿里云域名无法访问解决方案/#more" rel="contents">
@@ -948,7 +985,19 @@
             
 
             
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2019-05-30T16:46:51+08:00">
+                2019-05-30
+              </time>
             
           </span>
 
@@ -1044,12 +1093,13 @@
 
       
         
-          
-          作者： 戎 晨飞（Jovany Rong）
-一、更新内容一览
-修复了在Windows 6.1平台（包括Windows 7系列和Windows Server 2008系列等操作系统）中，有空置光驱时会造成硬盘检查崩溃的问题；
-新增整体运维报告输出功能，在首页点击“Check”按钮进行整体运维结束时，程
-          ...
+          <p><em>作者： 戎 晨飞（Jovany Rong）</em></p>
+<h2 id="一、更新内容一览"><a href="#一、更新内容一览" class="headerlink" title="一、更新内容一览"></a>一、更新内容一览</h2><ol>
+<li>修复了在Windows 6.1平台（包括Windows 7系列和Windows Server 2008系列等操作系统）中，有空置光驱时会造成硬盘检查崩溃的问题；</li>
+<li>新增整体运维报告输出功能，在首页点击“Check”按钮进行整体运维结束时，程序自动产生html格式的运维报告和eom格式的加密报文（eom报文供提交时使用），使运维结果更具可读性；</li>
+<li>提升了在目标数据库过大时，数据库运维的性能，使其更不容易出现卡死的情况；</li>
+<li>多处错误修复和文本优化。</li>
+</ol>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2019/05/16/EasyOM-1-0-1更新说明/#more" rel="contents">
@@ -1200,7 +1250,7 @@
                   <span class="links-of-author-item">
                     <a href="https://www.zhihu.com/people/rong-chen-fei/activities" target="_blank" title="知乎">
                       
-                        <i class="fa fa-fw fa-book-open"></i>知乎</a>
+                        <i class="fa fa-fw fa-book"></i>知乎</a>
                   </span>
                 
                   <span class="links-of-author-item">
@@ -1248,6 +1298,13 @@
       
 
       
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
 
     </div>
   </aside>
@@ -1274,7 +1331,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">3.8k</span>
+    <span title="Site words total count">3.7k</span>
   
 </div>
 
@@ -1296,7 +1353,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">全站共3.8k字</span>
+  <span class="post-count">全站共3.7k字</span>
 </div>
 
 <script>
@@ -1325,6 +1382,26 @@
   }, 1000);
 </script>
         
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
 
 
 
@@ -1337,18 +1414,7 @@
     </footer>
 
     
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
 
-    
-      <div id="needsharebutton-float">
-        <span class="btn">
-          <i class="fa fa-share-alt" aria-hidden="true"></i>
-        </span>
-      </div>
     
 
   </div>
@@ -1851,22 +1917,10 @@
       
           pbOptions.position = "bottomCenter";
       
-          pbOptions.networks = "Weibo,Wechat,Twitter,Facebook";
+          pbOptions.networks = "Weibo";
       
       new needShareButton('#needsharebutton-postbottom', pbOptions);
     
-    
-      flOptions = {};
-      
-          flOptions.iconStyle = "box";
-      
-          flOptions.boxForm = "horizontal";
-      
-          flOptions.position = "middleRight";
-      
-          flOptions.networks = "Weibo,Wechat,Twitter,Facebook";
-      
-      new needShareButton('#needsharebutton-float', flOptions);
     
   </script>
 
@@ -1878,7 +1932,7 @@
 
   
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginModelPath":"assets/","model":{"jsonPath":"live2d-widget-model-shizuku"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>
 
 <!-- 页面点击小红心 -->

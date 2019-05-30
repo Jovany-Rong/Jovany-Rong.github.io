@@ -21,6 +21,18 @@
   <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
   <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
 
+  <script>
+    (function(){
+        if(''){
+            if (prompt('请输入密码') !== ''){
+                alert('密码错误');
+                history.back();
+            }
+        }
+    })();
+  </script>
+
+
 
 
 
@@ -75,7 +87,7 @@
 
 
 
-  <meta name="keywords" content="Hexo,域名,问题解决,Coding,腾讯云开发者平台,">
+  <meta name="keywords" content="Hexo,Coding,腾讯云开发者平台,域名,问题解决,">
 
 
 
@@ -89,14 +101,14 @@
 
 
 <meta name="description" content="问题描述在腾讯云开发者平台（原Coding.net平台）部署Pages静态网页，在设置中绑定了阿里云顶级域名ABC.com。在阿里云域名控制台中，ABC.com域名有两条解析记录，分别通过主机记录的 @和www解析到Pages应用访问地址（Username.coding.me）。 解析完成后，通过顶级域名ABC.com能够正常访问到我们的Pages应用，但通过二级域名www.ABC.com访问时报">
-<meta name="keywords" content="Hexo,域名,问题解决,Coding,腾讯云开发者平台">
+<meta name="keywords" content="Hexo,Coding,腾讯云开发者平台,域名,问题解决">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Coding Pages绑定阿里云域名无法使用二级域名访问解决方案">
 <meta property="og:url" content="http://rongchenfei.com/2019/05/18/Coding-Pages绑定阿里云域名无法使用二级域名访问解决方案/index.html">
 <meta property="og:site_name" content="夏月谈">
 <meta property="og:description" content="问题描述在腾讯云开发者平台（原Coding.net平台）部署Pages静态网页，在设置中绑定了阿里云顶级域名ABC.com。在阿里云域名控制台中，ABC.com域名有两条解析记录，分别通过主机记录的 @和www解析到Pages应用访问地址（Username.coding.me）。 解析完成后，通过顶级域名ABC.com能够正常访问到我们的Pages应用，但通过二级域名www.ABC.com访问时报">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-29T09:03:33.413Z">
+<meta property="og:updated_time" content="2019-05-30T08:46:04.992Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Coding Pages绑定阿里云域名无法使用二级域名访问解决方案">
 <meta name="twitter:description" content="问题描述在腾讯云开发者平台（原Coding.net平台）部署Pages静态网页，在设置中绑定了阿里云顶级域名ABC.com。在阿里云域名控制台中，ABC.com域名有两条解析记录，分别通过主机记录的 @和www解析到Pages应用访问地址（Username.coding.me）。 解析完成后，通过顶级域名ABC.com能够正常访问到我们的Pages应用，但通过二级域名www.ABC.com访问时报">
@@ -109,7 +121,7 @@
     root: '/',
     scheme: 'Gemini',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -351,7 +363,19 @@
             
 
             
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2019-05-30T16:46:04+08:00">
+                2019-05-30
+              </time>
             
           </span>
 
@@ -396,6 +420,11 @@
           
           
 
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
           
 
           
@@ -448,6 +477,7 @@
       
         <h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>在腾讯云开发者平台（原Coding.net平台）部署Pages静态网页，在设置中绑定了阿里云顶级域名<em>ABC.com</em>。在阿里云域名控制台中，<em>ABC.com</em>域名有两条解析记录，分别通过主机记录的 <strong>@</strong>和<strong>www</strong>解析到Pages应用访问地址（<em>Username</em>.coding.me）。</p>
 <p>解析完成后，通过顶级域名<em>ABC.com</em>能够正常访问到我们的Pages应用，但通过二级域名www.<em>ABC.com</em>访问时报404错误。</p>
+<a id="more"></a>
 <h2 id="原因分析"><a href="#原因分析" class="headerlink" title="原因分析"></a>原因分析</h2><p>与GitHub平台不同，腾讯云开发者平台Pages应用支持绑定多个域名，但不支持自动绑定顶级域名下的二级域名，需要手动增加二级域名的绑定才能生效。</p>
 <h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>在Pages设置中增加二级域名www.<em>ABC.com</em>的绑定。稍待片刻，即可正常访问应用。</p>
 
@@ -478,7 +508,7 @@
   <p><span>本文标题:</span><a href="/2019/05/18/Coding-Pages绑定阿里云域名无法使用二级域名访问解决方案/">Coding Pages绑定阿里云域名无法使用二级域名访问解决方案</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Chenfei Jovany Rong 的个人博客">Chenfei Jovany Rong</a></p>
   <p><span>发布时间:</span>2019年05月18日 - 23:05</p>
-  <p><span>最后更新:</span>2019年05月29日 - 17:05</p>
+  <p><span>最后更新:</span>2019年05月30日 - 16:05</p>
   <p><span>原始链接:</span><a href="/2019/05/18/Coding-Pages绑定阿里云域名无法使用二级域名访问解决方案/" title="Coding Pages绑定阿里云域名无法使用二级域名访问解决方案">http://rongchenfei.com/2019/05/18/Coding-Pages绑定阿里云域名无法使用二级域名访问解决方案/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://rongchenfei.com/2019/05/18/Coding-Pages绑定阿里云域名无法使用二级域名访问解决方案/" aria-label="复制成功！"></i></span>
   </p>
@@ -542,13 +572,13 @@
           
             <a href="/tags/Hexo/" rel="tag"><i class="fa fa-tag"></i> Hexo</a>
           
-            <a href="/tags/域名/" rel="tag"><i class="fa fa-tag"></i> 域名</a>
-          
-            <a href="/tags/问题解决/" rel="tag"><i class="fa fa-tag"></i> 问题解决</a>
-          
             <a href="/tags/Coding/" rel="tag"><i class="fa fa-tag"></i> Coding</a>
           
             <a href="/tags/腾讯云开发者平台/" rel="tag"><i class="fa fa-tag"></i> 腾讯云开发者平台</a>
+          
+            <a href="/tags/域名/" rel="tag"><i class="fa fa-tag"></i> 域名</a>
+          
+            <a href="/tags/问题解决/" rel="tag"><i class="fa fa-tag"></i> 问题解决</a>
           
         </div>
       
@@ -725,7 +755,7 @@
                   <span class="links-of-author-item">
                     <a href="https://www.zhihu.com/people/rong-chen-fei/activities" target="_blank" title="知乎">
                       
-                        <i class="fa fa-fw fa-book-open"></i>知乎</a>
+                        <i class="fa fa-fw fa-book"></i>知乎</a>
                   </span>
                 
                   <span class="links-of-author-item">
@@ -789,6 +819,13 @@
       
 
       
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
 
     </div>
   </aside>
@@ -815,7 +852,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">3.8k</span>
+    <span title="Site words total count">3.7k</span>
   
 </div>
 
@@ -837,7 +874,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">全站共3.8k字</span>
+  <span class="post-count">全站共3.7k字</span>
 </div>
 
 <script>
@@ -866,6 +903,26 @@
   }, 1000);
 </script>
         
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
 
 
 
@@ -878,18 +935,7 @@
     </footer>
 
     
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
 
-    
-      <div id="needsharebutton-float">
-        <span class="btn">
-          <i class="fa fa-share-alt" aria-hidden="true"></i>
-        </span>
-      </div>
     
 
   </div>
@@ -1396,22 +1442,10 @@
       
           pbOptions.position = "bottomCenter";
       
-          pbOptions.networks = "Weibo,Wechat,Twitter,Facebook";
+          pbOptions.networks = "Weibo";
       
       new needShareButton('#needsharebutton-postbottom', pbOptions);
     
-    
-      flOptions = {};
-      
-          flOptions.iconStyle = "box";
-      
-          flOptions.boxForm = "horizontal";
-      
-          flOptions.position = "middleRight";
-      
-          flOptions.networks = "Weibo,Wechat,Twitter,Facebook";
-      
-      new needShareButton('#needsharebutton-float', flOptions);
     
   </script>
 
@@ -1423,7 +1457,7 @@
 
   
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginModelPath":"assets/","model":{"jsonPath":"live2d-widget-model-shizuku"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>
 
 <!-- 页面点击小红心 -->

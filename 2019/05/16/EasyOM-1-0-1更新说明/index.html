@@ -21,6 +21,18 @@
   <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
   <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
 
+  <script>
+    (function(){
+        if(''){
+            if (prompt('请输入密码') !== ''){
+                alert('密码错误');
+                history.back();
+            }
+        }
+    })();
+  </script>
+
+
 
 
 
@@ -96,7 +108,7 @@
 <meta property="og:site_name" content="夏月谈">
 <meta property="og:description" content="作者： 戎 晨飞（Jovany Rong） 一、更新内容一览 修复了在Windows 6.1平台（包括Windows 7系列和Windows Server 2008系列等操作系统）中，有空置光驱时会造成硬盘检查崩溃的问题； 新增整体运维报告输出功能，在首页点击“Check”按钮进行整体运维结束时，程序自动产生html格式的运维报告和eom格式的加密报文（eom报文供提交时使用），使运维结果更具可读">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-29T09:04:03.748Z">
+<meta property="og:updated_time" content="2019-05-30T08:46:51.492Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="EasyOM 1.0.1更新说明">
 <meta name="twitter:description" content="作者： 戎 晨飞（Jovany Rong） 一、更新内容一览 修复了在Windows 6.1平台（包括Windows 7系列和Windows Server 2008系列等操作系统）中，有空置光驱时会造成硬盘检查崩溃的问题； 新增整体运维报告输出功能，在首页点击“Check”按钮进行整体运维结束时，程序自动产生html格式的运维报告和eom格式的加密报文（eom报文供提交时使用），使运维结果更具可读">
@@ -109,7 +121,7 @@
     root: '/',
     scheme: 'Gemini',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -351,7 +363,19 @@
             
 
             
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2019-05-30T16:46:51+08:00">
+                2019-05-30
+              </time>
             
           </span>
 
@@ -396,6 +420,11 @@
           
           
 
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
           
 
           
@@ -453,6 +482,7 @@
 <li>提升了在目标数据库过大时，数据库运维的性能，使其更不容易出现卡死的情况；</li>
 <li>多处错误修复和文本优化。</li>
 </ol>
+<a id="more"></a>
 <h2 id="二、更新适用对象"><a href="#二、更新适用对象" class="headerlink" title="二、更新适用对象"></a>二、更新适用对象</h2><p>本次更新推荐所有EasyOM用户更新。</p>
 <h2 id="三、更新方式"><a href="#三、更新方式" class="headerlink" title="三、更新方式"></a>三、更新方式</h2><p>1) 通过程序内<strong>关于</strong>-&gt;<strong>关于EasyOM</strong>中的<strong>Update</strong>按钮下载最新版本；<br>2) 直接<a href="https://218.94.2.162:8087/svn/软件工程中心/8-实施工具代码/02-release/02-CS/Operation_Management/EasyOM/Latest" title="EasyOM 1.0.1" target="_blank" rel="noopener"><strong><em>点击此处</em></strong></a>获取更新。</p>
 <h2 id="四、其他说明"><a href="#四、其他说明" class="headerlink" title="四、其他说明"></a>四、其他说明</h2><p>对本次更新及EasyOM工具有任何意见或建议，请联系<strong>技术及质量管理部</strong>。</p>
@@ -484,7 +514,7 @@
   <p><span>本文标题:</span><a href="/2019/05/16/EasyOM-1-0-1更新说明/">EasyOM 1.0.1更新说明</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Chenfei Jovany Rong 的个人博客">Chenfei Jovany Rong</a></p>
   <p><span>发布时间:</span>2019年05月16日 - 21:05</p>
-  <p><span>最后更新:</span>2019年05月29日 - 17:05</p>
+  <p><span>最后更新:</span>2019年05月30日 - 16:05</p>
   <p><span>原始链接:</span><a href="/2019/05/16/EasyOM-1-0-1更新说明/" title="EasyOM 1.0.1更新说明">http://rongchenfei.com/2019/05/16/EasyOM-1-0-1更新说明/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://rongchenfei.com/2019/05/16/EasyOM-1-0-1更新说明/" aria-label="复制成功！"></i></span>
   </p>
@@ -725,7 +755,7 @@
                   <span class="links-of-author-item">
                     <a href="https://www.zhihu.com/people/rong-chen-fei/activities" target="_blank" title="知乎">
                       
-                        <i class="fa fa-fw fa-book-open"></i>知乎</a>
+                        <i class="fa fa-fw fa-book"></i>知乎</a>
                   </span>
                 
                   <span class="links-of-author-item">
@@ -789,6 +819,13 @@
       
 
       
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
 
     </div>
   </aside>
@@ -815,7 +852,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">3.8k</span>
+    <span title="Site words total count">3.7k</span>
   
 </div>
 
@@ -837,7 +874,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">全站共3.8k字</span>
+  <span class="post-count">全站共3.7k字</span>
 </div>
 
 <script>
@@ -866,6 +903,26 @@
   }, 1000);
 </script>
         
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
 
 
 
@@ -878,18 +935,7 @@
     </footer>
 
     
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
 
-    
-      <div id="needsharebutton-float">
-        <span class="btn">
-          <i class="fa fa-share-alt" aria-hidden="true"></i>
-        </span>
-      </div>
     
 
   </div>
@@ -1396,22 +1442,10 @@
       
           pbOptions.position = "bottomCenter";
       
-          pbOptions.networks = "Weibo,Wechat,Twitter,Facebook";
+          pbOptions.networks = "Weibo";
       
       new needShareButton('#needsharebutton-postbottom', pbOptions);
     
-    
-      flOptions = {};
-      
-          flOptions.iconStyle = "box";
-      
-          flOptions.boxForm = "horizontal";
-      
-          flOptions.position = "middleRight";
-      
-          flOptions.networks = "Weibo,Wechat,Twitter,Facebook";
-      
-      new needShareButton('#needsharebutton-float', flOptions);
     
   </script>
 
@@ -1423,7 +1457,7 @@
 
   
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginModelPath":"assets/","model":{"jsonPath":"live2d-widget-model-shizuku"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>
 
 <!-- 页面点击小红心 -->
