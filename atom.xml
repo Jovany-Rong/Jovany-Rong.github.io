@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://rongchenfei.com/"/>
-  <updated>2019-05-30T08:47:39.225Z</updated>
+  <updated>2019-05-30T10:13:37.248Z</updated>
   <id>http://rongchenfei.com/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【开源】办公自动化探索：全库质检周报助手</title>
+    <link href="http://rongchenfei.com/2019/05/30/%E3%80%90%E5%BC%80%E6%BA%90%E3%80%91%E5%8A%9E%E5%85%AC%E8%87%AA%E5%8A%A8%E5%8C%96%E6%8E%A2%E7%B4%A2%EF%BC%9A%E5%85%A8%E5%BA%93%E8%B4%A8%E6%A3%80%E5%91%A8%E6%8A%A5%E5%8A%A9%E6%89%8B/"/>
+    <id>http://rongchenfei.com/2019/05/30/【开源】办公自动化探索：全库质检周报助手/</id>
+    <published>2019-05-30T09:53:43.000Z</published>
+    <updated>2019-05-30T10:13:37.248Z</updated>
+    
+    <content type="html"><![CDATA[<p>众所周知，事务性工作是繁杂而琐碎的。像一些周报等定时需要做的工作，有时会让人焦头烂额，陷入文件整理和对比的泥潭。比如每周一需要出的全库质检周报，就需要核对全库质检情况跟踪表，并逐个检查SVN上各地区提交的最新质检报告。</p><p>那么，是否有一种方法可以让计算机辅助我们完成这项工作呢？</p><p>答案是肯定的，我们的全库质检周报助手就呼之欲出了。</p><p>什么？全库质检和你没关系？别着急，它的一些原理你会觉得有用的。</p><a id="more"></a><h1 id="开发环境"><a href="#开发环境" class="headerlink" title="开发环境"></a>开发环境</h1><ul><li>Python 3.7</li><li>Openpyxl模块</li><li>Windows 10</li></ul><h1 id="开发难点"><a href="#开发难点" class="headerlink" title="开发难点"></a>开发难点</h1><p>该工具需要我们去核对SVN文件夹，看各地区是否提交了质检报告。那么Python自带的OS模块就能完成这项任务。</p><p>我们还需要检查跟踪表，那么我们就需要处理Excel文件。Python中这类模块有很多，这次我们选用比较简单的Openpyxl模块。</p><h1 id="功能实现"><a href="#功能实现" class="headerlink" title="功能实现"></a>功能实现</h1><p>目前工具已经完成了1.0版本的开发，实现的功能有自动检查全库质检跟踪表（xlsx格式）各部门各地区是否填写本周进展及自动检查SVN目录中各地区是否提交了最新质检报告。</p><p>目前还无法自动帮我们出具周报，但已经帮我们处理了最复杂的工作。我们只需要等待几秒，对着终端出具我们的周报就可以了。</p><h1 id="源代码"><a href="#源代码" class="headerlink" title="源代码"></a>源代码</h1><p>本工具开源，大家可自由研究和使用，禁止用作商业用途～</p><p>请大家前往<a href="https://github.com/Jovany-Rong/DCTK_Checker" target="_blank" rel="noopener">我的GitHub</a>克隆代码仓库获取源代码。</p><p>不想看源代码，想直接使用编译过的工具的，请至本站下载页面下载。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;众所周知，事务性工作是繁杂而琐碎的。像一些周报等定时需要做的工作，有时会让人焦头烂额，陷入文件整理和对比的泥潭。比如每周一需要出的全库质检周报，就需要核对全库质检情况跟踪表，并逐个检查SVN上各地区提交的最新质检报告。&lt;/p&gt;
+&lt;p&gt;那么，是否有一种方法可以让计算机辅助我们完成这项工作呢？&lt;/p&gt;
+&lt;p&gt;答案是肯定的，我们的全库质检周报助手就呼之欲出了。&lt;/p&gt;
+&lt;p&gt;什么？全库质检和你没关系？别着急，它的一些原理你会觉得有用的。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="办公自动化" scheme="http://rongchenfei.com/categories/%E5%8A%9E%E5%85%AC%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
+    
+    
+      <category term="办公自动化" scheme="http://rongchenfei.com/tags/%E5%8A%9E%E5%85%AC%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
+    
+      <category term="Python" scheme="http://rongchenfei.com/tags/Python/"/>
+    
+      <category term="全库质检" scheme="http://rongchenfei.com/tags/%E5%85%A8%E5%BA%93%E8%B4%A8%E6%A3%80/"/>
+    
+      <category term="DCTK" scheme="http://rongchenfei.com/tags/DCTK/"/>
+    
+      <category term="开源" scheme="http://rongchenfei.com/tags/%E5%BC%80%E6%BA%90/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo + NexT进阶美化攻略</title>
@@ -66,13 +99,13 @@
     
       <category term="Hexo" scheme="http://rongchenfei.com/tags/Hexo/"/>
     
-      <category term="Coding" scheme="http://rongchenfei.com/tags/Coding/"/>
-    
-      <category term="腾讯云开发者平台" scheme="http://rongchenfei.com/tags/%E8%85%BE%E8%AE%AF%E4%BA%91%E5%BC%80%E5%8F%91%E8%80%85%E5%B9%B3%E5%8F%B0/"/>
-    
       <category term="域名" scheme="http://rongchenfei.com/tags/%E5%9F%9F%E5%90%8D/"/>
     
       <category term="问题解决" scheme="http://rongchenfei.com/tags/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
+    
+      <category term="Coding" scheme="http://rongchenfei.com/tags/Coding/"/>
+    
+      <category term="腾讯云开发者平台" scheme="http://rongchenfei.com/tags/%E8%85%BE%E8%AE%AF%E4%BA%91%E5%BC%80%E5%8F%91%E8%80%85%E5%B9%B3%E5%8F%B0/"/>
     
   </entry>
   
@@ -96,11 +129,11 @@
     
       <category term="Hexo" scheme="http://rongchenfei.com/tags/Hexo/"/>
     
+      <category term="GitHub" scheme="http://rongchenfei.com/tags/GitHub/"/>
+    
       <category term="域名" scheme="http://rongchenfei.com/tags/%E5%9F%9F%E5%90%8D/"/>
     
       <category term="问题解决" scheme="http://rongchenfei.com/tags/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
-    
-      <category term="GitHub" scheme="http://rongchenfei.com/tags/GitHub/"/>
     
   </entry>
   
@@ -128,13 +161,13 @@
       <category term="运维产品" scheme="http://rongchenfei.com/categories/%E8%BF%90%E7%BB%B4%E4%BA%A7%E5%93%81/"/>
     
     
+      <category term="Python" scheme="http://rongchenfei.com/tags/Python/"/>
+    
       <category term="EasyOM" scheme="http://rongchenfei.com/tags/EasyOM/"/>
     
       <category term="更新说明" scheme="http://rongchenfei.com/tags/%E6%9B%B4%E6%96%B0%E8%AF%B4%E6%98%8E/"/>
     
       <category term="运维" scheme="http://rongchenfei.com/tags/%E8%BF%90%E7%BB%B4/"/>
-    
-      <category term="Python" scheme="http://rongchenfei.com/tags/Python/"/>
     
   </entry>
   
