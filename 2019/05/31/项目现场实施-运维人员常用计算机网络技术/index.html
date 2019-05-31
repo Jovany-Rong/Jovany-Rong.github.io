@@ -1,0 +1,1586 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+  <script>
+    (function(){
+        if(''){
+            if (prompt('请输入密码') !== ''){
+                alert('密码错误');
+                history.back();
+            }
+        }
+    })();
+  </script>
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/xingkong-32x32.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/xingkong-16x16.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="网络,计算机,培训,">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="夏月谈" type="application/atom+xml">
+
+
+
+
+
+
+<meta name="description" content="上世纪中期以来，计算机网络已经越来越成为人类社会必不可少的基础设施。当前，我们日常生活和工作几乎离不开计算机网络，无论是“万物互联”的互联网，还是承载各类系统、数据库的专网、内网，都扮演了极为重要的角色。 那么，在我们软件项目现场实施或运维过程中，都需要掌握哪些基本的计算机及网络技能呢？">
+<meta name="keywords" content="网络,计算机,培训">
+<meta property="og:type" content="article">
+<meta property="og:title" content="项目现场实施&#x2F;运维人员常用计算机网络技术">
+<meta property="og:url" content="http://rongchenfei.com/2019/05/31/项目现场实施-运维人员常用计算机网络技术/index.html">
+<meta property="og:site_name" content="夏月谈">
+<meta property="og:description" content="上世纪中期以来，计算机网络已经越来越成为人类社会必不可少的基础设施。当前，我们日常生活和工作几乎离不开计算机网络，无论是“万物互联”的互联网，还是承载各类系统、数据库的专网、内网，都扮演了极为重要的角色。 那么，在我们软件项目现场实施或运维过程中，都需要掌握哪些基本的计算机及网络技能呢？">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-05-31T07:02:58.022Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="项目现场实施&#x2F;运维人员常用计算机网络技术">
+<meta name="twitter:description" content="上世纪中期以来，计算机网络已经越来越成为人类社会必不可少的基础设施。当前，我们日常生活和工作几乎离不开计算机网络，无论是“万物互联”的互联网，还是承载各类系统、数据库的专网、内网，都扮演了极为重要的角色。 那么，在我们软件项目现场实施或运维过程中，都需要掌握哪些基本的计算机及网络技能呢？">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://rongchenfei.com/2019/05/31/项目现场实施-运维人员常用计算机网络技术/">
+
+
+
+
+
+  <title>项目现场实施/运维人员常用计算机网络技术 | 夏月谈</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+<a href="https://github.com/Jovany-Rong" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewbox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">夏月谈</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">文档、写作和杂谈</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-easyom">
+          <a href="/EasyOM/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-wrench"></i> <br>
+            
+            EasyOM
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-downloads">
+          <a href="/downloads/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-download"></i> <br>
+            
+            下载
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://rongchenfei.com/2019/05/31/项目现场实施-运维人员常用计算机网络技术/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Chenfei Jovany Rong">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="夏月谈">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">项目现场实施/运维人员常用计算机网络技术</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-31T10:58:50+08:00">
+                2019-05-31
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2019-05-31T15:02:58+08:00">
+                2019-05-31
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/计算机技术/" itemprop="url" rel="index">
+                    <span itemprop="name">计算机技术</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/05/31/项目现场实施-运维人员常用计算机网络技术/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/05/31/项目现场实施-运维人员常用计算机网络技术/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  3.8k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  14
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>上世纪中期以来，计算机网络已经越来越成为人类社会必不可少的基础设施。当前，我们日常生活和工作几乎离不开计算机网络，<br>无论是“万物互联”的互联网，还是承载各类系统、数据库的专网、内网，都扮演了极为重要的角色。</p>
+<p>那么，在我们软件项目现场实施或运维过程中，都需要掌握哪些基本的计算机及网络技能呢？</p>
+<a id="more"></a>
+<h2 id="1-查看计算机IP"><a href="#1-查看计算机IP" class="headerlink" title="1 查看计算机IP"></a>1 查看计算机IP</h2><h3 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h3><p>打开命令行窗口（cmd或PowerShell），执行以下命令。</p>
+<figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ipconfig</span></span><br></pre></td></tr></table></figure>
+<h3 id="Linux-MacOS"><a href="#Linux-MacOS" class="headerlink" title="Linux / MacOS"></a>Linux / MacOS</h3><p>打开终端（Terminal或Term2等），执行以下命令。</p>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">ifconfig</span></span><br></pre></td></tr></table></figure>
+<h2 id="2-测试IP或域名是否连通"><a href="#2-测试IP或域名是否连通" class="headerlink" title="2 测试IP或域名是否连通"></a>2 测试IP或域名是否连通</h2><p>注意，目标机器防火墙必须允许回显。</p>
+<h3 id="Windows-1"><a href="#Windows-1" class="headerlink" title="Windows"></a>Windows</h3><p>打开命令行窗口（cmd或PowerShell），执行以下命令。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">ping</span> 192<span class="selector-class">.168</span><span class="selector-class">.1</span><span class="selector-class">.1</span></span><br></pre></td></tr></table></figure>
+<p>其中将 <em>192.168.1.1</em> 更改为目标的IP地址或域名。</p>
+<h3 id="Linux-MacOS-1"><a href="#Linux-MacOS-1" class="headerlink" title="Linux / MacOS"></a>Linux / MacOS</h3><p>打开终端（Terminal或Term2等），执行以下命令。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">ping</span> 192<span class="selector-class">.168</span><span class="selector-class">.1</span><span class="selector-class">.1</span></span><br></pre></td></tr></table></figure>
+<p>其中将 <em>192.168.1.1</em> 更改为目标的IP地址或域名。</p>
+<p>需要使用快捷键 <strong>Ctrl+C</strong> 中止命令，否则 <strong>ping</strong> 命令将持续执行。</p>
+<h2 id="3-测试目标计算机某端口是否开启"><a href="#3-测试目标计算机某端口是否开启" class="headerlink" title="3 测试目标计算机某端口是否开启"></a>3 测试目标计算机某端口是否开启</h2><p>注意，该方法使用Telnet，必须保证计算机已安装Telnet服务。</p>
+<p>根据操作系统，打开命令行窗口或终端窗口，执行以下命令。</p>
+<figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">telnet <span class="number">192.168</span><span class="number">.1</span><span class="number">.1</span> <span class="number">8080</span></span><br></pre></td></tr></table></figure>
+<p>其中将 <em>192.168.1.1 8080</em> 更改为目标的IP/域名及端口号。</p>
+<h2 id="4-查看计算机路由"><a href="#4-查看计算机路由" class="headerlink" title="4 查看计算机路由"></a>4 查看计算机路由</h2><h3 id="Windows-2"><a href="#Windows-2" class="headerlink" title="Windows"></a>Windows</h3><p>打开命令行窗口（cmd或PowerShell），执行以下命令。</p>
+<figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">route <span class="built_in">print</span></span><br></pre></td></tr></table></figure>
+<h3 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h3><p>打开终端（Terminal），执行以下命令。</p>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">route</span></span><br></pre></td></tr></table></figure>
+<h3 id="MacOS"><a href="#MacOS" class="headerlink" title="MacOS"></a>MacOS</h3><p>打开终端（Terminal或Term2等），执行以下命令。</p>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">netstat -nr</span></span><br></pre></td></tr></table></figure>
+<h2 id="5-添加路由"><a href="#5-添加路由" class="headerlink" title="5 添加路由"></a>5 添加路由</h2><h3 id="Windows-3"><a href="#Windows-3" class="headerlink" title="Windows"></a>Windows</h3><p>打开命令行窗口（cmd或PowerShell），执行以下命令。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">route</span> <span class="selector-tag">add</span> 192<span class="selector-class">.168</span><span class="selector-class">.1</span><span class="selector-class">.0</span> <span class="selector-tag">mask</span> 255<span class="selector-class">.255</span><span class="selector-class">.255</span><span class="selector-class">.0</span> 192<span class="selector-class">.168</span><span class="selector-class">.1</span><span class="selector-class">.1</span></span><br></pre></td></tr></table></figure>
+<p>其中将 <em>192.168.1.0</em> 更改为目标网段的IP， <em>255.255.255.0</em> 更改为子网掩码， <em>192.168.1.1</em> 更改为网关。</p>
+<h3 id="Linux-1"><a href="#Linux-1" class="headerlink" title="Linux"></a>Linux</h3><p>打开终端（Terminal），执行以下命令。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">route</span> <span class="selector-tag">add</span> <span class="selector-tag">-net</span> 192<span class="selector-class">.168</span><span class="selector-class">.1</span><span class="selector-class">.0</span> <span class="selector-tag">netmask</span> 255<span class="selector-class">.255</span><span class="selector-class">.255</span><span class="selector-class">.0</span> <span class="selector-tag">gw</span> 192<span class="selector-class">.168</span><span class="selector-class">.1</span><span class="selector-class">.1</span></span><br></pre></td></tr></table></figure>
+<p>其中将 <em>192.168.1.0</em> 更改为目标网段的IP， <em>255.255.255.0</em> 更改为子网掩码， <em>192.168.1.1</em> 更改为网关。</p>
+<h3 id="MacOS-1"><a href="#MacOS-1" class="headerlink" title="MacOS"></a>MacOS</h3><p>打开终端（Terminal或Term2等），执行以下命令。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">route</span> <span class="selector-tag">add</span> 192<span class="selector-class">.168</span><span class="selector-class">.1</span><span class="selector-class">.0</span> <span class="selector-tag">-netmask</span> 255<span class="selector-class">.255</span><span class="selector-class">.255</span><span class="selector-class">.0</span> 192<span class="selector-class">.168</span><span class="selector-class">.1</span><span class="selector-class">.1</span></span><br></pre></td></tr></table></figure>
+<p>其中将 <em>192.168.1.0</em> 更改为目标网段的IP， <em>255.255.255.0</em> 更改为子网掩码， <em>192.168.1.1</em> 更改为网关。</p>
+<h2 id="6-远程桌面"><a href="#6-远程桌面" class="headerlink" title="6 远程桌面"></a>6 远程桌面</h2><h3 id="6-1-RDP"><a href="#6-1-RDP" class="headerlink" title="6.1 RDP"></a>6.1 RDP</h3><p>该方式受控端只支持Windows，需要其打开3389端口。</p>
+<h4 id="Windows-To-Windows"><a href="#Windows-To-Windows" class="headerlink" title="Windows To Windows"></a>Windows To Windows</h4><p>通过Windows自带的远程桌面工具完成。</p>
+<p>主控端输入快捷键 <strong>Ctrl + R</strong> 调出 <strong>运行</strong> 对话框，在其中输入 <strong>mstsc</strong> 打开远程桌面工具。</p>
+<p>输入连接参数，即可完成远程桌面连接。</p>
+<h4 id="MacOS-To-Windows"><a href="#MacOS-To-Windows" class="headerlink" title="MacOS To Windows"></a>MacOS To Windows</h4><p>通过Microsoft开发的 <strong>Microsoft Remote Desktop</strong> 应用程序完成。</p>
+<p>该应用程序<strong>尚未</strong>在中国Mac App Store上架。</p>
+<p>在Mac上登录<strong>美国地区</strong>Apple ID。</p>
+<p>在Mac App Store中搜索 <strong>Microsoft Remote Desktop</strong> 应用程序并下载安装。</p>
+<p>打开该应用程序，输入连接参数，即可完成远程桌面连接。</p>
+<h4 id="iOS-Android-To-Windows"><a href="#iOS-Android-To-Windows" class="headerlink" title="iOS/Android To Windows"></a>iOS/Android To Windows</h4><p>通过Microsoft开发的 <strong>Microsoft Remote Desktop</strong> 应用程序完成。</p>
+<p>在手机应用商店（App Store、Play Store等）中搜索 <strong>Microsoft Remote Desktop</strong> 应用程序并下载安装。</p>
+<p>打开该应用程序，输入连接参数，即可完成远程桌面连接。</p>
+<h3 id="6-2-Teamviewer"><a href="#6-2-Teamviewer" class="headerlink" title="6.2 Teamviewer"></a>6.2 Teamviewer</h3><p>该工具支持全平台。非商业用途免费，商业用途需付费。</p>
+<p>受控端需安装Teamviewer软件或直接运行，若为安装版本还可配置无人值守。</p>
+<p>主控端需安装Teamviewer软件，输入受控端的ID和密码即可完成。</p>
+<p>在受控端设置中，还可开启使用IP地址作为ID，供内网使用。</p>
+<h3 id="6-3-SSH"><a href="#6-3-SSH" class="headerlink" title="6.3 SSH"></a>6.3 SSH</h3><p>通过SSH2协议进行远程连接。</p>
+<p>该方式支持全平台，要求受控端开启SSH服务，但仅支持命令行界面。这是我们远程Linux服务器的主要方式。</p>
+<p>主控端若为Linux或MacOS，打开终端就能使用SSH进行远程连接。</p>
+<p>主控端若为Windows，可安装第三方软件（PuTTY、XShell等）进行SSH连接。</p>
+<h2 id="7-Windows文件共享"><a href="#7-Windows文件共享" class="headerlink" title="7 Windows文件共享"></a>7 Windows文件共享</h2><p>在Windows计算机中，可对某个目录设置共享，并配置用户权限。使用该功能需打开445端口。</p>
+<p>另一台Windows计算机可以输入快捷键 <strong>Ctrl + R</strong> 调出 <strong>运行</strong> 对话框，在其中输入 <strong>//IP地址</strong> 访问该IP对应计算机的共享文件。</p>
+<p><em>特殊地，通过输入 <strong>//IP地址/d$</strong> 访问该IP对应计算机D盘中的所有文件。</em></p>
+<p>另一台Linux或MacOS计算机则可以在文件系统管理器中找到局域网中的计算机来访问共享文件。</p>
+<h2 id="8-FTP"><a href="#8-FTP" class="headerlink" title="8 FTP"></a>8 FTP</h2><p><strong>文件传输协议</strong> （FTP）是一套用于文件传输的标准协议。</p>
+<h3 id="8-1-搭建FTP服务器"><a href="#8-1-搭建FTP服务器" class="headerlink" title="8.1 搭建FTP服务器"></a>8.1 搭建FTP服务器</h3><h4 id="Windows-4"><a href="#Windows-4" class="headerlink" title="Windows"></a>Windows</h4><p>在Windows计算机中，打开IIS管理器。</p>
+<p>在IIS管理器中新建FTP站点。输入站点名称和根目录，并绑定本机IP地址和21端口，再配置权限即可完成FTP服务器的搭建。</p>
+<h4 id="Linux-2"><a href="#Linux-2" class="headerlink" title="Linux"></a>Linux</h4><p>在Linux计算机中，搭建FTP服务器要稍微复杂一些。</p>
+<p>首先通过yum等包管理器安装vsftpd，代码如下。</p>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum -y <span class="keyword">install</span> vsftpd</span><br></pre></td></tr></table></figure>
+<p>创建FTP用户，代码如下。</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">useradd -s <span class="regexp">/sbin/</span>nologin -d <span class="regexp">/home/</span>ftp ftp</span><br></pre></td></tr></table></figure>
+<p>为 <strong>ftp</strong> 用户创建密码，代码如下。</p>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">passwd ftp</span></span><br></pre></td></tr></table></figure>
+<p>编辑 <strong>/etc/vsftpd/vsftpd.conf</strong> 文件，将配置项 <strong>anonymous_enable</strong> 的值修改为NO，禁止匿名登录。</p>
+<p>启动FTP服务，代码如下。</p>
+<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl <span class="literal">start</span> vsftpd.service</span><br></pre></td></tr></table></figure>
+<h3 id="8-2-FTP客户端连接"><a href="#8-2-FTP客户端连接" class="headerlink" title="8.2 FTP客户端连接"></a>8.2 FTP客户端连接</h3><p>客户端建议使用FileZilla、FlashFXP等第三方客户端连接FTP服务器。</p>
+<h2 id="9-SFTP"><a href="#9-SFTP" class="headerlink" title="9 SFTP"></a>9 SFTP</h2><p><strong>安全文件传输协议</strong> （SFTP）也是一套用于文件传输的标准协议，它比FTP协议更安全。</p>
+<h3 id="9-1-搭建SFTP服务器"><a href="#9-1-搭建SFTP服务器" class="headerlink" title="9.1 搭建SFTP服务器"></a>9.1 搭建SFTP服务器</h3><h4 id="Windows-5"><a href="#Windows-5" class="headerlink" title="Windows"></a>Windows</h4><p>首先安装 <a href="http://www.freesshd.com/" target="_blank" rel="noopener">freeSSHd</a> 软件，安装过程在此不赘述。</p>
+<p>安装完成后打开软件，在 <strong>SSH</strong> 标签页中取消勾选 <strong>Start SSH server on freeSSHd startup</strong> 和 <strong>Use new console engine</strong> ；再在 <strong>Telnet</strong> 标签页中取消勾选 <strong>Start Telnet server on freeSSHd startup</strong> 。</p>
+<p>在 <strong>Users</strong> 标签页中添加用户设置，并在 <strong>Authentication</strong> 标签页中选择密码验证和公钥验证，最后在 <strong>SFTP</strong> 标签页中选择根目录。</p>
+<p>启动SSH服务即可。</p>
+<h4 id="Linux-3"><a href="#Linux-3" class="headerlink" title="Linux"></a>Linux</h4><p>大部分系统原生支持SSHd服务，可以直接使用。</p>
+<h3 id="9-2-FTP客户端连接"><a href="#9-2-FTP客户端连接" class="headerlink" title="9.2 FTP客户端连接"></a>9.2 FTP客户端连接</h3><p>客户端建议使用FileZilla、FlashFXP等第三方客户端连接SFTP服务器。</p>
+<h2 id="10-SVN"><a href="#10-SVN" class="headerlink" title="10 SVN"></a>10 SVN</h2><p>SVN是一个开源的版本控制系统，也是目前我们公司使用的版本控制系统。这里主要介绍一下如何连接SVN服务器进行使用。</p>
+<h3 id="10-1-客户端选择"><a href="#10-1-客户端选择" class="headerlink" title="10.1 客户端选择"></a>10.1 客户端选择</h3><p>Windows计算机可以安装 <a href="https://tortoisesvn.net/" target="_blank" rel="noopener"><strong>TortoiseSVN</strong></a> ，Mac计算机可在Mac App Store中下载 <strong>SnailSVN Lite</strong> 。</p>
+<h3 id="10-2-使用方法"><a href="#10-2-使用方法" class="headerlink" title="10.2 使用方法"></a>10.2 使用方法</h3><p>使用各个客户端都大同小异。下面介绍几种常见用法。</p>
+<ul>
+<li>SVN Checkout：检出，迁出SVN配置库的内容。相当于Git中的克隆功能，适用于在本地新建SVN目录。</li>
+<li>SVN Update：更新，从SVN配置库中更新本地文件，适用于本地SVN目录版本较旧需要更新成SVN配置库中的文件版本。</li>
+<li>SVN Commit：提交，将本地目录文件提交到SVN配置库中，适用于本地文件较新需要提交到服务器的情况。注意，建议每一次提交都撰写相应的备注，养成良好的版本管理习惯。</li>
+</ul>
+<h2 id="11-Git"><a href="#11-Git" class="headerlink" title="11 Git"></a>11 Git</h2><p>Git是另一个开源的版本控制系统，也是世界上最流行的版本控制系统。它与SVN最大的区别就是支持本地版本管理。这里主要介绍一下如何使用本地Git客户端及GitHub。</p>
+<h3 id="11-1-客户端安装"><a href="#11-1-客户端安装" class="headerlink" title="11.1 客户端安装"></a>11.1 客户端安装</h3><p>Git支持全平台，在其 <a href="https://git-scm.com/" target="_blank" rel="noopener"><strong>官方网站</strong></a> 可以下载对应版本的Git软件。</p>
+<h3 id="11-2-创建版本库"><a href="#11-2-创建版本库" class="headerlink" title="11.2 创建版本库"></a>11.2 创建版本库</h3><p>创建一个空目录，并将命令行窗口或终端窗口定位到该目录下。</p>
+<p>执行如下代码创建Git版本库。</p>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">git init</span></span><br></pre></td></tr></table></figure>
+<h3 id="11-3-将文件添加到版本库"><a href="#11-3-将文件添加到版本库" class="headerlink" title="11.3 将文件添加到版本库"></a>11.3 将文件添加到版本库</h3><p>例如我们新建了一个说明文件 <strong>readme.md</strong> ，现在想将它添加到Git版本库，执行如下代码。</p>
+<figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">add</span><span class="bash"> readme.md</span></span><br></pre></td></tr></table></figure>
+<p>特别地，如果要将目录下所有文件添加到版本库，执行如下代码。</p>
+<figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">add</span><span class="bash"> .</span></span><br></pre></td></tr></table></figure>
+<p>再执行如下代码将刚才的add操作提交。</p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">git</span> commit -m <span class="string">"hello world"</span></span><br></pre></td></tr></table></figure>
+<p>其中 <em>hello world</em> 可替换成想要的备注。</p>
+<h3 id="11-4-添加GitHub远程仓库"><a href="#11-4-添加GitHub远程仓库" class="headerlink" title="11.4 添加GitHub远程仓库"></a>11.4 添加GitHub远程仓库</h3><p>在 <a href="https://github.com" target="_blank" rel="noopener"><strong>GitHub</strong></a> 中，注册或登录自己的账号，为了方便描述，这里将用户名暂定为 <strong>Your-Name</strong> ，执行代码时需将其改为自己的用户名。</p>
+<p>在GitHub页面右上角找到 <strong>Create a new repo</strong> 按钮，创建一个新的仓库，这里仓库名暂定为 <strong>learngit</strong> 。</p>
+<p>在本地仓库中，执行如下代码添加远程仓库。</p>
+<figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">git</span> remote <span class="keyword">add </span>origin git<span class="comment">@github.com:Your-Name/learngit.git</span></span><br></pre></td></tr></table></figure>
+<p>第一次推送远程仓库时，使用如下命令。</p>
+<figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">push</span> -u <span class="built_in">origin</span> master</span><br></pre></td></tr></table></figure>
+<p>以后再推送远程仓库时，使用如下命令。</p>
+<figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">push</span> <span class="built_in">origin</span> master</span><br></pre></td></tr></table></figure>
+<h2 id="12-NAS"><a href="#12-NAS" class="headerlink" title="12 NAS"></a>12 NAS</h2><p>NAS被定义为一种特殊的专用数据存储服务器，包括存储器件（例如磁盘阵列、CD/DVD驱动器、磁带驱动器或可移动的存储介质）和内嵌系统软件，可提供跨平台文件共享功能。NAS通常在一个LAN上占有自己的节点，无需应用服务器的干预，允许用户在网络上存取数据，在这种配置中，NAS集中管理和处理网络上的所有数据，将负载从应用或企业服务器上卸载下来，有效降低总拥有成本，保护用户投资。</p>
+<p>简单地说，NAS和网盘类似，只不过这个网盘是我们自己搭建的，主动权掌握在我们自己手里。</p>
+<p>目前市面上常见的NAS品牌有Synology（群晖）、Buffalo（巴法络）、QNAP（威联通）等。</p>
+<p>对自建NAS有兴趣的同学，请参考 <a href="https://www.jianshu.com/p/1d45d2baa24f" target="_blank" rel="noopener">这篇博文</a> 进行搭建。</p>
+<h2 id="13-防火墙"><a href="#13-防火墙" class="headerlink" title="13 防火墙"></a>13 防火墙</h2><p>所谓防火墙指的是一个由软件和硬件设备组合而成、在内部网和外部网之间、专用网与公共网之间的边界上构造的保护屏障.是一种获取安全性方法的形象说法，它是一种计算机硬件和软件的结合，使Internet与Intranet之间建立起一个安全网关（Security Gateway），从而保护内部网免受非法用户的侵入，防火墙主要由服务访问规则、验证工具、包过滤和应用网关4个部分组成，防火墙就是一个位于计算机和它所连接的网络之间的软件或硬件。该计算机流入流出的所有网络通信和数据包均要经过此防火墙。</p>
+<p>在网络中，所谓“防火墙”，是指一种将内部网和公众访问网（如Internet）分开的方法，它实际上是一种隔离技术。防火墙是在两个网络通讯时执行的一种访问控制尺度，它能允许你“同意”的人和数据进入你的网络，同时将你“不同意”的人和数据拒之门外，最大限度地阻止网络中的黑客来访问你的网络。换句话说，如果不通过防火墙，公司内部的人就无法访问Internet，Internet上的人也无法和公司内部的人进行通信。</p>
+<p><strong><em>注意，在任何时候不建议关闭防火墙！需要时开启相应端口即可。</em></strong></p>
+<h3 id="13-1-Windows防火墙"><a href="#13-1-Windows防火墙" class="headerlink" title="13.1 Windows防火墙"></a>13.1 Windows防火墙</h3><p>本例中以在Winodows计算机中配置防火墙，使其他计算机能通过3306端口访问这台计算机为例。</p>
+<p>首先打开防火墙设置界面。</p>
+<p>依次点击这些按钮：<strong>入站规则-&gt;新建规则-&gt;自定义-&gt;下一步-&gt;所有程序</strong> 。</p>
+<p>选择协议类型为 <strong>TCP</strong> ，本地端口选择 <strong>特定端口</strong> ，并填写 <strong>3306</strong> ，在点击 <strong>下一步</strong> 。</p>
+<p>选择此规则应用于的远程IP。选择 <strong>下列IP地址-&gt;添加</strong> ，输入允许访问本地3306端口的IP。</p>
+<p>一路下一步，配置一个简明的规则名称，如 <strong>MySQL访问</strong> ，最后点击 <strong>完成</strong> 。</p>
+<h3 id="13-2-Linux防火墙"><a href="#13-2-Linux防火墙" class="headerlink" title="13.2 Linux防火墙"></a>13.2 Linux防火墙</h3><p>由于不同的Linux版本采用的防火墙版本不同，这里以在CentOS 6中开放3306端口为例。</p>
+<p>在终端中输入如下命令开启3306端口。</p>
+<figure class="highlight pf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iptables -A INPUT -p tcp -m <span class="keyword">state</span> --state NEW -m tcp --dport <span class="number">3306</span> -j ACCEPT</span><br></pre></td></tr></table></figure>
+<p>输入如下命令，保存防火墙设置。</p>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">service iptables save</span></span><br></pre></td></tr></table></figure>
+<p>输入如下命令，重新启动防火墙。</p>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">service iptables restart</span></span><br></pre></td></tr></table></figure>
+<h2 id="14-病毒防护"><a href="#14-病毒防护" class="headerlink" title="14 病毒防护"></a>14 病毒防护</h2><h3 id="Windows-6"><a href="#Windows-6" class="headerlink" title="Windows"></a>Windows</h3><p>Windows相对是计算机病毒最泛滥的平台，因此建议在保证防火墙开启的前提下，安装杀毒软件。项目现场如果客户已经购买了企业级杀毒软件，一定要定期查杀病毒。</p>
+<p>个人版杀毒软件可以根据个人喜好安装 <strong>火绒</strong> 、 <strong>360</strong> 等。</p>
+<p>同时，由于近年来勒索病毒肆虐，一定要检查计算机的危险端口（如3389、445、139等）在不必要时保持关闭。</p>
+<h3 id="Linux-MacOS-2"><a href="#Linux-MacOS-2" class="headerlink" title="Linux/MacOS"></a>Linux/MacOS</h3><p>确保防火墙时刻开启并正确配置可免受大部分木马和病毒的侵扰。</p>
+<h2 id="15-加密及数字签名"><a href="#15-加密及数字签名" class="headerlink" title="15 加密及数字签名"></a>15 加密及数字签名</h2><p>加密算法主要有两种，对称加密和非对称加密。</p>
+<ul>
+<li>对称加密：加密和解密的密钥一样，比如用123加密就是用123解密，但是实际中密码都是普通数据在互联网传输的，这样一点密码被中间人截取并破解，加密直接被攻破。</li>
+<li>非对称加密：把密钥分为公钥和私钥，公钥是公开的所有人都可以认领，私钥是保密的只有一个人知道。假设A要发送一封Email给B，他不想让任何其他人在传输中看到Email的内容，做法就是使用B的公钥对Email加密，只有B的私钥能够解密（B的私钥唯一性保证信件不会泄露）。</li>
+</ul>
+<p>公钥的作用：对内容本身加密，保证不被其他人看到。</p>
+<p>私钥的作用：证明内容的来源。</p>
+<p>公钥和私钥是配对关系，公钥加密就用私钥解密，反之亦然，用错的密钥来尝试解密会报错。</p>
+<p>对于数字签名，也可以用这个例子做一个通俗的解释。</p>
+<ul>
+<li>A先对这封Email执行哈希运算得到hash值简称“摘要”，取名h1。</li>
+<li>然后用自己私钥对摘要加密，生成的东西叫“数字签名”。</li>
+<li>把数字签名加在Email正文后面，一起发送给B。当然，为了防止邮件被窃听你可以用继续公钥加密。</li>
+<li>B收到邮件后用A的公钥对数字签名解密，成功则代表Email确实来自A，失败说明有人冒充。</li>
+<li>B对邮件正文执行哈希运算得到hash值，取名h2。</li>
+<li>B会对比第4步数字签名的hash值h1和自己运算得到的h2，一致则说明邮件未被篡改。</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+
+    <div>
+      
+        
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <p><span>本文标题:</span><a href="/2019/05/31/项目现场实施-运维人员常用计算机网络技术/">项目现场实施/运维人员常用计算机网络技术</a></p>
+  <p><span>文章作者:</span><a href="/" title="访问 Chenfei Jovany Rong 的个人博客">Chenfei Jovany Rong</a></p>
+  <p><span>发布时间:</span>2019年05月31日 - 10:05</p>
+  <p><span>最后更新:</span>2019年05月31日 - 15:05</p>
+  <p><span>原始链接:</span><a href="/2019/05/31/项目现场实施-运维人员常用计算机网络技术/" title="项目现场实施/运维人员常用计算机网络技术">http://rongchenfei.com/2019/05/31/项目现场实施-运维人员常用计算机网络技术/</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://rongchenfei.com/2019/05/31/项目现场实施-运维人员常用计算机网络技术/" aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+    $(".fa-clipboard").click(function(){
+      clipboard.on('success', function(){
+        swal({   
+          title: "",   
+          text: '复制成功',
+          icon: "success", 
+          showConfirmButton: true
+          });
+    });
+    });  
+</script>
+
+      
+    </div>
+
+    <div>
+      
+        <div>
+    
+        <div style="text-align:center;color: #636363;font-size:14px;letter-spacing: 10px">本文到此结束<i class="fa fa-bell"></i>感谢您的阅读</div>
+    
+</div>
+      
+    </div>
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>请作者喝杯咖啡，鼓励原创技术分享！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatreward.jpg" alt="Chenfei Jovany Rong 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipayreward.jpg" alt="Chenfei Jovany Rong 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/网络/" rel="tag"><i class="fa fa-tag"></i> 网络</a>
+          
+            <a href="/tags/计算机/" rel="tag"><i class="fa fa-tag"></i> 计算机</a>
+          
+            <a href="/tags/培训/" rel="tag"><i class="fa fa-tag"></i> 培训</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div id="needsharebutton-postbottom">
+            <span class="btn">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </span>
+          </div>
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/05/31/计算机网络基本介绍/" rel="next" title="计算机网络基本介绍">
+                <i class="fa fa-chevron-left"></i> 计算机网络基本介绍
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Chenfei Jovany Rong</p>
+              <p class="site-description motion-element" itemprop="description">Technology changes the world!</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">20</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/Jovany-Rong" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:amphliegg@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.zhihu.com/people/rong-chen-fei/activities" target="_blank" title="知乎">
+                      
+                        <i class="fa fa-fw fa-book"></i>知乎</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.taptap.com/user/4323230" target="_blank" title="TapTap">
+                      
+                        <i class="fa fa-fw fa-gamepad"></i>TapTap</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                友情链接
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://github.com/" title="GitHub" target="_blank">GitHub</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.gtmap.cn/" title="南京国图信息产业有限公司" target="_blank">南京国图信息产业有限公司</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://oa.gtis.com.cn/" title="南京国图协同办公平台" target="_blank">南京国图协同办公平台</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-查看计算机IP"><span class="nav-text">1 查看计算机IP</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Windows"><span class="nav-text">Windows</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux-MacOS"><span class="nav-text">Linux / MacOS</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-测试IP或域名是否连通"><span class="nav-text">2 测试IP或域名是否连通</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Windows-1"><span class="nav-text">Windows</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux-MacOS-1"><span class="nav-text">Linux / MacOS</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-测试目标计算机某端口是否开启"><span class="nav-text">3 测试目标计算机某端口是否开启</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-查看计算机路由"><span class="nav-text">4 查看计算机路由</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Windows-2"><span class="nav-text">Windows</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux"><span class="nav-text">Linux</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MacOS"><span class="nav-text">MacOS</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-添加路由"><span class="nav-text">5 添加路由</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Windows-3"><span class="nav-text">Windows</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux-1"><span class="nav-text">Linux</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MacOS-1"><span class="nav-text">MacOS</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-远程桌面"><span class="nav-text">6 远程桌面</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#6-1-RDP"><span class="nav-text">6.1 RDP</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Windows-To-Windows"><span class="nav-text">Windows To Windows</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#MacOS-To-Windows"><span class="nav-text">MacOS To Windows</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#iOS-Android-To-Windows"><span class="nav-text">iOS/Android To Windows</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-2-Teamviewer"><span class="nav-text">6.2 Teamviewer</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-3-SSH"><span class="nav-text">6.3 SSH</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-Windows文件共享"><span class="nav-text">7 Windows文件共享</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-FTP"><span class="nav-text">8 FTP</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#8-1-搭建FTP服务器"><span class="nav-text">8.1 搭建FTP服务器</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Windows-4"><span class="nav-text">Windows</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Linux-2"><span class="nav-text">Linux</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-2-FTP客户端连接"><span class="nav-text">8.2 FTP客户端连接</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-SFTP"><span class="nav-text">9 SFTP</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#9-1-搭建SFTP服务器"><span class="nav-text">9.1 搭建SFTP服务器</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Windows-5"><span class="nav-text">Windows</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Linux-3"><span class="nav-text">Linux</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-2-FTP客户端连接"><span class="nav-text">9.2 FTP客户端连接</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10-SVN"><span class="nav-text">10 SVN</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#10-1-客户端选择"><span class="nav-text">10.1 客户端选择</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-2-使用方法"><span class="nav-text">10.2 使用方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#11-Git"><span class="nav-text">11 Git</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#11-1-客户端安装"><span class="nav-text">11.1 客户端安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-2-创建版本库"><span class="nav-text">11.2 创建版本库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-3-将文件添加到版本库"><span class="nav-text">11.3 将文件添加到版本库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-4-添加GitHub远程仓库"><span class="nav-text">11.4 添加GitHub远程仓库</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#12-NAS"><span class="nav-text">12 NAS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#13-防火墙"><span class="nav-text">13 防火墙</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#13-1-Windows防火墙"><span class="nav-text">13.1 Windows防火墙</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#13-2-Linux防火墙"><span class="nav-text">13.2 Linux防火墙</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#14-病毒防护"><span class="nav-text">14 病毒防护</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Windows-6"><span class="nav-text">Windows</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux-MacOS-2"><span class="nav-text">Linux/MacOS</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#15-加密及数字签名"><span class="nav-text">15 加密及数字签名</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Summer Moon Talk</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">14.3k</span>
+  
+</div>
+
+<!--
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+-->
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">全站共14.3k字</span>
+</div>
+
+<script>
+  var seconds = 1000;
+  var minutes = seconds * 60;
+  var hours = minutes * 60;
+  var days = hours * 24;
+  var years = days * 365;
+  var birthDay = Date.UTC(2019,05,15,00,00,00); // 这里设置建站时间
+  setInterval(function() {
+    var today = new Date();
+    var todayYear = today.getFullYear();
+    var todayMonth = today.getMonth()+1;
+    var todayDate = today.getDate();
+    var todayHour = today.getHours();
+    var todayMinute = today.getMinutes();
+    var todaySecond = today.getSeconds();
+    var now = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
+    var diff = now - birthDay;
+    var diffYears = Math.floor(diff/years);
+    var diffDays = Math.floor((diff/days)-diffYears*365);
+    var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
+    var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
+    var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
+      document.getElementById('showDays').innerHTML="本站已运行 "+diffYears+" 年 "+diffDays+" 天 "+diffHours+" 小时 "+diffMinutes+" 分钟 "+diffSeconds+" 秒";
+  }, 1000);
+</script>
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'WiM216tvokY0PK63MYb6a5Q1-gzGzoHsz',
+        appKey: 'JHbx1xYW6yJ4smpQNIzHgits',
+        placeholder: '留下评论再走嘛～',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "box";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Weibo";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+  </script>
+
+  
+
+  
+
+  
+
+  
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginModelPath":"assets/","model":{"jsonPath":"live2d-widget-model-shizuku"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>
+
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/clicklove.js"></script>
