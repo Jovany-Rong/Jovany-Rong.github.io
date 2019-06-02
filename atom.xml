@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://rongchenfei.com/"/>
-  <updated>2019-06-02T11:33:13.157Z</updated>
+  <updated>2019-06-02T12:05:04.669Z</updated>
   <id>https://rongchenfei.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【公告】在线联系、打赏鸣谢功能正式上线</title>
+    <link href="https://rongchenfei.com/a/ee66n89/"/>
+    <id>https://rongchenfei.com/a/ee66n89/</id>
+    <published>2019-06-02T12:00:40.000Z</published>
+    <updated>2019-06-02T12:05:04.669Z</updated>
+    
+    <content type="html"><![CDATA[<p>本站新功能 <strong>在线联系</strong> 、 <strong>打赏鸣谢</strong> 功能已经正式上线！</p><p>本站接入 <strong>DaoVoice</strong> 在线联系模块，用户可点击网站右下角绿色气泡与我进行实时沟通。</p><p>对于打赏用户，本站已开辟页面进行感谢。打赏后鸣谢清单将在1-3日内更新。</p><p><strong>Jovany Rong</strong><br><strong>2019年6月2日</strong></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;本站新功能 &lt;strong&gt;在线联系&lt;/strong&gt; 、 &lt;strong&gt;打赏鸣谢&lt;/strong&gt; 功能已经正式上线！&lt;/p&gt;
+&lt;p&gt;本站接入 &lt;strong&gt;DaoVoice&lt;/strong&gt; 在线联系模块，用户可点击网站右下角绿色气泡与我进行实时沟通。&lt;/p&gt;
+&lt;p
+      
+    
+    </summary>
+    
+      <category term="公告" scheme="https://rongchenfei.com/categories/%E5%85%AC%E5%91%8A/"/>
+    
+    
+      <category term="公告" scheme="https://rongchenfei.com/tags/%E5%85%AC%E5%91%8A/"/>
+    
+  </entry>
   
   <entry>
     <title>【公告】2019年6月2日网站评论重置公告</title>
@@ -236,13 +263,13 @@
     
       <category term="Hexo" scheme="https://rongchenfei.com/tags/Hexo/"/>
     
-      <category term="域名" scheme="https://rongchenfei.com/tags/%E5%9F%9F%E5%90%8D/"/>
-    
-      <category term="问题解决" scheme="https://rongchenfei.com/tags/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
-    
       <category term="Coding" scheme="https://rongchenfei.com/tags/Coding/"/>
     
       <category term="腾讯云开发者平台" scheme="https://rongchenfei.com/tags/%E8%85%BE%E8%AE%AF%E4%BA%91%E5%BC%80%E5%8F%91%E8%80%85%E5%B9%B3%E5%8F%B0/"/>
+    
+      <category term="域名" scheme="https://rongchenfei.com/tags/%E5%9F%9F%E5%90%8D/"/>
+    
+      <category term="问题解决" scheme="https://rongchenfei.com/tags/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
     
   </entry>
   
@@ -266,11 +293,11 @@
     
       <category term="Hexo" scheme="https://rongchenfei.com/tags/Hexo/"/>
     
-      <category term="GitHub" scheme="https://rongchenfei.com/tags/GitHub/"/>
-    
       <category term="域名" scheme="https://rongchenfei.com/tags/%E5%9F%9F%E5%90%8D/"/>
     
       <category term="问题解决" scheme="https://rongchenfei.com/tags/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
+    
+      <category term="GitHub" scheme="https://rongchenfei.com/tags/GitHub/"/>
     
   </entry>
   
