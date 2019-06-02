@@ -23,8 +23,8 @@
 
   <script>
     (function(){
-        if(''){
-            if (prompt('请输入密码') !== ''){
+        if('tqm'){
+            if (prompt('请输入密码') !== 'tqm'){
                 alert('密码错误');
                 history.back();
             }
@@ -87,7 +87,7 @@
 
 
 
-  <meta name="keywords" content="EasyOM,更新说明,运维,Python,">
+  <meta name="keywords" content="Python,办公自动化,全库质检,DCTK,开源,">
 
 
 
@@ -100,18 +100,18 @@
 
 
 
-<meta name="description" content="作者： 戎 晨飞（Jovany Rong） 一、更新内容一览 修复了在Windows 6.1平台（包括Windows 7系列和Windows Server 2008系列等操作系统）中，有空置光驱时会造成硬盘检查崩溃的问题； 新增整体运维报告输出功能，在首页点击“Check”按钮进行整体运维结束时，程序自动产生html格式的运维报告和eom格式的加密报文（eom报文供提交时使用），使运维结果更具可读">
-<meta name="keywords" content="EasyOM,更新说明,运维,Python">
+<meta name="description" content="众所周知，事务性工作是繁杂而琐碎的。像一些周报等定时需要做的工作，有时会让人焦头烂额，陷入文件整理和对比的泥潭。比如每周一需要出的全库质检周报，就需要核对全库质检情况跟踪表，并逐个检查SVN上各地区提交的最新质检报告。 那么，是否有一种方法可以让计算机辅助我们完成这项工作呢？ 答案是肯定的，我们的全库质检周报助手就呼之欲出了。 什么？全库质检和你没关系？别着急，它的一些原理你会觉得有用的。">
+<meta name="keywords" content="Python,办公自动化,全库质检,DCTK,开源">
 <meta property="og:type" content="article">
-<meta property="og:title" content="EasyOM 1.0.1更新说明">
-<meta property="og:url" content="https://rongchenfei.com/a/2057.html">
+<meta property="og:title" content="【开源】办公自动化探索：全库质检周报助手">
+<meta property="og:url" content="https://rongchenfei.com/a/349e/index.html">
 <meta property="og:site_name" content="夏月谈">
-<meta property="og:description" content="作者： 戎 晨飞（Jovany Rong） 一、更新内容一览 修复了在Windows 6.1平台（包括Windows 7系列和Windows Server 2008系列等操作系统）中，有空置光驱时会造成硬盘检查崩溃的问题； 新增整体运维报告输出功能，在首页点击“Check”按钮进行整体运维结束时，程序自动产生html格式的运维报告和eom格式的加密报文（eom报文供提交时使用），使运维结果更具可读">
+<meta property="og:description" content="众所周知，事务性工作是繁杂而琐碎的。像一些周报等定时需要做的工作，有时会让人焦头烂额，陷入文件整理和对比的泥潭。比如每周一需要出的全库质检周报，就需要核对全库质检情况跟踪表，并逐个检查SVN上各地区提交的最新质检报告。 那么，是否有一种方法可以让计算机辅助我们完成这项工作呢？ 答案是肯定的，我们的全库质检周报助手就呼之欲出了。 什么？全库质检和你没关系？别着急，它的一些原理你会觉得有用的。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-30T08:46:51.492Z">
+<meta property="og:updated_time" content="2019-06-02T01:47:57.362Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="EasyOM 1.0.1更新说明">
-<meta name="twitter:description" content="作者： 戎 晨飞（Jovany Rong） 一、更新内容一览 修复了在Windows 6.1平台（包括Windows 7系列和Windows Server 2008系列等操作系统）中，有空置光驱时会造成硬盘检查崩溃的问题； 新增整体运维报告输出功能，在首页点击“Check”按钮进行整体运维结束时，程序自动产生html格式的运维报告和eom格式的加密报文（eom报文供提交时使用），使运维结果更具可读">
+<meta name="twitter:title" content="【开源】办公自动化探索：全库质检周报助手">
+<meta name="twitter:description" content="众所周知，事务性工作是繁杂而琐碎的。像一些周报等定时需要做的工作，有时会让人焦头烂额，陷入文件整理和对比的泥潭。比如每周一需要出的全库质检周报，就需要核对全库质检情况跟踪表，并逐个检查SVN上各地区提交的最新质检报告。 那么，是否有一种方法可以让计算机辅助我们完成这项工作呢？ 答案是肯定的，我们的全库质检周报助手就呼之欲出了。 什么？全库质检和你没关系？别着急，它的一些原理你会觉得有用的。">
 
 
 
@@ -141,13 +141,13 @@
 
 
 
-  <link rel="canonical" href="https://rongchenfei.com/a/2057.html">
+  <link rel="canonical" href="https://rongchenfei.com/a/349e/">
 
 
 
 
 
-  <title>EasyOM 1.0.1更新说明 | 夏月谈</title>
+  <title>【开源】办公自动化探索：全库质检周报助手 | 夏月谈</title>
   
 
 
@@ -338,7 +338,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://rongchenfei.com/a/2057.html">
+    <link itemprop="mainEntityOfPage" href="https://rongchenfei.com/a/349e/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Chenfei Jovany Rong">
@@ -355,7 +355,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">EasyOM 1.0.1更新说明</h1>
+          <h1 class="post-title" itemprop="name headline">【开源】办公自动化探索：全库质检周报助手</h1>
         
 
         <div class="post-meta">
@@ -367,8 +367,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-16T21:05:57+08:00">
-                2019-05-16
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-30T17:53:43+08:00">
+                2019-05-30
               </time>
             
 
@@ -383,8 +383,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-05-30T16:46:51+08:00">
-                2019-05-30
+              <time title="更新于" itemprop="dateModified" datetime="2019-06-02T09:47:57+08:00">
+                2019-06-02
               </time>
             
           </span>
@@ -402,8 +402,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/运维产品/" itemprop="url" rel="index">
-                    <span itemprop="name">运维产品</span>
+                  <a href="/categories/办公自动化/" itemprop="url" rel="index">
+                    <span itemprop="name">办公自动化</span>
                   </a>
                 </span>
 
@@ -420,8 +420,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/a/2057.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/a/2057.html" itemprop="commentCount"></span>
+                <a href="/a/349e/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/a/349e/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -443,7 +443,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  263
+                  482
                 </span>
               
 
@@ -480,17 +480,23 @@
       
 
       
-        <p><em>作者： 戎 晨飞（Jovany Rong）</em></p>
-<h2 id="一、更新内容一览"><a href="#一、更新内容一览" class="headerlink" title="一、更新内容一览"></a>一、更新内容一览</h2><ol>
-<li>修复了在Windows 6.1平台（包括Windows 7系列和Windows Server 2008系列等操作系统）中，有空置光驱时会造成硬盘检查崩溃的问题；</li>
-<li>新增整体运维报告输出功能，在首页点击“Check”按钮进行整体运维结束时，程序自动产生html格式的运维报告和eom格式的加密报文（eom报文供提交时使用），使运维结果更具可读性；</li>
-<li>提升了在目标数据库过大时，数据库运维的性能，使其更不容易出现卡死的情况；</li>
-<li>多处错误修复和文本优化。</li>
-</ol>
+        <p>众所周知，事务性工作是繁杂而琐碎的。像一些周报等定时需要做的工作，有时会让人焦头烂额，陷入文件整理和对比的泥潭。比如每周一需要出的全库质检周报，就需要核对全库质检情况跟踪表，并逐个检查SVN上各地区提交的最新质检报告。</p>
+<p>那么，是否有一种方法可以让计算机辅助我们完成这项工作呢？</p>
+<p>答案是肯定的，我们的全库质检周报助手就呼之欲出了。</p>
+<p>什么？全库质检和你没关系？别着急，它的一些原理你会觉得有用的。</p>
 <a id="more"></a>
-<h2 id="二、更新适用对象"><a href="#二、更新适用对象" class="headerlink" title="二、更新适用对象"></a>二、更新适用对象</h2><p>本次更新推荐所有EasyOM用户更新。</p>
-<h2 id="三、更新方式"><a href="#三、更新方式" class="headerlink" title="三、更新方式"></a>三、更新方式</h2><p>1) 通过程序内<strong>关于</strong>-&gt;<strong>关于EasyOM</strong>中的<strong>Update</strong>按钮下载最新版本；<br>2) 直接<a href="https://218.94.2.162:8087/svn/软件工程中心/8-实施工具代码/02-release/02-CS/Operation_Management/EasyOM/Latest" title="EasyOM 1.0.1" target="_blank" rel="noopener"><strong><em>点击此处</em></strong></a>获取更新。</p>
-<h2 id="四、其他说明"><a href="#四、其他说明" class="headerlink" title="四、其他说明"></a>四、其他说明</h2><p>对本次更新及EasyOM工具有任何意见或建议，请联系<strong>技术及质量管理部</strong>。</p>
+<h1 id="开发环境"><a href="#开发环境" class="headerlink" title="开发环境"></a>开发环境</h1><ul>
+<li>Python 3.7</li>
+<li>Openpyxl模块</li>
+<li>Windows 10</li>
+</ul>
+<h1 id="开发难点"><a href="#开发难点" class="headerlink" title="开发难点"></a>开发难点</h1><p>该工具需要我们去核对SVN文件夹，看各地区是否提交了质检报告。那么Python自带的OS模块就能完成这项任务。</p>
+<p>我们还需要检查跟踪表，那么我们就需要处理Excel文件。Python中这类模块有很多，这次我们选用比较简单的Openpyxl模块。</p>
+<h1 id="功能实现"><a href="#功能实现" class="headerlink" title="功能实现"></a>功能实现</h1><p>目前工具已经完成了1.0版本的开发，实现的功能有自动检查全库质检跟踪表（xlsx格式）各部门各地区是否填写本周进展及自动检查SVN目录中各地区是否提交了最新质检报告。</p>
+<p>目前还无法自动帮我们出具周报，但已经帮我们处理了最复杂的工作。我们只需要等待几秒，对着终端出具我们的周报就可以了。</p>
+<h1 id="源代码"><a href="#源代码" class="headerlink" title="源代码"></a>源代码</h1><p>本工具开源，大家可自由研究和使用，禁止用作商业用途～</p>
+<p>请大家前往<a href="https://github.com/Jovany-Rong/DCTK_Checker" target="_blank" rel="noopener">我的GitHub</a>克隆代码仓库获取源代码。</p>
+<p>不想看源代码，想直接使用编译过的工具的，请至本站下载页面下载。</p>
 
       
     </div>
@@ -508,12 +514,12 @@
   <!-- JS库 sweetalert 可修改路径 -->
   <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <p><span>本文标题:</span><a href="/a/2057.html">EasyOM 1.0.1更新说明</a></p>
+  <p><span>本文标题:</span><a href="/a/349e/">【开源】办公自动化探索：全库质检周报助手</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Chenfei Jovany Rong 的个人博客">Chenfei Jovany Rong</a></p>
-  <p><span>发布时间:</span>2019年05月16日 - 21:05</p>
-  <p><span>最后更新:</span>2019年05月30日 - 16:05</p>
-  <p><span>原始链接:</span><a href="/a/2057.html" title="EasyOM 1.0.1更新说明">https://rongchenfei.com/a/2057.html</a>
-    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://rongchenfei.com/a/2057.html" aria-label="复制成功！"></i></span>
+  <p><span>发布时间:</span>2019年05月30日 - 17:05</p>
+  <p><span>最后更新:</span>2019年06月02日 - 09:06</p>
+  <p><span>原始链接:</span><a href="/a/349e/" title="【开源】办公自动化探索：全库质检周报助手">https://rongchenfei.com/a/349e/</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://rongchenfei.com/a/349e/" aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
 </div>
@@ -583,13 +589,15 @@
       
         <div class="post-tags">
           
-            <a href="/tags/EasyOM/" rel="tag"><i class="fa fa-tag"></i> EasyOM</a>
-          
-            <a href="/tags/更新说明/" rel="tag"><i class="fa fa-tag"></i> 更新说明</a>
-          
-            <a href="/tags/运维/" rel="tag"><i class="fa fa-tag"></i> 运维</a>
-          
             <a href="/tags/Python/" rel="tag"><i class="fa fa-tag"></i> Python</a>
+          
+            <a href="/tags/办公自动化/" rel="tag"><i class="fa fa-tag"></i> 办公自动化</a>
+          
+            <a href="/tags/全库质检/" rel="tag"><i class="fa fa-tag"></i> 全库质检</a>
+          
+            <a href="/tags/DCTK/" rel="tag"><i class="fa fa-tag"></i> DCTK</a>
+          
+            <a href="/tags/开源/" rel="tag"><i class="fa fa-tag"></i> 开源</a>
           
         </div>
       
@@ -617,14 +625,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/a/5c3a/" rel="next" title="Hexo + NexT进阶美化攻略">
+                <i class="fa fa-chevron-left"></i> Hexo + NexT进阶美化攻略
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/a/712d.html" rel="prev" title="GitHub Pages + Hexo + 阿里云域名无法访问解决方案">
-                GitHub Pages + Hexo + 阿里云域名无法访问解决方案 <i class="fa fa-chevron-right"></i>
+              <a href="/a/345b/" rel="prev" title="计算机网络基本介绍">
+                计算机网络基本介绍 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -817,7 +829,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、更新内容一览"><span class="nav-text">一、更新内容一览</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、更新适用对象"><span class="nav-text">二、更新适用对象</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、更新方式"><span class="nav-text">三、更新方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四、其他说明"><span class="nav-text">四、其他说明</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#开发环境"><span class="nav-text">开发环境</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#开发难点"><span class="nav-text">开发难点</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#功能实现"><span class="nav-text">功能实现</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#源代码"><span class="nav-text">源代码</span></a></li></ol></div>
             
 
           </div>
