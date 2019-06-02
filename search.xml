@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[【公告】2019年6月2日网站评论重制公告]]></title>
+    <title><![CDATA[【公告】2019年6月2日网站评论重置公告]]></title>
     <url>%2Fa%2F7015%2F</url>
     <content type="text"><![CDATA[由于网站URL链接升级，导致网站评论系统中之前博文的URL与最新URL无法对应，丢失了之前的所有评论。 本次影响范围为 2019年6月2日13:00前 的所有站内评论， 2019年6月2日13:01后 的站内评论未受影响。 出于维护成本的考量，本人放弃对之前评论进行找回，敬请谅解！ 如有用户需要找回之前评论内容，请在本帖中留言。 Jovany Rong2019年6月2日]]></content>
       <categories>
@@ -102,10 +102,10 @@
       </categories>
       <tags>
         <tag>Hexo</tag>
-        <tag>Coding</tag>
-        <tag>腾讯云开发者平台</tag>
         <tag>域名</tag>
         <tag>问题解决</tag>
+        <tag>Coding</tag>
+        <tag>腾讯云开发者平台</tag>
       </tags>
   </entry>
   <entry>
@@ -117,9 +117,9 @@
       </categories>
       <tags>
         <tag>Hexo</tag>
+        <tag>GitHub</tag>
         <tag>域名</tag>
         <tag>问题解决</tag>
-        <tag>GitHub</tag>
       </tags>
   </entry>
   <entry>
