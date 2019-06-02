@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://rongchenfei.com/"/>
-  <updated>2019-06-02T01:47:57.361Z</updated>
+  <updated>2019-06-02T11:03:11.804Z</updated>
   <id>https://rongchenfei.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【公告】2019年6月2日网站评论重制公告</title>
+    <link href="https://rongchenfei.com/a/7015/"/>
+    <id>https://rongchenfei.com/a/7015/</id>
+    <published>2019-06-02T10:30:15.000Z</published>
+    <updated>2019-06-02T11:03:11.804Z</updated>
+    
+    <content type="html"><![CDATA[<p>由于网站URL链接升级，导致网站评论系统中之前博文的URL与最新URL无法对应，丢失了之前的所有评论。</p><p>本次影响范围为 <strong>2019年6月2日13:00前</strong> 的所有站内评论， <strong>2019年6月2日13:01后</strong> 的站内评论未受影响。</p><p>出于维护成本的考量，本人放弃对之前评论进行找回，敬请谅解！</p><p>如有用户需要找回之前评论内容，请在本帖中留言。</p><p><strong>Jovany Rong</strong><br><strong>2019年6月2日</strong></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;由于网站URL链接升级，导致网站评论系统中之前博文的URL与最新URL无法对应，丢失了之前的所有评论。&lt;/p&gt;
+&lt;p&gt;本次影响范围为 &lt;strong&gt;2019年6月2日13:00前&lt;/strong&gt; 的所有站内评论， &lt;strong&gt;2019年6月2日13:01后&lt;/str
+      
+    
+    </summary>
+    
+      <category term="公告" scheme="https://rongchenfei.com/categories/%E5%85%AC%E5%91%8A/"/>
+    
+    
+      <category term="公告" scheme="https://rongchenfei.com/tags/%E5%85%AC%E5%91%8A/"/>
+    
+  </entry>
   
   <entry>
     <title>我的Django学习笔记（一）：第一个Django项目</title>
