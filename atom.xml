@@ -5,9 +5,9 @@
   <subtitle>文档、写作和杂谈</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://rongchenfei.com/"/>
+  <link href="https://rongchenfei.com/"/>
   <updated>2019-06-01T16:31:05.579Z</updated>
-  <id>http://rongchenfei.com/</id>
+  <id>https://rongchenfei.com/</id>
   
   <author>
     <name>Chenfei Jovany Rong</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>我的Django学习笔记（一）：第一个Django项目</title>
-    <link href="http://rongchenfei.com/2019/05/31/My-First-Django-Project-1/"/>
-    <id>http://rongchenfei.com/2019/05/31/My-First-Django-Project-1/</id>
+    <link href="https://rongchenfei.com/a/e568.html"/>
+    <id>https://rongchenfei.com/a/e568.html</id>
     <published>2019-05-31T15:16:38.000Z</published>
     <updated>2019-06-01T16:31:05.579Z</updated>
     
@@ -33,23 +33,23 @@
     
     </summary>
     
-      <category term="Python" scheme="http://rongchenfei.com/categories/Python/"/>
+      <category term="Python" scheme="https://rongchenfei.com/categories/Python/"/>
     
     
-      <category term="Python" scheme="http://rongchenfei.com/tags/Python/"/>
+      <category term="Python" scheme="https://rongchenfei.com/tags/Python/"/>
     
-      <category term="Django" scheme="http://rongchenfei.com/tags/Django/"/>
+      <category term="Django" scheme="https://rongchenfei.com/tags/Django/"/>
     
-      <category term="BS开发" scheme="http://rongchenfei.com/tags/BS%E5%BC%80%E5%8F%91/"/>
+      <category term="BS开发" scheme="https://rongchenfei.com/tags/BS%E5%BC%80%E5%8F%91/"/>
     
-      <category term="学习笔记" scheme="http://rongchenfei.com/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="学习笔记" scheme="https://rongchenfei.com/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
   <entry>
     <title>网络趣味小知识</title>
-    <link href="http://rongchenfei.com/2019/05/31/Network-Little-Knowledge-by-Cheng-Shan-SHan/"/>
-    <id>http://rongchenfei.com/2019/05/31/Network-Little-Knowledge-by-Cheng-Shan-SHan/</id>
+    <link href="https://rongchenfei.com/a/36ce.html"/>
+    <id>https://rongchenfei.com/a/36ce.html</id>
     <published>2019-05-31T07:47:10.000Z</published>
     <updated>2019-05-31T08:36:24.851Z</updated>
     
@@ -62,21 +62,21 @@
     
     </summary>
     
-      <category term="网络" scheme="http://rongchenfei.com/categories/%E7%BD%91%E7%BB%9C/"/>
+      <category term="网络" scheme="https://rongchenfei.com/categories/%E7%BD%91%E7%BB%9C/"/>
     
     
-      <category term="网络" scheme="http://rongchenfei.com/tags/%E7%BD%91%E7%BB%9C/"/>
+      <category term="网络" scheme="https://rongchenfei.com/tags/%E7%BD%91%E7%BB%9C/"/>
     
-      <category term="计算机" scheme="http://rongchenfei.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+      <category term="计算机" scheme="https://rongchenfei.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
     
-      <category term="培训" scheme="http://rongchenfei.com/tags/%E5%9F%B9%E8%AE%AD/"/>
+      <category term="培训" scheme="https://rongchenfei.com/tags/%E5%9F%B9%E8%AE%AD/"/>
     
   </entry>
   
   <entry>
     <title>项目现场实施/运维人员常用计算机网络技术</title>
-    <link href="http://rongchenfei.com/2019/05/31/%E9%A1%B9%E7%9B%AE%E7%8E%B0%E5%9C%BA%E5%AE%9E%E6%96%BD-%E8%BF%90%E7%BB%B4%E4%BA%BA%E5%91%98%E5%B8%B8%E7%94%A8%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
-    <id>http://rongchenfei.com/2019/05/31/项目现场实施-运维人员常用计算机网络技术/</id>
+    <link href="https://rongchenfei.com/a/a42e.html"/>
+    <id>https://rongchenfei.com/a/a42e.html</id>
     <published>2019-05-31T02:58:50.000Z</published>
     <updated>2019-05-31T07:26:58.572Z</updated>
     
@@ -89,21 +89,21 @@
     
     </summary>
     
-      <category term="计算机技术" scheme="http://rongchenfei.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%8A%80%E6%9C%AF/"/>
+      <category term="计算机技术" scheme="https://rongchenfei.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="网络" scheme="http://rongchenfei.com/tags/%E7%BD%91%E7%BB%9C/"/>
+      <category term="网络" scheme="https://rongchenfei.com/tags/%E7%BD%91%E7%BB%9C/"/>
     
-      <category term="计算机" scheme="http://rongchenfei.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+      <category term="计算机" scheme="https://rongchenfei.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
     
-      <category term="培训" scheme="http://rongchenfei.com/tags/%E5%9F%B9%E8%AE%AD/"/>
+      <category term="培训" scheme="https://rongchenfei.com/tags/%E5%9F%B9%E8%AE%AD/"/>
     
   </entry>
   
   <entry>
     <title>计算机网络基本介绍</title>
-    <link href="http://rongchenfei.com/2019/05/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%9F%BA%E6%9C%AC%E4%BB%8B%E7%BB%8D/"/>
-    <id>http://rongchenfei.com/2019/05/31/计算机网络基本介绍/</id>
+    <link href="https://rongchenfei.com/a/345b.html"/>
+    <id>https://rongchenfei.com/a/345b.html</id>
     <published>2019-05-31T00:43:00.000Z</published>
     <updated>2019-05-31T07:27:06.998Z</updated>
     
@@ -116,21 +116,21 @@
     
     </summary>
     
-      <category term="网络" scheme="http://rongchenfei.com/categories/%E7%BD%91%E7%BB%9C/"/>
+      <category term="网络" scheme="https://rongchenfei.com/categories/%E7%BD%91%E7%BB%9C/"/>
     
     
-      <category term="网络" scheme="http://rongchenfei.com/tags/%E7%BD%91%E7%BB%9C/"/>
+      <category term="网络" scheme="https://rongchenfei.com/tags/%E7%BD%91%E7%BB%9C/"/>
     
-      <category term="计算机" scheme="http://rongchenfei.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+      <category term="计算机" scheme="https://rongchenfei.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
     
-      <category term="培训" scheme="http://rongchenfei.com/tags/%E5%9F%B9%E8%AE%AD/"/>
+      <category term="培训" scheme="https://rongchenfei.com/tags/%E5%9F%B9%E8%AE%AD/"/>
     
   </entry>
   
   <entry>
     <title>【开源】办公自动化探索：全库质检周报助手</title>
-    <link href="http://rongchenfei.com/2019/05/30/%E3%80%90%E5%BC%80%E6%BA%90%E3%80%91%E5%8A%9E%E5%85%AC%E8%87%AA%E5%8A%A8%E5%8C%96%E6%8E%A2%E7%B4%A2%EF%BC%9A%E5%85%A8%E5%BA%93%E8%B4%A8%E6%A3%80%E5%91%A8%E6%8A%A5%E5%8A%A9%E6%89%8B/"/>
-    <id>http://rongchenfei.com/2019/05/30/【开源】办公自动化探索：全库质检周报助手/</id>
+    <link href="https://rongchenfei.com/a/349e.html"/>
+    <id>https://rongchenfei.com/a/349e.html</id>
     <published>2019-05-30T09:53:43.000Z</published>
     <updated>2019-05-30T10:22:26.001Z</updated>
     
@@ -145,25 +145,25 @@
     
     </summary>
     
-      <category term="办公自动化" scheme="http://rongchenfei.com/categories/%E5%8A%9E%E5%85%AC%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
+      <category term="办公自动化" scheme="https://rongchenfei.com/categories/%E5%8A%9E%E5%85%AC%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
     
     
-      <category term="Python" scheme="http://rongchenfei.com/tags/Python/"/>
+      <category term="Python" scheme="https://rongchenfei.com/tags/Python/"/>
     
-      <category term="办公自动化" scheme="http://rongchenfei.com/tags/%E5%8A%9E%E5%85%AC%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
+      <category term="办公自动化" scheme="https://rongchenfei.com/tags/%E5%8A%9E%E5%85%AC%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
     
-      <category term="全库质检" scheme="http://rongchenfei.com/tags/%E5%85%A8%E5%BA%93%E8%B4%A8%E6%A3%80/"/>
+      <category term="全库质检" scheme="https://rongchenfei.com/tags/%E5%85%A8%E5%BA%93%E8%B4%A8%E6%A3%80/"/>
     
-      <category term="DCTK" scheme="http://rongchenfei.com/tags/DCTK/"/>
+      <category term="DCTK" scheme="https://rongchenfei.com/tags/DCTK/"/>
     
-      <category term="开源" scheme="http://rongchenfei.com/tags/%E5%BC%80%E6%BA%90/"/>
+      <category term="开源" scheme="https://rongchenfei.com/tags/%E5%BC%80%E6%BA%90/"/>
     
   </entry>
   
   <entry>
     <title>Hexo + NexT进阶美化攻略</title>
-    <link href="http://rongchenfei.com/2019/05/29/Hexo-NexT%E8%BF%9B%E9%98%B6%E7%BE%8E%E5%8C%96%E6%94%BB%E7%95%A5/"/>
-    <id>http://rongchenfei.com/2019/05/29/Hexo-NexT进阶美化攻略/</id>
+    <link href="https://rongchenfei.com/a/5c3a.html"/>
+    <id>https://rongchenfei.com/a/5c3a.html</id>
     <published>2019-05-29T10:24:27.000Z</published>
     <updated>2019-05-30T08:47:39.225Z</updated>
     
@@ -176,23 +176,23 @@
     
     </summary>
     
-      <category term="Hexo" scheme="http://rongchenfei.com/categories/Hexo/"/>
+      <category term="Hexo" scheme="https://rongchenfei.com/categories/Hexo/"/>
     
     
-      <category term="Hexo" scheme="http://rongchenfei.com/tags/Hexo/"/>
+      <category term="Hexo" scheme="https://rongchenfei.com/tags/Hexo/"/>
     
-      <category term="NexT" scheme="http://rongchenfei.com/tags/NexT/"/>
+      <category term="NexT" scheme="https://rongchenfei.com/tags/NexT/"/>
     
-      <category term="攻略" scheme="http://rongchenfei.com/tags/%E6%94%BB%E7%95%A5/"/>
+      <category term="攻略" scheme="https://rongchenfei.com/tags/%E6%94%BB%E7%95%A5/"/>
     
-      <category term="UI" scheme="http://rongchenfei.com/tags/UI/"/>
+      <category term="UI" scheme="https://rongchenfei.com/tags/UI/"/>
     
   </entry>
   
   <entry>
     <title>Coding Pages绑定阿里云域名无法使用二级域名访问解决方案</title>
-    <link href="http://rongchenfei.com/2019/05/18/Coding-Pages%E7%BB%91%E5%AE%9A%E9%98%BF%E9%87%8C%E4%BA%91%E5%9F%9F%E5%90%8D%E6%97%A0%E6%B3%95%E4%BD%BF%E7%94%A8%E4%BA%8C%E7%BA%A7%E5%9F%9F%E5%90%8D%E8%AE%BF%E9%97%AE%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
-    <id>http://rongchenfei.com/2019/05/18/Coding-Pages绑定阿里云域名无法使用二级域名访问解决方案/</id>
+    <link href="https://rongchenfei.com/a/575e.html"/>
+    <id>https://rongchenfei.com/a/575e.html</id>
     <published>2019-05-18T15:14:42.000Z</published>
     <updated>2019-05-30T08:46:04.992Z</updated>
     
@@ -205,25 +205,25 @@
     
     </summary>
     
-      <category term="网络技术" scheme="http://rongchenfei.com/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
+      <category term="网络技术" scheme="https://rongchenfei.com/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="Hexo" scheme="http://rongchenfei.com/tags/Hexo/"/>
+      <category term="Hexo" scheme="https://rongchenfei.com/tags/Hexo/"/>
     
-      <category term="Coding" scheme="http://rongchenfei.com/tags/Coding/"/>
+      <category term="Coding" scheme="https://rongchenfei.com/tags/Coding/"/>
     
-      <category term="腾讯云开发者平台" scheme="http://rongchenfei.com/tags/%E8%85%BE%E8%AE%AF%E4%BA%91%E5%BC%80%E5%8F%91%E8%80%85%E5%B9%B3%E5%8F%B0/"/>
+      <category term="腾讯云开发者平台" scheme="https://rongchenfei.com/tags/%E8%85%BE%E8%AE%AF%E4%BA%91%E5%BC%80%E5%8F%91%E8%80%85%E5%B9%B3%E5%8F%B0/"/>
     
-      <category term="域名" scheme="http://rongchenfei.com/tags/%E5%9F%9F%E5%90%8D/"/>
+      <category term="域名" scheme="https://rongchenfei.com/tags/%E5%9F%9F%E5%90%8D/"/>
     
-      <category term="问题解决" scheme="http://rongchenfei.com/tags/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
+      <category term="问题解决" scheme="https://rongchenfei.com/tags/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
     
   </entry>
   
   <entry>
     <title>GitHub Pages + Hexo + 阿里云域名无法访问解决方案</title>
-    <link href="http://rongchenfei.com/2019/05/17/GitHub-Pages-Hexo-%E9%98%BF%E9%87%8C%E4%BA%91%E5%9F%9F%E5%90%8D%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AE%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
-    <id>http://rongchenfei.com/2019/05/17/GitHub-Pages-Hexo-阿里云域名无法访问解决方案/</id>
+    <link href="https://rongchenfei.com/a/712d.html"/>
+    <id>https://rongchenfei.com/a/712d.html</id>
     <published>2019-05-17T08:40:59.000Z</published>
     <updated>2019-05-30T08:47:19.177Z</updated>
     
@@ -235,23 +235,23 @@
     
     </summary>
     
-      <category term="网络技术" scheme="http://rongchenfei.com/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
+      <category term="网络技术" scheme="https://rongchenfei.com/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="Hexo" scheme="http://rongchenfei.com/tags/Hexo/"/>
+      <category term="Hexo" scheme="https://rongchenfei.com/tags/Hexo/"/>
     
-      <category term="域名" scheme="http://rongchenfei.com/tags/%E5%9F%9F%E5%90%8D/"/>
+      <category term="域名" scheme="https://rongchenfei.com/tags/%E5%9F%9F%E5%90%8D/"/>
     
-      <category term="问题解决" scheme="http://rongchenfei.com/tags/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
+      <category term="问题解决" scheme="https://rongchenfei.com/tags/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
     
-      <category term="GitHub" scheme="http://rongchenfei.com/tags/GitHub/"/>
+      <category term="GitHub" scheme="https://rongchenfei.com/tags/GitHub/"/>
     
   </entry>
   
   <entry>
     <title>EasyOM 1.0.1更新说明</title>
-    <link href="http://rongchenfei.com/2019/05/16/EasyOM-1-0-1%E6%9B%B4%E6%96%B0%E8%AF%B4%E6%98%8E/"/>
-    <id>http://rongchenfei.com/2019/05/16/EasyOM-1-0-1更新说明/</id>
+    <link href="https://rongchenfei.com/a/2057.html"/>
+    <id>https://rongchenfei.com/a/2057.html</id>
     <published>2019-05-16T13:05:57.000Z</published>
     <updated>2019-05-30T08:46:51.492Z</updated>
     
@@ -269,16 +269,16 @@
     
     </summary>
     
-      <category term="运维产品" scheme="http://rongchenfei.com/categories/%E8%BF%90%E7%BB%B4%E4%BA%A7%E5%93%81/"/>
+      <category term="运维产品" scheme="https://rongchenfei.com/categories/%E8%BF%90%E7%BB%B4%E4%BA%A7%E5%93%81/"/>
     
     
-      <category term="EasyOM" scheme="http://rongchenfei.com/tags/EasyOM/"/>
+      <category term="EasyOM" scheme="https://rongchenfei.com/tags/EasyOM/"/>
     
-      <category term="更新说明" scheme="http://rongchenfei.com/tags/%E6%9B%B4%E6%96%B0%E8%AF%B4%E6%98%8E/"/>
+      <category term="更新说明" scheme="https://rongchenfei.com/tags/%E6%9B%B4%E6%96%B0%E8%AF%B4%E6%98%8E/"/>
     
-      <category term="运维" scheme="http://rongchenfei.com/tags/%E8%BF%90%E7%BB%B4/"/>
+      <category term="运维" scheme="https://rongchenfei.com/tags/%E8%BF%90%E7%BB%B4/"/>
     
-      <category term="Python" scheme="http://rongchenfei.com/tags/Python/"/>
+      <category term="Python" scheme="https://rongchenfei.com/tags/Python/"/>
     
   </entry>
   

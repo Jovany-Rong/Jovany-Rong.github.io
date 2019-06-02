@@ -23,8 +23,8 @@
 
   <script>
     (function(){
-        if(''){
-            if (prompt('请输入密码') !== ''){
+        if('tqm'){
+            if (prompt('请输入密码') !== 'tqm'){
                 alert('密码错误');
                 history.back();
             }
@@ -87,7 +87,7 @@
 
 
 
-  <meta name="keywords" content="Python,Django,BS开发,学习笔记,">
+  <meta name="keywords" content="Python,办公自动化,全库质检,DCTK,开源,">
 
 
 
@@ -100,18 +100,18 @@
 
 
 
-<meta name="description" content="Django是Python的Web应用模块中非常流行的一款。我的Django学习笔记系列博文将记录我学习使用Django的历程。 本系列博文将不定期更新，欢迎各位前来捧场。 本篇博文主要记录了Django环境准备、启动项目。">
-<meta name="keywords" content="Python,Django,BS开发,学习笔记">
+<meta name="description" content="众所周知，事务性工作是繁杂而琐碎的。像一些周报等定时需要做的工作，有时会让人焦头烂额，陷入文件整理和对比的泥潭。比如每周一需要出的全库质检周报，就需要核对全库质检情况跟踪表，并逐个检查SVN上各地区提交的最新质检报告。 那么，是否有一种方法可以让计算机辅助我们完成这项工作呢？ 答案是肯定的，我们的全库质检周报助手就呼之欲出了。 什么？全库质检和你没关系？别着急，它的一些原理你会觉得有用的。">
+<meta name="keywords" content="Python,办公自动化,全库质检,DCTK,开源">
 <meta property="og:type" content="article">
-<meta property="og:title" content="我的Django学习笔记（一）：第一个Django项目">
-<meta property="og:url" content="http://rongchenfei.com/2019/05/31/My-First-Django-Project-1/index.html">
+<meta property="og:title" content="【开源】办公自动化探索：全库质检周报助手">
+<meta property="og:url" content="https://rongchenfei.com/a/349e.html">
 <meta property="og:site_name" content="夏月谈">
-<meta property="og:description" content="Django是Python的Web应用模块中非常流行的一款。我的Django学习笔记系列博文将记录我学习使用Django的历程。 本系列博文将不定期更新，欢迎各位前来捧场。 本篇博文主要记录了Django环境准备、启动项目。">
+<meta property="og:description" content="众所周知，事务性工作是繁杂而琐碎的。像一些周报等定时需要做的工作，有时会让人焦头烂额，陷入文件整理和对比的泥潭。比如每周一需要出的全库质检周报，就需要核对全库质检情况跟踪表，并逐个检查SVN上各地区提交的最新质检报告。 那么，是否有一种方法可以让计算机辅助我们完成这项工作呢？ 答案是肯定的，我们的全库质检周报助手就呼之欲出了。 什么？全库质检和你没关系？别着急，它的一些原理你会觉得有用的。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-06-01T16:31:05.579Z">
+<meta property="og:updated_time" content="2019-05-30T10:22:26.001Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="我的Django学习笔记（一）：第一个Django项目">
-<meta name="twitter:description" content="Django是Python的Web应用模块中非常流行的一款。我的Django学习笔记系列博文将记录我学习使用Django的历程。 本系列博文将不定期更新，欢迎各位前来捧场。 本篇博文主要记录了Django环境准备、启动项目。">
+<meta name="twitter:title" content="【开源】办公自动化探索：全库质检周报助手">
+<meta name="twitter:description" content="众所周知，事务性工作是繁杂而琐碎的。像一些周报等定时需要做的工作，有时会让人焦头烂额，陷入文件整理和对比的泥潭。比如每周一需要出的全库质检周报，就需要核对全库质检情况跟踪表，并逐个检查SVN上各地区提交的最新质检报告。 那么，是否有一种方法可以让计算机辅助我们完成这项工作呢？ 答案是肯定的，我们的全库质检周报助手就呼之欲出了。 什么？全库质检和你没关系？别着急，它的一些原理你会觉得有用的。">
 
 
 
@@ -141,13 +141,13 @@
 
 
 
-  <link rel="canonical" href="http://rongchenfei.com/2019/05/31/My-First-Django-Project-1/">
+  <link rel="canonical" href="https://rongchenfei.com/a/349e.html">
 
 
 
 
 
-  <title>我的Django学习笔记（一）：第一个Django项目 | 夏月谈</title>
+  <title>【开源】办公自动化探索：全库质检周报助手 | 夏月谈</title>
   
 
 
@@ -338,7 +338,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://rongchenfei.com/2019/05/31/My-First-Django-Project-1/">
+    <link itemprop="mainEntityOfPage" href="https://rongchenfei.com/a/349e.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Chenfei Jovany Rong">
@@ -355,7 +355,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">我的Django学习笔记（一）：第一个Django项目</h1>
+          <h1 class="post-title" itemprop="name headline">【开源】办公自动化探索：全库质检周报助手</h1>
         
 
         <div class="post-meta">
@@ -367,8 +367,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-31T23:16:38+08:00">
-                2019-05-31
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-30T17:53:43+08:00">
+                2019-05-30
               </time>
             
 
@@ -383,8 +383,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-06-02T00:31:05+08:00">
-                2019-06-02
+              <time title="更新于" itemprop="dateModified" datetime="2019-05-30T18:22:26+08:00">
+                2019-05-30
               </time>
             
           </span>
@@ -402,8 +402,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Python/" itemprop="url" rel="index">
-                    <span itemprop="name">Python</span>
+                  <a href="/categories/办公自动化/" itemprop="url" rel="index">
+                    <span itemprop="name">办公自动化</span>
                   </a>
                 </span>
 
@@ -420,8 +420,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/05/31/My-First-Django-Project-1/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/05/31/My-First-Django-Project-1/" itemprop="commentCount"></span>
+                <a href="/a/349e.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/a/349e.html" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -443,7 +443,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  601
+                  482
                 </span>
               
 
@@ -459,7 +459,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  2
+                  1
                 </span>
               
             </div>
@@ -480,45 +480,23 @@
       
 
       
-        <p>Django是Python的Web应用模块中非常流行的一款。<strong>我的Django学习笔记</strong>系列博文将记录我学习使用Django的历程。</p>
-<p>本系列博文将不定期更新，欢迎各位前来捧场。</p>
-<p>本篇博文主要记录了Django环境准备、启动项目。</p>
+        <p>众所周知，事务性工作是繁杂而琐碎的。像一些周报等定时需要做的工作，有时会让人焦头烂额，陷入文件整理和对比的泥潭。比如每周一需要出的全库质检周报，就需要核对全库质检情况跟踪表，并逐个检查SVN上各地区提交的最新质检报告。</p>
+<p>那么，是否有一种方法可以让计算机辅助我们完成这项工作呢？</p>
+<p>答案是肯定的，我们的全库质检周报助手就呼之欲出了。</p>
+<p>什么？全库质检和你没关系？别着急，它的一些原理你会觉得有用的。</p>
 <a id="more"></a>
-<h1 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h1><h2 id="前置环境"><a href="#前置环境" class="headerlink" title="前置环境"></a>前置环境</h2><p>首先贴出系统环境和Python环境。</p>
-<p>操作系统为MacOS 10.14.5。</p>
-<p>Python环境为3.7.0。</p>
-<h2 id="Django安装"><a href="#Django安装" class="headerlink" title="Django安装"></a>Django安装</h2><p>使用pip安装django，代码如下。</p>
-<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ pip <span class="keyword">install</span> django</span><br></pre></td></tr></table></figure>
-<p>安装完成后使用如下命令查看Django版本。</p>
-<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ python</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;import django</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;django.VERSION</span><br></pre></td></tr></table></figure>
-<p>查到安装的Django版本为2.2.1，说明Django安装成功。</p>
-<h1 id="创建Django项目"><a href="#创建Django项目" class="headerlink" title="创建Django项目"></a>创建Django项目</h1><h2 id="新建项目"><a href="#新建项目" class="headerlink" title="新建项目"></a>新建项目</h2><p>使用django-admin来创建新项目 <em>HelloWorld</em> ， 代码如下。</p>
-<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>django-admin startproject HelloWorld</span><br></pre></td></tr></table></figure>
-<p>查看项目目录结构，代码如下。</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$ tree</span><br><span class="line">.</span><br><span class="line">├── HelloWorld</span><br><span class="line">│   ├── __init__.py</span><br><span class="line">│   ├── settings.py</span><br><span class="line">│   ├── urls.py</span><br><span class="line">│   └── wsgi.py</span><br><span class="line">└── manage.py</span><br><span class="line"></span><br><span class="line"><span class="number">1</span> directory, <span class="number">5</span> files</span><br></pre></td></tr></table></figure>
-<p>该目录所有目录和文件的说明如下。</p>
-<ul>
-<li>HelloWorld: 项目的容器。</li>
-<li>manage.py: 一个实用的命令行工具，可让你以各种方式与该 Django 项目进行交互。</li>
-<li>HelloWorld/<strong>init</strong>.py: 一个空文件，告诉 Python 该目录是一个 Python 包。</li>
-<li>HelloWorld/settings.py: 该 Django 项目的设置/配置。</li>
-<li>HelloWorld/urls.py: 该 Django 项目的 URL 声明; 一份由 Django 驱动的网站”目录”。</li>
-<li>HelloWorld/wsgi.py: 一个 WSGI 兼容的 Web 服务器的入口，以便运行你的项目。</li>
+<h1 id="开发环境"><a href="#开发环境" class="headerlink" title="开发环境"></a>开发环境</h1><ul>
+<li>Python 3.7</li>
+<li>Openpyxl模块</li>
+<li>Windows 10</li>
 </ul>
-<p>使用以下命令启动Django服务器。</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ python manage<span class="selector-class">.py</span> runserver <span class="number">0.0</span>.<span class="number">0.0</span>:<span class="number">8000</span></span><br></pre></td></tr></table></figure>
-<p>在浏览器访问 <strong>127.0.0.1:8000</strong> ，出现 <strong>Django</strong> 页面。</p>
-<h2 id="配置视图及URL"><a href="#配置视图及URL" class="headerlink" title="配置视图及URL"></a>配置视图及URL</h2><p>在项目目录中 <strong>HelloWorld</strong> 目录内新建 <strong>view.py</strong> 文件，并写入以下代码。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> django.http <span class="keyword">import</span> HttpResponse</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">hello</span><span class="params">(request)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> HttpResponse(<span class="string">"Hello world ! "</span>)</span><br></pre></td></tr></table></figure>
-<p>打开 <strong>urls.py</strong> 文件，删除原来代码，将以下代码复制粘贴到 <strong>urls.py</strong> 文件中。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> django.conf.urls <span class="keyword">import</span> url</span><br><span class="line"> </span><br><span class="line"><span class="keyword">from</span> . <span class="keyword">import</span> view</span><br><span class="line"> </span><br><span class="line">urlpatterns = [</span><br><span class="line">    url(<span class="string">r'^$'</span>, view.hello),</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
-<p>目录结构如下。</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">$ tree</span><br><span class="line">.</span><br><span class="line">├── HelloWorld</span><br><span class="line">│   ├── __init__.py</span><br><span class="line">│   ├── __pycache__</span><br><span class="line">│   │   ├── __init__<span class="selector-class">.cpython-37</span><span class="selector-class">.pyc</span></span><br><span class="line">│   │   ├── settings<span class="selector-class">.cpython-37</span><span class="selector-class">.pyc</span></span><br><span class="line">│   │   ├── urls<span class="selector-class">.cpython-37</span><span class="selector-class">.pyc</span></span><br><span class="line">│   │   ├── view<span class="selector-class">.cpython-37</span><span class="selector-class">.pyc</span></span><br><span class="line">│   │   └── wsgi<span class="selector-class">.cpython-37</span><span class="selector-class">.pyc</span></span><br><span class="line">│   ├── settings.py</span><br><span class="line">│   ├── urls.py</span><br><span class="line">│   ├── view.py</span><br><span class="line">│   └── wsgi.py</span><br><span class="line">├── db.sqlite3</span><br><span class="line">└── manage.py</span><br><span class="line"></span><br><span class="line"><span class="number">2</span> directories, <span class="number">12</span> files</span><br></pre></td></tr></table></figure>
-<p>启动Django服务器，浏览器打开 <strong>127.0.0.1:8000</strong> ，页面显示 <strong>Hello world !</strong> 。</p>
-<p>修改 <strong>urls.py</strong> 中的代码如下。</p>
-<figure class="highlight xl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">from django.urls <span class="keyword">import</span> <span class="built_in">path</span></span><br><span class="line"> </span><br><span class="line">from . <span class="keyword">import</span> view</span><br><span class="line"> </span><br><span class="line">urlpatterns = [</span><br><span class="line">    <span class="built_in">path</span>(<span class="string">'hello/'</span>, view.hello),</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
-<p>则在浏览器打开 <strong>127.0.0.1:8000/hello</strong> ，页面显示 <strong>Hello world !</strong> 。</p>
-<p><strong>注意</strong>，Django无需重启，即可重新载入新的代码。</p>
+<h1 id="开发难点"><a href="#开发难点" class="headerlink" title="开发难点"></a>开发难点</h1><p>该工具需要我们去核对SVN文件夹，看各地区是否提交了质检报告。那么Python自带的OS模块就能完成这项任务。</p>
+<p>我们还需要检查跟踪表，那么我们就需要处理Excel文件。Python中这类模块有很多，这次我们选用比较简单的Openpyxl模块。</p>
+<h1 id="功能实现"><a href="#功能实现" class="headerlink" title="功能实现"></a>功能实现</h1><p>目前工具已经完成了1.0版本的开发，实现的功能有自动检查全库质检跟踪表（xlsx格式）各部门各地区是否填写本周进展及自动检查SVN目录中各地区是否提交了最新质检报告。</p>
+<p>目前还无法自动帮我们出具周报，但已经帮我们处理了最复杂的工作。我们只需要等待几秒，对着终端出具我们的周报就可以了。</p>
+<h1 id="源代码"><a href="#源代码" class="headerlink" title="源代码"></a>源代码</h1><p>本工具开源，大家可自由研究和使用，禁止用作商业用途～</p>
+<p>请大家前往<a href="https://github.com/Jovany-Rong/DCTK_Checker" target="_blank" rel="noopener">我的GitHub</a>克隆代码仓库获取源代码。</p>
+<p>不想看源代码，想直接使用编译过的工具的，请至本站下载页面下载。</p>
 
       
     </div>
@@ -536,12 +514,12 @@
   <!-- JS库 sweetalert 可修改路径 -->
   <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <p><span>本文标题:</span><a href="/2019/05/31/My-First-Django-Project-1/">我的Django学习笔记（一）：第一个Django项目</a></p>
+  <p><span>本文标题:</span><a href="/a/349e.html">【开源】办公自动化探索：全库质检周报助手</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Chenfei Jovany Rong 的个人博客">Chenfei Jovany Rong</a></p>
-  <p><span>发布时间:</span>2019年05月31日 - 23:05</p>
-  <p><span>最后更新:</span>2019年06月02日 - 00:06</p>
-  <p><span>原始链接:</span><a href="/2019/05/31/My-First-Django-Project-1/" title="我的Django学习笔记（一）：第一个Django项目">http://rongchenfei.com/2019/05/31/My-First-Django-Project-1/</a>
-    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://rongchenfei.com/2019/05/31/My-First-Django-Project-1/" aria-label="复制成功！"></i></span>
+  <p><span>发布时间:</span>2019年05月30日 - 17:05</p>
+  <p><span>最后更新:</span>2019年05月30日 - 18:05</p>
+  <p><span>原始链接:</span><a href="/a/349e.html" title="【开源】办公自动化探索：全库质检周报助手">https://rongchenfei.com/a/349e.html</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://rongchenfei.com/a/349e.html" aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
 </div>
@@ -613,11 +591,13 @@
           
             <a href="/tags/Python/" rel="tag"><i class="fa fa-tag"></i> Python</a>
           
-            <a href="/tags/Django/" rel="tag"><i class="fa fa-tag"></i> Django</a>
+            <a href="/tags/办公自动化/" rel="tag"><i class="fa fa-tag"></i> 办公自动化</a>
           
-            <a href="/tags/BS开发/" rel="tag"><i class="fa fa-tag"></i> BS开发</a>
+            <a href="/tags/全库质检/" rel="tag"><i class="fa fa-tag"></i> 全库质检</a>
           
-            <a href="/tags/学习笔记/" rel="tag"><i class="fa fa-tag"></i> 学习笔记</a>
+            <a href="/tags/DCTK/" rel="tag"><i class="fa fa-tag"></i> DCTK</a>
+          
+            <a href="/tags/开源/" rel="tag"><i class="fa fa-tag"></i> 开源</a>
           
         </div>
       
@@ -645,8 +625,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/05/31/Network-Little-Knowledge-by-Cheng-Shan-SHan/" rel="next" title="网络趣味小知识">
-                <i class="fa fa-chevron-left"></i> 网络趣味小知识
+              <a href="/a/5c3a.html" rel="next" title="Hexo + NexT进阶美化攻略">
+                <i class="fa fa-chevron-left"></i> Hexo + NexT进阶美化攻略
               </a>
             
           </div>
@@ -654,6 +634,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/a/345b.html" rel="prev" title="计算机网络基本介绍">
+                计算机网络基本介绍 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -776,25 +760,25 @@
             <div class="links-of-author motion-element">
                 
                   <span class="links-of-author-item">
-                    <a href="https://github.com/Jovany-Rong" target="_blank" title="GitHub">
+                    <a href="https://github.com/Jovany-Rong" rel="external nofollow" target="_blank" title="GitHub">
                       
                         <i class="fa fa-fw fa-github"></i>GitHub</a>
                   </span>
                 
                   <span class="links-of-author-item">
-                    <a href="mailto:amphliegg@gmail.com" target="_blank" title="E-Mail">
+                    <a href="mailto:amphliegg@gmail.com" rel="external nofollow" target="_blank" title="E-Mail">
                       
                         <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
                   </span>
                 
                   <span class="links-of-author-item">
-                    <a href="https://www.zhihu.com/people/rong-chen-fei/activities" target="_blank" title="知乎">
+                    <a href="https://www.zhihu.com/people/rong-chen-fei/activities" rel="external nofollow" target="_blank" title="知乎">
                       
                         <i class="fa fa-fw fa-book"></i>知乎</a>
                   </span>
                 
                   <span class="links-of-author-item">
-                    <a href="https://www.taptap.com/user/4323230" target="_blank" title="TapTap">
+                    <a href="https://www.taptap.com/user/4323230" rel="external nofollow" target="_blank" title="TapTap">
                       
                         <i class="fa fa-fw fa-gamepad"></i>TapTap</a>
                   </span>
@@ -815,15 +799,15 @@
               <ul class="links-of-blogroll-list">
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://github.com/" title="GitHub" target="_blank">GitHub</a>
+                    <a rel="external nofollow" href="https://github.com/" title="GitHub" target="_blank">GitHub</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="http://www.gtmap.cn/" title="南京国图信息产业有限公司" target="_blank">南京国图信息产业有限公司</a>
+                    <a rel="external nofollow" href="http://www.gtmap.cn/" title="南京国图信息产业有限公司" target="_blank">南京国图信息产业有限公司</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="http://oa.gtis.com.cn/" title="南京国图协同办公平台" target="_blank">南京国图协同办公平台</a>
+                    <a rel="external nofollow" href="http://oa.gtis.com.cn/" title="南京国图协同办公平台" target="_blank">南京国图协同办公平台</a>
                   </li>
                 
               </ul>
@@ -845,7 +829,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#环境准备"><span class="nav-text">环境准备</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#前置环境"><span class="nav-text">前置环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Django安装"><span class="nav-text">Django安装</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#创建Django项目"><span class="nav-text">创建Django项目</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#新建项目"><span class="nav-text">新建项目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置视图及URL"><span class="nav-text">配置视图及URL</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#开发环境"><span class="nav-text">开发环境</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#开发难点"><span class="nav-text">开发难点</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#功能实现"><span class="nav-text">功能实现</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#源代码"><span class="nav-text">源代码</span></a></li></ol></div>
             
 
           </div>
@@ -877,7 +861,7 @@
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">Summer Moon Talk</span>
+  <span class="author" itemprop="copyrightHolder">Chenfei Rong (Jovany)</span>
 
   
     <span class="post-meta-divider">|</span>
@@ -893,7 +877,7 @@
 
 <!--
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+  <div class="powered-by">由 <a class="theme-link" target="_blank" rel="external nofollow" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
 
 
@@ -901,7 +885,7 @@
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" rel="external nofollow" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
 
 
 
