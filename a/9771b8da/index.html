@@ -100,18 +100,22 @@
 
 
 
-<meta name="description" content="Django是Python的Web应用模块中非常流行的一款。我的Django学习笔记系列博文将记录我学习使用Django的历程。 本系列博文将不定期更新，欢迎各位前来捧场。 本篇博文主要记录了Django环境准备、启动项目。">
+<meta name="description" content="Django是Python的Web应用模块中非常流行的一款。我的Django学习笔记系列博文将记录我学习使用Django的历程。 本系列博文将不定期更新，欢迎各位前来捧场。 本篇博文主要记录了创建guest项目并以模板方式打开Hello Django页面。">
 <meta name="keywords" content="Python,Django,BS开发,学习笔记">
 <meta property="og:type" content="article">
-<meta property="og:title" content="我的Django学习笔记（一）：第一个Django项目">
-<meta property="og:url" content="https://rongchenfei.com/a/e568/index.html">
+<meta property="og:title" content="我的Django学习笔记（二）：使用模板打开页面">
+<meta property="og:url" content="https://rongchenfei.com/a/9771b8da/index.html">
 <meta property="og:site_name" content="夏月谈">
-<meta property="og:description" content="Django是Python的Web应用模块中非常流行的一款。我的Django学习笔记系列博文将记录我学习使用Django的历程。 本系列博文将不定期更新，欢迎各位前来捧场。 本篇博文主要记录了Django环境准备、启动项目。">
+<meta property="og:description" content="Django是Python的Web应用模块中非常流行的一款。我的Django学习笔记系列博文将记录我学习使用Django的历程。 本系列博文将不定期更新，欢迎各位前来捧场。 本篇博文主要记录了创建guest项目并以模板方式打开Hello Django页面。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-06-02T01:47:57.361Z">
+<meta property="og:image" content="http://ww2.sinaimg.cn/large/006tNc79gy1g3oc4eju2kj311l0u03zz.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/006tNc79gy1g3of9f2mtdj30pe0c0dfu.jpg">
+<meta property="og:image" content="http://ww3.sinaimg.cn/large/006tNc79gy1g3ofjpthsuj30k60bywel.jpg">
+<meta property="og:updated_time" content="2019-06-03T16:27:11.394Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="我的Django学习笔记（一）：第一个Django项目">
-<meta name="twitter:description" content="Django是Python的Web应用模块中非常流行的一款。我的Django学习笔记系列博文将记录我学习使用Django的历程。 本系列博文将不定期更新，欢迎各位前来捧场。 本篇博文主要记录了Django环境准备、启动项目。">
+<meta name="twitter:title" content="我的Django学习笔记（二）：使用模板打开页面">
+<meta name="twitter:description" content="Django是Python的Web应用模块中非常流行的一款。我的Django学习笔记系列博文将记录我学习使用Django的历程。 本系列博文将不定期更新，欢迎各位前来捧场。 本篇博文主要记录了创建guest项目并以模板方式打开Hello Django页面。">
+<meta name="twitter:image" content="http://ww2.sinaimg.cn/large/006tNc79gy1g3oc4eju2kj311l0u03zz.jpg">
 
 
 
@@ -141,7 +145,7 @@
 
 
 
-  <link rel="canonical" href="https://rongchenfei.com/a/e568/">
+  <link rel="canonical" href="https://rongchenfei.com/a/9771b8da/">
 
 
 
@@ -156,7 +160,7 @@
   daovoice('update');
   </script>
 
-  <title>我的Django学习笔记（一）：第一个Django项目 | 夏月谈</title>
+  <title>我的Django学习笔记（二）：使用模板打开页面 | 夏月谈</title>
   
 
 
@@ -357,7 +361,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://rongchenfei.com/a/e568/">
+    <link itemprop="mainEntityOfPage" href="https://rongchenfei.com/a/9771b8da/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Chenfei Jovany Rong">
@@ -374,7 +378,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">我的Django学习笔记（一）：第一个Django项目</h1>
+          <h1 class="post-title" itemprop="name headline">我的Django学习笔记（二）：使用模板打开页面</h1>
         
 
         <div class="post-meta">
@@ -386,8 +390,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-31T23:16:38+08:00">
-                2019-05-31
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-06-03T22:10:34+08:00">
+                2019-06-03
               </time>
             
 
@@ -402,8 +406,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-06-02T09:47:57+08:00">
-                2019-06-02
+              <time title="更新于" itemprop="dateModified" datetime="2019-06-04T00:27:11+08:00">
+                2019-06-04
               </time>
             
           </span>
@@ -439,8 +443,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/a/e568/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/a/e568/" itemprop="commentCount"></span>
+                <a href="/a/9771b8da/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/a/9771b8da/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -462,7 +466,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  601
+                  509
                 </span>
               
 
@@ -501,43 +505,38 @@
       
         <p>Django是Python的Web应用模块中非常流行的一款。<strong>我的Django学习笔记</strong>系列博文将记录我学习使用Django的历程。</p>
 <p>本系列博文将不定期更新，欢迎各位前来捧场。</p>
-<p>本篇博文主要记录了Django环境准备、启动项目。</p>
+<p>本篇博文主要记录了创建guest项目并以模板方式打开Hello Django页面。</p>
 <a id="more"></a>
-<h1 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h1><h2 id="前置环境"><a href="#前置环境" class="headerlink" title="前置环境"></a>前置环境</h2><p>首先贴出系统环境和Python环境。</p>
-<p>操作系统为MacOS 10.14.5。</p>
-<p>Python环境为3.7.0。</p>
-<h2 id="Django安装"><a href="#Django安装" class="headerlink" title="Django安装"></a>Django安装</h2><p>使用pip安装django，代码如下。</p>
-<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ pip <span class="keyword">install</span> django</span><br></pre></td></tr></table></figure>
-<p>安装完成后使用如下命令查看Django版本。</p>
-<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ python</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;import django</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;django.VERSION</span><br></pre></td></tr></table></figure>
-<p>查到安装的Django版本为2.2.1，说明Django安装成功。</p>
-<h1 id="创建Django项目"><a href="#创建Django项目" class="headerlink" title="创建Django项目"></a>创建Django项目</h1><h2 id="新建项目"><a href="#新建项目" class="headerlink" title="新建项目"></a>新建项目</h2><p>使用django-admin来创建新项目 <em>HelloWorld</em> ， 代码如下。</p>
-<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>django-admin startproject HelloWorld</span><br></pre></td></tr></table></figure>
-<p>查看项目目录结构，代码如下。</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$ tree</span><br><span class="line">.</span><br><span class="line">├── HelloWorld</span><br><span class="line">│   ├── __init__.py</span><br><span class="line">│   ├── settings.py</span><br><span class="line">│   ├── urls.py</span><br><span class="line">│   └── wsgi.py</span><br><span class="line">└── manage.py</span><br><span class="line"></span><br><span class="line"><span class="number">1</span> directory, <span class="number">5</span> files</span><br></pre></td></tr></table></figure>
-<p>该目录所有目录和文件的说明如下。</p>
-<ul>
-<li>HelloWorld: 项目的容器。</li>
-<li>manage.py: 一个实用的命令行工具，可让你以各种方式与该 Django 项目进行交互。</li>
-<li>HelloWorld/<strong>init</strong>.py: 一个空文件，告诉 Python 该目录是一个 Python 包。</li>
-<li>HelloWorld/settings.py: 该 Django 项目的设置/配置。</li>
-<li>HelloWorld/urls.py: 该 Django 项目的 URL 声明; 一份由 Django 驱动的网站”目录”。</li>
-<li>HelloWorld/wsgi.py: 一个 WSGI 兼容的 Web 服务器的入口，以便运行你的项目。</li>
-</ul>
-<p>使用以下命令启动Django服务器。</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ python manage<span class="selector-class">.py</span> runserver <span class="number">0.0</span>.<span class="number">0.0</span>:<span class="number">8000</span></span><br></pre></td></tr></table></figure>
-<p>在浏览器访问 <strong>127.0.0.1:8000</strong> ，出现 <strong>Django</strong> 页面。</p>
-<h2 id="配置视图及URL"><a href="#配置视图及URL" class="headerlink" title="配置视图及URL"></a>配置视图及URL</h2><p>在项目目录中 <strong>HelloWorld</strong> 目录内新建 <strong>view.py</strong> 文件，并写入以下代码。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> django.http <span class="keyword">import</span> HttpResponse</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">hello</span><span class="params">(request)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> HttpResponse(<span class="string">"Hello world ! "</span>)</span><br></pre></td></tr></table></figure>
-<p>打开 <strong>urls.py</strong> 文件，删除原来代码，将以下代码复制粘贴到 <strong>urls.py</strong> 文件中。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> django.conf.urls <span class="keyword">import</span> url</span><br><span class="line"> </span><br><span class="line"><span class="keyword">from</span> . <span class="keyword">import</span> view</span><br><span class="line"> </span><br><span class="line">urlpatterns = [</span><br><span class="line">    url(<span class="string">r'^$'</span>, view.hello),</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
-<p>目录结构如下。</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">$ tree</span><br><span class="line">.</span><br><span class="line">├── HelloWorld</span><br><span class="line">│   ├── __init__.py</span><br><span class="line">│   ├── __pycache__</span><br><span class="line">│   │   ├── __init__<span class="selector-class">.cpython-37</span><span class="selector-class">.pyc</span></span><br><span class="line">│   │   ├── settings<span class="selector-class">.cpython-37</span><span class="selector-class">.pyc</span></span><br><span class="line">│   │   ├── urls<span class="selector-class">.cpython-37</span><span class="selector-class">.pyc</span></span><br><span class="line">│   │   ├── view<span class="selector-class">.cpython-37</span><span class="selector-class">.pyc</span></span><br><span class="line">│   │   └── wsgi<span class="selector-class">.cpython-37</span><span class="selector-class">.pyc</span></span><br><span class="line">│   ├── settings.py</span><br><span class="line">│   ├── urls.py</span><br><span class="line">│   ├── view.py</span><br><span class="line">│   └── wsgi.py</span><br><span class="line">├── db.sqlite3</span><br><span class="line">└── manage.py</span><br><span class="line"></span><br><span class="line"><span class="number">2</span> directories, <span class="number">12</span> files</span><br></pre></td></tr></table></figure>
-<p>启动Django服务器，浏览器打开 <strong>127.0.0.1:8000</strong> ，页面显示 <strong>Hello world !</strong> 。</p>
-<p>修改 <strong>urls.py</strong> 中的代码如下。</p>
-<figure class="highlight xl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">from django.urls <span class="keyword">import</span> <span class="built_in">path</span></span><br><span class="line"> </span><br><span class="line">from . <span class="keyword">import</span> view</span><br><span class="line"> </span><br><span class="line">urlpatterns = [</span><br><span class="line">    <span class="built_in">path</span>(<span class="string">'hello/'</span>, view.hello),</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
-<p>则在浏览器打开 <strong>127.0.0.1:8000/hello</strong> ，页面显示 <strong>Hello world !</strong> 。</p>
-<p><strong>注意</strong>，Django无需重启，即可重新载入新的代码。</p>
+<h1 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h1><p>从本期开始，我开始跟着 <strong>《Web接口开发与自动化测试————基于Python语言》</strong> （虫师 著，2017年版）学习。</p>
+<p>现在的目标是使用Django开发一个简单的发布会签到系统。</p>
+<h1 id="创建guest项目"><a href="#创建guest项目" class="headerlink" title="创建guest项目"></a>创建guest项目</h1><p>使用Django-Admin创建项目 <strong>guest</strong> 。</p>
+<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>django-admin startproject guest</span><br></pre></td></tr></table></figure>
+<h1 id="创建sign应用"><a href="#创建sign应用" class="headerlink" title="创建sign应用"></a>创建sign应用</h1><p>使用manage工具创建应用 <strong>sign</strong> 。</p>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="keyword">cd</span> guest</span><br><span class="line">$ <span class="keyword">python</span> manage.<span class="keyword">py</span> startapp <span class="keyword">sign</span></span><br></pre></td></tr></table></figure>
+<p>启动Django服务器。</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ python manage<span class="selector-class">.py</span> runserver</span><br></pre></td></tr></table></figure>
+<p>浏览器打开 <strong>127.0.0.1:8000</strong> 。</p>
+<p><img src="http://ww2.sinaimg.cn/large/006tNc79gy1g3oc4eju2kj311l0u03zz.jpg" alt></p>
+<p>出现以上画面，说明Django启动成功。</p>
+<h1 id="将sign应用添加到guest项目中"><a href="#将sign应用添加到guest项目中" class="headerlink" title="将sign应用添加到guest项目中"></a>将sign应用添加到guest项目中</h1><p>打开 <strong>guest/settings.py</strong> 文件，添加 <strong>sign</strong> 条目。</p>
+<p><em>settings.py</em></p>
+<figure class="highlight sml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># <span class="type">Application</span> definition</span><br><span class="line"></span><br><span class="line"><span class="type">INSTALLED_APPS</span> = [</span><br><span class="line">    <span class="symbol">'django</span>.contrib.admin',</span><br><span class="line">    <span class="symbol">'django</span>.contrib.auth',</span><br><span class="line">    <span class="symbol">'django</span>.contrib.contenttypes',</span><br><span class="line">    <span class="symbol">'django</span>.contrib.sessions',</span><br><span class="line">    <span class="symbol">'django</span>.contrib.messages',</span><br><span class="line">    <span class="symbol">'django</span>.contrib.staticfiles',</span><br><span class="line">    <span class="symbol">'sign'</span>, # 添加sign应用</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+<h1 id="通过访问-127-0-0-1-8000-index-地址显示-“Hello-Django”页面"><a href="#通过访问-127-0-0-1-8000-index-地址显示-“Hello-Django”页面" class="headerlink" title="通过访问 127.0.0.1:8000/index 地址显示 “Hello Django”页面"></a>通过访问 127.0.0.1:8000/index 地址显示 “Hello Django”页面</h1><p>在 <strong>guest/urls.py</strong> 文件中，添加/index/的路径配置。</p>
+<p><em>urls.py</em></p>
+<figure class="highlight xl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">from django.contrib <span class="keyword">import</span> admin</span><br><span class="line">from django.urls <span class="keyword">import</span> <span class="built_in">path</span></span><br><span class="line">from <span class="built_in">sign</span> <span class="keyword">import</span> views # 导入views文件</span><br><span class="line"></span><br><span class="line">urlpatterns = [</span><br><span class="line">    <span class="built_in">path</span>(<span class="string">'admin/'</span>, admin.site.urls),</span><br><span class="line">    <span class="built_in">path</span>(<span class="string">'index/'</span>, views.index, <span class="keyword">name</span>=<span class="string">"index"</span>), # 添加/index/路径配置</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+<p>在 <strong>guest/sign/views.py</strong> 文件中，添加index函数。</p>
+<p><em>views.py</em></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> django.shortcuts <span class="keyword">import</span> render</span><br><span class="line"><span class="keyword">from</span> django.http <span class="keyword">import</span> HttpResponse <span class="comment"># 引入HttpResponse类</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Create your views here.</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">index</span><span class="params">(request)</span>:</span> <span class="comment"># 创建index函数</span></span><br><span class="line">    <span class="keyword">return</span> HttpResponse(<span class="string">"Hello Django!"</span>)</span><br></pre></td></tr></table></figure>
+<p>访问 <strong>127.0.0.1:8000/index</strong> 页面，显示 “Hello Django!”。</p>
+<p><img src="http://ww1.sinaimg.cn/large/006tNc79gy1g3of9f2mtdj30pe0c0dfu.jpg" alt></p>
+<h1 id="使用模板展示Hello-Django页面"><a href="#使用模板展示Hello-Django页面" class="headerlink" title="使用模板展示Hello Django页面"></a>使用模板展示Hello Django页面</h1><p>在应用 <strong>sign/</strong> 目录中创建 <strong>templates/index.html</strong> 文件。</p>
+<p><em>index.html</em></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>Django Page<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h1</span>&gt;</span>Hello Django!<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>修改视图文件 <strong>views.py</strong> 。</p>
+<p><em>views.py</em></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> django.shortcuts <span class="keyword">import</span> render</span><br><span class="line"><span class="comment"># from django.http import HttpResponse # 无需使用 HttpResponse，注释掉</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Create your views here.</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">index</span><span class="params">(request)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> render(request, <span class="string">"index.html"</span>) <span class="comment"># 改为使用render 处理请求</span></span><br></pre></td></tr></table></figure>
+<p>刷新页面。</p>
+<p><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g3ofjpthsuj30k60bywel.jpg" alt></p>
 
       
     </div>
@@ -555,12 +554,12 @@
   <!-- JS库 sweetalert 可修改路径 -->
   <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <p><span>本文标题:</span><a href="/a/e568/">我的Django学习笔记（一）：第一个Django项目</a></p>
+  <p><span>本文标题:</span><a href="/a/9771b8da/">我的Django学习笔记（二）：使用模板打开页面</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Chenfei Jovany Rong 的个人博客">Chenfei Jovany Rong</a></p>
-  <p><span>发布时间:</span>2019年05月31日 - 23:05</p>
-  <p><span>最后更新:</span>2019年06月02日 - 09:06</p>
-  <p><span>原始链接:</span><a href="/a/e568/" title="我的Django学习笔记（一）：第一个Django项目">https://rongchenfei.com/a/e568/</a>
-    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://rongchenfei.com/a/e568/" aria-label="复制成功！"></i></span>
+  <p><span>发布时间:</span>2019年06月03日 - 22:06</p>
+  <p><span>最后更新:</span>2019年06月04日 - 00:06</p>
+  <p><span>原始链接:</span><a href="/a/9771b8da/" title="我的Django学习笔记（二）：使用模板打开页面">https://rongchenfei.com/a/9771b8da/</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://rongchenfei.com/a/9771b8da/" aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
 </div>
@@ -664,8 +663,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/a/36ce/" rel="next" title="网络趣味小知识">
-                <i class="fa fa-chevron-left"></i> 网络趣味小知识
+              <a href="/a/ee66n89/" rel="next" title="【公告】在线联系、打赏鸣谢功能正式上线">
+                <i class="fa fa-chevron-left"></i> 【公告】在线联系、打赏鸣谢功能正式上线
               </a>
             
           </div>
@@ -673,10 +672,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/a/7015/" rel="prev" title="【公告】2019年6月2日网站评论重置公告">
-                【公告】2019年6月2日网站评论重置公告 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -870,7 +865,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#环境准备"><span class="nav-text">环境准备</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#前置环境"><span class="nav-text">前置环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Django安装"><span class="nav-text">Django安装</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#创建Django项目"><span class="nav-text">创建Django项目</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#新建项目"><span class="nav-text">新建项目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置视图及URL"><span class="nav-text">配置视图及URL</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#项目介绍"><span class="nav-text">项目介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#创建guest项目"><span class="nav-text">创建guest项目</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#创建sign应用"><span class="nav-text">创建sign应用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#将sign应用添加到guest项目中"><span class="nav-text">将sign应用添加到guest项目中</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#通过访问-127-0-0-1-8000-index-地址显示-“Hello-Django”页面"><span class="nav-text">通过访问 127.0.0.1:8000/index 地址显示 “Hello Django”页面</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#使用模板展示Hello-Django页面"><span class="nav-text">使用模板展示Hello Django页面</span></a></li></ol></div>
             
 
           </div>
