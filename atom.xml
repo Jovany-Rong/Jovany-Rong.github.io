@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>夏月谈</title>
   
-  <subtitle>文档、写作和杂谈</subtitle>
+  <subtitle>Welcome to Jovany Rong&#39;s Homepage!</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://rongchenfei.com/"/>
-  <updated>2019-06-07T09:28:28.645Z</updated>
+  <updated>2019-06-07T09:30:10.899Z</updated>
   <id>https://rongchenfei.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://rongchenfei.com/a/c3738a73/"/>
     <id>https://rongchenfei.com/a/c3738a73/</id>
     <published>2019-06-06T09:05:57.000Z</published>
-    <updated>2019-06-07T09:28:28.645Z</updated>
+    <updated>2019-06-07T09:30:10.899Z</updated>
     
     <content type="html"><![CDATA[<p>本次更新基于1.0.1版本，主要增加了配合 <strong>EasyOM运维总体明细生成器</strong> （<em>开发中，即将发布</em>）的生成单机数据源的功能，后期可以利用它生成服务器群的运维总体明细。此外，本次更新还进行了较大幅度的界面优化和性能提升。</p><a id="more"></a><h1 id="更新内容一览"><a href="#更新内容一览" class="headerlink" title="更新内容一览"></a>更新内容一览</h1><ol><li>新增了单机数据源生成功能。在每次执行完整检查后，会出现是否生成单机数据源的提示。该功能可以配合即将发布的 <strong>EasyOM运维总体明细生成器</strong> 软件生成服务器群的运维总体明细，详细使用方法将在 <strong>EasyOM运维总体明细生成器</strong> 发布时予以介绍。</li><li>优化了用户界面。现在支持对窗口进行最大化和随意缩放了，分辨率也不局限于800 * 600，尽管它仍是我们的缺省分辨率。</li><li>优化了检查等待过程。现在在执行检查时，用户可以实时看到系统反馈的问题与建议了。</li><li>重构了数据库检查逻辑。因为在大型数据库中数据库检查的速度表现欠佳，我对相关检查代码进行了重构，在数据库检查速度上比上版本提高了80%以上。</li><li>修复了硬盘检查问题与建议中打印列表的BUG。</li><li>修复了64位计算机执行32位版本软件检查出系统为32位的BUG。</li><li>修复了某些系统下IP检查出现重复项的BUG。</li><li>修复了因权限问题进程检查导致程序Crash的BUG。</li><li>其他问题修复和文本优化。</li></ol><h1 id="更新适用对象"><a href="#更新适用对象" class="headerlink" title="更新适用对象"></a>更新适用对象</h1><p>本次更新推荐所有用户更新。</p><h1 id="更新方式"><a href="#更新方式" class="headerlink" title="更新方式"></a>更新方式</h1><ul><li>通过软件中<strong>关于</strong>-&gt;<strong>关于EasyOM</strong>中的<strong>Update</strong>按钮下载最新版本。</li><li>直接<a href="https://rongchenfei.com/downloads/Operation_Softwares.html"><strong><em>点击此处</em></strong></a>下载最新版本。</li></ul><h1 id="常见问题解答"><a href="#常见问题解答" class="headerlink" title="常见问题解答"></a>常见问题解答</h1><ul><li>Q：如何选择对应版本（32位/64位）？</li><li>A：32位计算机就选择32位；64位计算机根据Oracle（客户端或服务端都可以）版本来选择，如果有安装64位Oracle则选择64位，安装32位Oracle的则选择32位，都安装或都未安装则两个版本都可以。</li></ul><hr><ul><li>Q：我的数据库是Oracle 10g，如何才能检查？</li><li>A：非常抱歉，因为软件的Oracle驱动只支持11.2以上版本（含12、18等），如果需要检查较低版本的数据库，建议在计算机中安装受支持版本的客户端。</li></ul><hr><ul><li>Q：我没有SVN权限，如何下载EasyOM软件？</li><li>A：下载页面现在支持SVN和百度网盘两种方式下载，可以通过百度网盘下载。注意百度网盘下载的压缩文件解压都是需要密码的，密码在下载页面也有说明。</li></ul><h1 id="其他说明"><a href="#其他说明" class="headerlink" title="其他说明"></a>其他说明</h1><p>对本次更新及EasyOM运维工具箱有任何意见或建议，请联系技术及质量管理部。也欢迎在本页面中留言或点击右下角绿色气泡与我交流。</p><p>EasyOM项目官网：<a href="https://rongchenfei.com/EasyOM/">点此进入</a></p><p>EasyOM运维工具箱V1.1操作手册：<a href="https://rongchenfei.com/a/eombk111/">点此进入</a></p>]]></content>
     
