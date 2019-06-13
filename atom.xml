@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://rongchenfei.com/"/>
-  <updated>2019-06-07T13:58:16.382Z</updated>
+  <updated>2019-06-13T03:06:40.169Z</updated>
   <id>https://rongchenfei.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【培训资料】计算机网络及常用技术基础</title>
+    <link href="https://rongchenfei.com/a/f2847a81/"/>
+    <id>https://rongchenfei.com/a/f2847a81/</id>
+    <published>2019-06-13T02:20:00.000Z</published>
+    <updated>2019-06-13T03:06:40.169Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://ww4.sinaimg.cn/large/006tNc79gy1g3zb514zvzj31hc0u0gnk.jpg" alt></p><a id="more"></a><p><img src="http://ww1.sinaimg.cn/large/006tNc79gy1g3zb6sce32j31hk0u0ad5.jpg" alt></p><p><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g3zb9k8hyuj31hb0u0ju4.jpg" alt></p><p><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g3zba7ccr4j31hc0u0dhm.jpg" alt></p><p><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g3zbajab3vj31hb0u0mzl.jpg" alt></p><p><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g3zbbez1mzj31hh0u0goe.jpg" alt></p><p><img src="http://ww4.sinaimg.cn/large/006tNc79gy1g3zbbpkwlkj31hh0u0wh3.jpg" alt></p><p><img src="http://ww1.sinaimg.cn/large/006tNc79gy1g3zbc27qzaj31hd0u0gpz.jpg" alt></p><p><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g3zbiwtoovj31hh0u0go3.jpg" alt></p><p><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g3zbjthbsmj31he0u0tbe.jpg" alt></p><p><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g3zc3vvhqqj31hg0u0411.jpg" alt></p><p><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g3zc46yo05j31hh0u0go7.jpg" alt></p><p><img src="http://ww1.sinaimg.cn/large/006tNc79gy1g3zc56zudtj31he0u0jtz.jpg" alt></p><p><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g3zc4r0hbmj31hk0u0goc.jpg" alt></p><p><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g3zc6y30ygj31hb0u0wgf.jpg" alt></p><p><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g3zc76qatsj31hh0u0n03.jpg" alt></p><p><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g3zc7vz8b5j31hj0u0dhs.jpg" alt></p><p><img src="http://ww1.sinaimg.cn/large/006tNc79gy1g3zc862bllj31hi0u041z.jpg" alt></p><p><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g3zc8ilqvyj31hk0u0q7u.jpg" alt></p><p><img src="http://ww2.sinaimg.cn/large/006tNc79gy1g3zc8s6ixoj31he0u0djl.jpg" alt></p><p><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g3zc9bbzzxj31hd0u0q61.jpg" alt></p><p><img src="http://ww4.sinaimg.cn/large/006tNc79gy1g3zcaw7miwj31he0u0jv4.jpg" alt></p><p><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g3zcb4qfcuj31hg0u0dod.jpg" alt></p><p><img src="http://ww1.sinaimg.cn/large/006tNc79gy1g3zcbd0crnj31ha0u0jw1.jpg" alt></p><p><img src="http://ww2.sinaimg.cn/large/006tNc79gy1g3zcbmsi93j31hb0u0did.jpg" alt></p><p><img src="http://ww1.sinaimg.cn/large/006tNc79gy1g3zcbuxr4wj31hh0u00v1.jpg" alt></p><p><img src="http://ww2.sinaimg.cn/large/006tNc79gy1g3zcc41xuqj31he0u041x.jpg" alt></p><p><img src="http://ww2.sinaimg.cn/large/006tNc79gy1g3zccfjg88j31hh0u043k.jpg" alt></p><p><img src="http://ww4.sinaimg.cn/large/006tNc79gy1g3zcetfhc5j31hl0u0juk.jpg" alt></p><p><img src="http://ww4.sinaimg.cn/large/006tNc79gy1g3zcf372h5j31hi0u0myw.jpg" alt></p><p><img src="http://ww1.sinaimg.cn/large/006tNc79gy1g3zcfdsofyj31hb0u0mzy.jpg" alt></p><p><img src="http://ww1.sinaimg.cn/large/006tNc79gy1g3zcfngoxyj31hf0u041s.jpg" alt></p><p><img src="http://ww2.sinaimg.cn/large/006tNc79gy1g3zcfwhh3mj31h60u0agd.jpg" alt></p><p><img src="http://ww2.sinaimg.cn/large/006tNc79gy1g3zck5jio1j31hc0u0mym.jpg" alt></p><p><img src="http://ww1.sinaimg.cn/large/006tNc79gy1g3zckbjc36j31hg0u00un.jpg" alt></p><p><img src="http://ww4.sinaimg.cn/large/006tNc79gy1g3zckkc7nbj31hi0u0gnd.jpg" alt></p><p><img src="http://ww2.sinaimg.cn/large/006tNc79gy1g3zckujwu8j31ha0u0abv.jpg" alt></p><p><img src="http://ww2.sinaimg.cn/large/006tNc79gy1g3zcl4xhg8j31ha0u0di0.jpg" alt></p><p><img src="http://ww1.sinaimg.cn/large/006tNc79gy1g3zclku89pj31ha0u040k.jpg" alt></p><p><img src="http://ww4.sinaimg.cn/large/006tNc79gy1g3zcm0mv4kj31hd0u0ac6.jpg" alt></p><p><img src="http://ww4.sinaimg.cn/large/006tNc79gy1g3zcmg0kdxj31hg0u0q4o.jpg" alt></p><p><img src="http://ww1.sinaimg.cn/large/006tNc79gy1g3zcmn1m60j31hg0u0abt.jpg" alt></p><p><img src="http://ww2.sinaimg.cn/large/006tNc79gy1g3zcmvwpf6j31hh0u0ta3.jpg" alt></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/large/006tNc79gy1g3zb514zvzj31hc0u0gnk.jpg&quot; alt&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="网络" scheme="https://rongchenfei.com/categories/%E7%BD%91%E7%BB%9C/"/>
+    
+    
+      <category term="网络" scheme="https://rongchenfei.com/tags/%E7%BD%91%E7%BB%9C/"/>
+    
+      <category term="计算机" scheme="https://rongchenfei.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+    
+      <category term="培训" scheme="https://rongchenfei.com/tags/%E5%9F%B9%E8%AE%AD/"/>
+    
+  </entry>
   
   <entry>
     <title>我的Django学习笔记（四）：登录界面中cookie的使用</title>
