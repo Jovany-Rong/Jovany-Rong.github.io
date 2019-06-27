@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://rongchenfei.com/"/>
-  <updated>2019-06-13T03:06:40.169Z</updated>
+  <updated>2019-06-27T10:30:14.550Z</updated>
   <id>https://rongchenfei.com/</id>
   
   <author>
@@ -17,11 +17,100 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Python在ArcGIS中的运用</title>
+    <link href="https://rongchenfei.com/a/fb5fae57/"/>
+    <id>https://rongchenfei.com/a/fb5fae57/</id>
+    <published>2019-06-27T10:47:10.000Z</published>
+    <updated>2019-06-27T10:30:14.550Z</updated>
+    
+    <content type="html"><![CDATA[<p>作者：田 旸（Tian Yang） 本文为授权转载，禁止任何人二次转载！</p><p>ArcGIS + Python，解放你的双手。</p><a id="more"></a><p>以下为6月27日软件工程中心Python学习小组内部培训资料，如对Python感兴趣，可联系技术及质量管理部加入。</p><p><img src="http://ww2.sinaimg.cn/large/006tNc79gy1g4fvul311qj31hg0u0an1.jpg" alt></p><p><img src="http://ww1.sinaimg.cn/large/006tNc79gy1g4fvw01pw8j31hc0u0qeo.jpg" alt></p><p><img src="http://ww2.sinaimg.cn/large/006tNc79gy1g4fvwcghppj31hj0u0tla.jpg" alt></p><p><img src="http://ww4.sinaimg.cn/large/006tNc79gy1g4fvwnqakwj31hj0u0kdn.jpg" alt></p><p><img src="http://ww4.sinaimg.cn/large/006tNc79gy1g4fvxjvugfj31hf0u0k8q.jpg" alt></p><p><img src="http://ww2.sinaimg.cn/large/006tNc79gy1g4fvxvsxnxj31hd0u0ap9.jpg" alt></p><p><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g4fvy5n33uj31hd0u0tl4.jpg" alt></p><p><img src="http://ww4.sinaimg.cn/large/006tNc79gy1g4fvyg0rl6j31he0u0aw0.jpg" alt></p><p><img src="http://ww4.sinaimg.cn/large/006tNc79gy1g4fvzcx8ixj31hk0u01cf.jpg" alt></p><p><img src="http://ww4.sinaimg.cn/large/006tNc79gy1g4fvzlctqxj31hh0u0az6.jpg" alt></p><p><img src="http://ww4.sinaimg.cn/large/006tNc79gy1g4fvzucugoj31hj0u0nob.jpg" alt></p><p><img src="http://ww1.sinaimg.cn/large/006tNc79gy1g4fw1dc4w2j31hm0u01kx.jpg" alt></p><p><img src="http://ww1.sinaimg.cn/large/006tNc79gy1g4fw1js1nhj31h90u0k3z.jpg" alt></p><p><img src="http://ww4.sinaimg.cn/large/006tNc79gy1g4fw1ryivlj31hj0u0asx.jpg" alt></p><p><img src="http://ww1.sinaimg.cn/large/006tNc79gy1g4fw2k2bytj31hb0u07ku.jpg" alt></p><p><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g4fw2ua04kj31hc0u0wst.jpg" alt></p><p><img src="http://ww1.sinaimg.cn/large/006tNc79gy1g4fw315iw1j31ha0u0tl3.jpg" alt></p><p><img src="http://ww1.sinaimg.cn/large/006tNc79gy1g4fw3y4ub0j31hf0u0qij.jpg" alt></p><p><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g4fw47hxs7j31he0u0k8e.jpg" alt></p><p><img src="http://ww2.sinaimg.cn/large/006tNc79gy1g4fw4h3oggj31hm0u0ndl.jpg" alt></p><p><img src="http://ww2.sinaimg.cn/large/006tNc79gy1g4fw53eemqj31hh0u01af.jpg" alt></p><p><img src="http://ww1.sinaimg.cn/large/006tNc79gy1g4fw5bqq04j31hi0u0tpu.jpg" alt></p><p><img src="http://ww1.sinaimg.cn/large/006tNc79gy1g4fw5jkpryj31hh0u0qf6.jpg" alt></p><p><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g4fw5qz4ugj31he0u0gxs.jpg" alt></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;作者：田 旸（Tian Yang） 本文为授权转载，禁止任何人二次转载！&lt;/p&gt;
+&lt;p&gt;ArcGIS + Python，解放你的双手。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Python" scheme="https://rongchenfei.com/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="https://rongchenfei.com/tags/Python/"/>
+    
+      <category term="ArcPy" scheme="https://rongchenfei.com/tags/ArcPy/"/>
+    
+      <category term="ArcGIS" scheme="https://rongchenfei.com/tags/ArcGIS/"/>
+    
+      <category term="二次开发" scheme="https://rongchenfei.com/tags/%E4%BA%8C%E6%AC%A1%E5%BC%80%E5%8F%91/"/>
+    
+      <category term="培训" scheme="https://rongchenfei.com/tags/%E5%9F%B9%E8%AE%AD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>EasyOM运维工具箱1.1.1更新说明</title>
+    <link href="https://rongchenfei.com/a/1ee553f6/"/>
+    <id>https://rongchenfei.com/a/1ee553f6/</id>
+    <published>2019-06-27T10:05:57.000Z</published>
+    <updated>2019-06-27T10:08:43.466Z</updated>
+    
+    <content type="html"><![CDATA[<p>本次更新基于1.1.0版本，主要解决了部分情况下程序崩溃的BUG。</p><a id="more"></a><h1 id="更新内容一览"><a href="#更新内容一览" class="headerlink" title="更新内容一览"></a>更新内容一览</h1><ol><li>修复了直接进行单项检查时程序Crash的BUG。</li><li>其他问题修复和文本优化。</li></ol><h1 id="更新适用对象"><a href="#更新适用对象" class="headerlink" title="更新适用对象"></a>更新适用对象</h1><p>本次更新推荐所有用户更新。</p><h1 id="更新方式"><a href="#更新方式" class="headerlink" title="更新方式"></a>更新方式</h1><ul><li>通过软件中<strong>关于</strong>-&gt;<strong>关于EasyOM</strong>中的<strong>Update</strong>按钮下载最新版本。</li><li>直接<a href="https://rongchenfei.com/downloads/Operation_Softwares.html"><strong><em>点击此处</em></strong></a>下载最新版本。</li></ul><h1 id="常见问题解答"><a href="#常见问题解答" class="headerlink" title="常见问题解答"></a>常见问题解答</h1><ul><li>Q：如何选择对应版本（32位/64位）？</li><li>A：32位计算机就选择32位；64位计算机根据Oracle（客户端或服务端都可以）版本来选择，如果有安装64位Oracle则选择64位，安装32位Oracle的则选择32位，都安装或都未安装则两个版本都可以。</li></ul><hr><ul><li>Q：我的数据库是Oracle 10g，如何才能检查？</li><li>A：非常抱歉，因为软件的Oracle驱动只支持11.2以上版本（含12、18等），如果需要检查较低版本的数据库，建议在计算机中安装受支持版本的客户端。</li></ul><hr><ul><li>Q：我没有SVN权限，如何下载EasyOM软件？</li><li>A：下载页面现在支持SVN和百度网盘两种方式下载，可以通过百度网盘下载。注意百度网盘下载的压缩文件解压都是需要密码的，密码在下载页面也有说明。</li></ul><h1 id="其他说明"><a href="#其他说明" class="headerlink" title="其他说明"></a>其他说明</h1><p>对本次更新及EasyOM运维工具箱有任何意见或建议，请联系技术及质量管理部。也欢迎在本页面中留言或点击右下角绿色气泡与我交流。</p><p>EasyOM项目官网：<a href="https://rongchenfei.com/EasyOM/">点此进入</a></p><p>EasyOM运维工具箱V1.1操作手册：<a href="https://rongchenfei.com/a/eombk111/">点此进入</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本次更新基于1.1.0版本，主要解决了部分情况下程序崩溃的BUG。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="运维产品" scheme="https://rongchenfei.com/categories/%E8%BF%90%E7%BB%B4%E4%BA%A7%E5%93%81/"/>
+    
+    
+      <category term="EasyOM" scheme="https://rongchenfei.com/tags/EasyOM/"/>
+    
+      <category term="更新说明" scheme="https://rongchenfei.com/tags/%E6%9B%B4%E6%96%B0%E8%AF%B4%E6%98%8E/"/>
+    
+      <category term="运维" scheme="https://rongchenfei.com/tags/%E8%BF%90%E7%BB%B4/"/>
+    
+      <category term="Python" scheme="https://rongchenfei.com/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【开源】EasyOM总体运维报告生成工具1.0软件说明书</title>
+    <link href="https://rongchenfei.com/a/71eafcbb/"/>
+    <id>https://rongchenfei.com/a/71eafcbb/</id>
+    <published>2019-06-27T10:01:09.000Z</published>
+    <updated>2019-06-27T10:05:46.557Z</updated>
+    
+    <content type="html"><![CDATA[<p>本工具可供集群环境下生成总体运维报告，源代码公开。</p><a id="more"></a><h2 id="软件介绍"><a href="#软件介绍" class="headerlink" title="软件介绍"></a>软件介绍</h2><p>本工具需配合EasyOM运维工具箱1.1及以上版本使用。使用EasyOM运维工具箱执行运维检查后，可以生成对应计算机的单机数据源文件（*.esp格式）。若需要一次出具多台计算机的运维报告，可以收集在这些计算机中运行后的单机数据源文件，使用本工具生成总体运维报告。</p><h2 id="使用手册"><a href="#使用手册" class="headerlink" title="使用手册"></a>使用手册</h2><h3 id="运行软件"><a href="#运行软件" class="headerlink" title="运行软件"></a>运行软件</h3><p>打开 <strong>EasyOM_TSG.exe</strong> 文件。</p><p><img src="https://i.loli.net/2019/06/27/5d14844d79aee97780.png" alt="1.png"></p><h3 id="查看教程"><a href="#查看教程" class="headerlink" title="查看教程"></a>查看教程</h3><p>按任意键，软件提示查看教程。</p><p><img src="https://i.loli.net/2019/06/27/5d1485799906270889.png" alt="2.png"></p><p><em>翻译：</em></p><ol><li>检查conf/tsg.conf文件中的配置；</li><li>将所有ESP文件放入Input目录中；</li><li>按任意键以生成总体运维报告，它将出现在Output目录中。</li></ol><h3 id="检查配置文件"><a href="#检查配置文件" class="headerlink" title="检查配置文件"></a>检查配置文件</h3><p>在conf目录中，打开tsg.conf配置文件，配置如图所示。</p><p><img src="https://i.loli.net/2019/06/27/5d1485e500c0529177.png" alt="3.png"></p><p>如您不慎遗失该配置文件，可手动新建tsg.conf文件放入conf目录中。</p><p>title参数用于配置最终运维报告的标题。</p><p>header参数用于配置最终运维报告的页眉。</p><p>footer参数用于配置最终运维报告的页脚。</p><h3 id="放入ESP文件"><a href="#放入ESP文件" class="headerlink" title="放入ESP文件"></a>放入ESP文件</h3><p>在Input目录中，放入从各计算机中执行运维检查后的ESP文件（ESP文件产生在EasyOM运维工具箱的esp目录中）。</p><p><img src="https://i.loli.net/2019/06/27/5d14880a9992318652.png" alt="4.png"></p><h3 id="执行配置检查"><a href="#执行配置检查" class="headerlink" title="执行配置检查"></a>执行配置检查</h3><p>按任意键以使用软件进行配置检查，检查通过则显示OK字样。</p><p><img src="https://i.loli.net/2019/06/27/5d14888297e4734264.png" alt="5.png"></p><h3 id="执行Input目录检查"><a href="#执行Input目录检查" class="headerlink" title="执行Input目录检查"></a>执行Input目录检查</h3><p>按任意键以使用软件进行Input目录检查，检查通过则显示OK字样。</p><p><img src="https://i.loli.net/2019/06/27/5d1488f28eddc53897.png" alt="6.png"></p><h3 id="执行ESP文件检查和评价"><a href="#执行ESP文件检查和评价" class="headerlink" title="执行ESP文件检查和评价"></a>执行ESP文件检查和评价</h3><p>按任意键以使用软件进行ESP文件检查。软件要求用户对每个ESP文件对应的计算机进行评价，用户需针对每个ESP文件输入1-4打分，1代表运行良好，2代表运行正常，3代表运行基本正常，4代表运行异常。</p><p><img src="https://i.loli.net/2019/06/27/5d1489af6e9ac80522.png" alt="7.png"></p><p>依次对每个ESP进行评分，全部完成后软件显示总共有几个ESP文件。</p><p><img src="https://i.loli.net/2019/06/27/5d1489e1bdb1777676.png" alt="8.png"></p><h3 id="输入巡检人姓名"><a href="#输入巡检人姓名" class="headerlink" title="输入巡检人姓名"></a>输入巡检人姓名</h3><p>按任意键以进行总体运维报告生成，首先需要输入巡检人姓名。</p><p><img src="https://i.loli.net/2019/06/27/5d148ac48e59f56255.png" alt="9.png"></p><h3 id="执行报告生成"><a href="#执行报告生成" class="headerlink" title="执行报告生成"></a>执行报告生成</h3><p>键入回车，进行总体运维报告生成，完成后系统提示Report generated。</p><p><img src="https://i.loli.net/2019/06/27/5d148b54bbc5593680.png" alt="10.png"></p><p>系统自动调用浏览器打开总体运维报告。</p><p><img src="https://i.loli.net/2019/06/27/5d148bb8b8c0f58115.png" alt="11.png"></p><p>报告文件在Output目录中。</p><p><img src="https://i.loli.net/2019/06/27/5d148c03276f150868.png" alt="12.png"></p><h2 id="下载链接"><a href="#下载链接" class="headerlink" title="下载链接"></a>下载链接</h2><p>直接<a href="https://rongchenfei.com/downloads/Operation_Softwares.html"><strong><em>点击此处</em></strong></a>下载。</p><h2 id="源代码"><a href="#源代码" class="headerlink" title="源代码"></a>源代码</h2><p>本工具开源，大家可自由研究和使用，禁止用作商业用途～</p><p>请大家前往<a href="https://github.com/Jovany-Rong/EasyOM_Total_Specification_Generator" target="_blank" rel="noopener">我的GitHub</a>克隆代码仓库获取源代码。</p><h2 id="项目官网"><a href="#项目官网" class="headerlink" title="项目官网"></a>项目官网</h2><p>EasyOM项目官网：<a href="https://rongchenfei.com/EasyOM/">点此进入</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本工具可供集群环境下生成总体运维报告，源代码公开。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="运维产品" scheme="https://rongchenfei.com/categories/%E8%BF%90%E7%BB%B4%E4%BA%A7%E5%93%81/"/>
+    
+    
+      <category term="EasyOM" scheme="https://rongchenfei.com/tags/EasyOM/"/>
+    
+      <category term="运维" scheme="https://rongchenfei.com/tags/%E8%BF%90%E7%BB%B4/"/>
+    
+      <category term="Python" scheme="https://rongchenfei.com/tags/Python/"/>
+    
+      <category term="发布说明" scheme="https://rongchenfei.com/tags/%E5%8F%91%E5%B8%83%E8%AF%B4%E6%98%8E/"/>
+    
+      <category term="开源" scheme="https://rongchenfei.com/tags/%E5%BC%80%E6%BA%90/"/>
+    
+  </entry>
+  
+  <entry>
     <title>【培训资料】计算机网络及常用技术基础</title>
     <link href="https://rongchenfei.com/a/f2847a81/"/>
     <id>https://rongchenfei.com/a/f2847a81/</id>
     <published>2019-06-13T02:20:00.000Z</published>
-    <updated>2019-06-13T03:06:40.169Z</updated>
+    <updated>2019-06-13T03:07:13.211Z</updated>
     
     <content type="html"><![CDATA[<p><img src="http://ww4.sinaimg.cn/large/006tNc79gy1g3zb514zvzj31hc0u0gnk.jpg" alt></p><a id="more"></a><p><img src="http://ww1.sinaimg.cn/large/006tNc79gy1g3zb6sce32j31hk0u0ad5.jpg" alt></p><p><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g3zb9k8hyuj31hb0u0ju4.jpg" alt></p><p><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g3zba7ccr4j31hc0u0dhm.jpg" alt></p><p><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g3zbajab3vj31hb0u0mzl.jpg" alt></p><p><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g3zbbez1mzj31hh0u0goe.jpg" alt></p><p><img src="http://ww4.sinaimg.cn/large/006tNc79gy1g3zbbpkwlkj31hh0u0wh3.jpg" alt></p><p><img src="http://ww1.sinaimg.cn/large/006tNc79gy1g3zbc27qzaj31hd0u0gpz.jpg" alt></p><p><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g3zbiwtoovj31hh0u0go3.jpg" alt></p><p><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g3zbjthbsmj31he0u0tbe.jpg" alt></p><p><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g3zc3vvhqqj31hg0u0411.jpg" alt></p><p><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g3zc46yo05j31hh0u0go7.jpg" alt></p><p><img src="http://ww1.sinaimg.cn/large/006tNc79gy1g3zc56zudtj31he0u0jtz.jpg" alt></p><p><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g3zc4r0hbmj31hk0u0goc.jpg" alt></p><p><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g3zc6y30ygj31hb0u0wgf.jpg" alt></p><p><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g3zc76qatsj31hh0u0n03.jpg" alt></p><p><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g3zc7vz8b5j31hj0u0dhs.jpg" alt></p><p><img src="http://ww1.sinaimg.cn/large/006tNc79gy1g3zc862bllj31hi0u041z.jpg" alt></p><p><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g3zc8ilqvyj31hk0u0q7u.jpg" alt></p><p><img src="http://ww2.sinaimg.cn/large/006tNc79gy1g3zc8s6ixoj31he0u0djl.jpg" alt></p><p><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g3zc9bbzzxj31hd0u0q61.jpg" alt></p><p><img src="http://ww4.sinaimg.cn/large/006tNc79gy1g3zcaw7miwj31he0u0jv4.jpg" alt></p><p><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g3zcb4qfcuj31hg0u0dod.jpg" alt></p><p><img src="http://ww1.sinaimg.cn/large/006tNc79gy1g3zcbd0crnj31ha0u0jw1.jpg" alt></p><p><img src="http://ww2.sinaimg.cn/large/006tNc79gy1g3zcbmsi93j31hb0u0did.jpg" alt></p><p><img src="http://ww1.sinaimg.cn/large/006tNc79gy1g3zcbuxr4wj31hh0u00v1.jpg" alt></p><p><img src="http://ww2.sinaimg.cn/large/006tNc79gy1g3zcc41xuqj31he0u041x.jpg" alt></p><p><img src="http://ww2.sinaimg.cn/large/006tNc79gy1g3zccfjg88j31hh0u043k.jpg" alt></p><p><img src="http://ww4.sinaimg.cn/large/006tNc79gy1g3zcetfhc5j31hl0u0juk.jpg" alt></p><p><img src="http://ww4.sinaimg.cn/large/006tNc79gy1g3zcf372h5j31hi0u0myw.jpg" alt></p><p><img src="http://ww1.sinaimg.cn/large/006tNc79gy1g3zcfdsofyj31hb0u0mzy.jpg" alt></p><p><img src="http://ww1.sinaimg.cn/large/006tNc79gy1g3zcfngoxyj31hf0u041s.jpg" alt></p><p><img src="http://ww2.sinaimg.cn/large/006tNc79gy1g3zcfwhh3mj31h60u0agd.jpg" alt></p><p><img src="http://ww2.sinaimg.cn/large/006tNc79gy1g3zck5jio1j31hc0u0mym.jpg" alt></p><p><img src="http://ww1.sinaimg.cn/large/006tNc79gy1g3zckbjc36j31hg0u00un.jpg" alt></p><p><img src="http://ww4.sinaimg.cn/large/006tNc79gy1g3zckkc7nbj31hi0u0gnd.jpg" alt></p><p><img src="http://ww2.sinaimg.cn/large/006tNc79gy1g3zckujwu8j31ha0u0abv.jpg" alt></p><p><img src="http://ww2.sinaimg.cn/large/006tNc79gy1g3zcl4xhg8j31ha0u0di0.jpg" alt></p><p><img src="http://ww1.sinaimg.cn/large/006tNc79gy1g3zclku89pj31ha0u040k.jpg" alt></p><p><img src="http://ww4.sinaimg.cn/large/006tNc79gy1g3zcm0mv4kj31hd0u0ac6.jpg" alt></p><p><img src="http://ww4.sinaimg.cn/large/006tNc79gy1g3zcmg0kdxj31hg0u0q4o.jpg" alt></p><p><img src="http://ww1.sinaimg.cn/large/006tNc79gy1g3zcmn1m60j31hg0u0abt.jpg" alt></p><p><img src="http://ww2.sinaimg.cn/large/006tNc79gy1g3zcmvwpf6j31hh0u0ta3.jpg" alt></p>]]></content>
     
@@ -34,11 +123,11 @@
       <category term="网络" scheme="https://rongchenfei.com/categories/%E7%BD%91%E7%BB%9C/"/>
     
     
+      <category term="培训" scheme="https://rongchenfei.com/tags/%E5%9F%B9%E8%AE%AD/"/>
+    
       <category term="网络" scheme="https://rongchenfei.com/tags/%E7%BD%91%E7%BB%9C/"/>
     
       <category term="计算机" scheme="https://rongchenfei.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
-    
-      <category term="培训" scheme="https://rongchenfei.com/tags/%E5%9F%B9%E8%AE%AD/"/>
     
   </entry>
   
@@ -290,11 +379,11 @@
       <category term="网络" scheme="https://rongchenfei.com/categories/%E7%BD%91%E7%BB%9C/"/>
     
     
+      <category term="培训" scheme="https://rongchenfei.com/tags/%E5%9F%B9%E8%AE%AD/"/>
+    
       <category term="网络" scheme="https://rongchenfei.com/tags/%E7%BD%91%E7%BB%9C/"/>
     
       <category term="计算机" scheme="https://rongchenfei.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
-    
-      <category term="培训" scheme="https://rongchenfei.com/tags/%E5%9F%B9%E8%AE%AD/"/>
     
   </entry>
   
@@ -317,11 +406,11 @@
       <category term="计算机技术" scheme="https://rongchenfei.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%8A%80%E6%9C%AF/"/>
     
     
+      <category term="培训" scheme="https://rongchenfei.com/tags/%E5%9F%B9%E8%AE%AD/"/>
+    
       <category term="网络" scheme="https://rongchenfei.com/tags/%E7%BD%91%E7%BB%9C/"/>
     
       <category term="计算机" scheme="https://rongchenfei.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
-    
-      <category term="培训" scheme="https://rongchenfei.com/tags/%E5%9F%B9%E8%AE%AD/"/>
     
   </entry>
   
@@ -344,11 +433,11 @@
       <category term="网络" scheme="https://rongchenfei.com/categories/%E7%BD%91%E7%BB%9C/"/>
     
     
+      <category term="培训" scheme="https://rongchenfei.com/tags/%E5%9F%B9%E8%AE%AD/"/>
+    
       <category term="网络" scheme="https://rongchenfei.com/tags/%E7%BD%91%E7%BB%9C/"/>
     
       <category term="计算机" scheme="https://rongchenfei.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
-    
-      <category term="培训" scheme="https://rongchenfei.com/tags/%E5%9F%B9%E8%AE%AD/"/>
     
   </entry>
   
@@ -375,13 +464,13 @@
     
       <category term="Python" scheme="https://rongchenfei.com/tags/Python/"/>
     
+      <category term="开源" scheme="https://rongchenfei.com/tags/%E5%BC%80%E6%BA%90/"/>
+    
       <category term="办公自动化" scheme="https://rongchenfei.com/tags/%E5%8A%9E%E5%85%AC%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
     
       <category term="全库质检" scheme="https://rongchenfei.com/tags/%E5%85%A8%E5%BA%93%E8%B4%A8%E6%A3%80/"/>
     
       <category term="DCTK" scheme="https://rongchenfei.com/tags/DCTK/"/>
-    
-      <category term="开源" scheme="https://rongchenfei.com/tags/%E5%BC%80%E6%BA%90/"/>
     
   </entry>
   

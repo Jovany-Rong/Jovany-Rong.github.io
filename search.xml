@@ -1,6 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Python在ArcGIS中的运用]]></title>
+    <url>%2Fa%2Ffb5fae57%2F</url>
+    <content type="text"><![CDATA[作者：田 旸（Tian Yang） 本文为授权转载，禁止任何人二次转载！ ArcGIS + Python，解放你的双手。 以下为6月27日软件工程中心Python学习小组内部培训资料，如对Python感兴趣，可联系技术及质量管理部加入。]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>ArcPy</tag>
+        <tag>ArcGIS</tag>
+        <tag>二次开发</tag>
+        <tag>培训</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[EasyOM运维工具箱1.1.1更新说明]]></title>
+    <url>%2Fa%2F1ee553f6%2F</url>
+    <content type="text"><![CDATA[本次更新基于1.1.0版本，主要解决了部分情况下程序崩溃的BUG。 更新内容一览 修复了直接进行单项检查时程序Crash的BUG。 其他问题修复和文本优化。 更新适用对象本次更新推荐所有用户更新。 更新方式 通过软件中关于-&gt;关于EasyOM中的Update按钮下载最新版本。 直接点击此处下载最新版本。 常见问题解答 Q：如何选择对应版本（32位/64位）？ A：32位计算机就选择32位；64位计算机根据Oracle（客户端或服务端都可以）版本来选择，如果有安装64位Oracle则选择64位，安装32位Oracle的则选择32位，都安装或都未安装则两个版本都可以。 Q：我的数据库是Oracle 10g，如何才能检查？ A：非常抱歉，因为软件的Oracle驱动只支持11.2以上版本（含12、18等），如果需要检查较低版本的数据库，建议在计算机中安装受支持版本的客户端。 Q：我没有SVN权限，如何下载EasyOM软件？ A：下载页面现在支持SVN和百度网盘两种方式下载，可以通过百度网盘下载。注意百度网盘下载的压缩文件解压都是需要密码的，密码在下载页面也有说明。 其他说明对本次更新及EasyOM运维工具箱有任何意见或建议，请联系技术及质量管理部。也欢迎在本页面中留言或点击右下角绿色气泡与我交流。 EasyOM项目官网：点此进入 EasyOM运维工具箱V1.1操作手册：点此进入]]></content>
+      <categories>
+        <category>运维产品</category>
+      </categories>
+      <tags>
+        <tag>EasyOM</tag>
+        <tag>更新说明</tag>
+        <tag>运维</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[【开源】EasyOM总体运维报告生成工具1.0软件说明书]]></title>
+    <url>%2Fa%2F71eafcbb%2F</url>
+    <content type="text"><![CDATA[本工具可供集群环境下生成总体运维报告，源代码公开。 软件介绍本工具需配合EasyOM运维工具箱1.1及以上版本使用。使用EasyOM运维工具箱执行运维检查后，可以生成对应计算机的单机数据源文件（*.esp格式）。若需要一次出具多台计算机的运维报告，可以收集在这些计算机中运行后的单机数据源文件，使用本工具生成总体运维报告。 使用手册运行软件打开 EasyOM_TSG.exe 文件。 查看教程按任意键，软件提示查看教程。 翻译： 检查conf/tsg.conf文件中的配置； 将所有ESP文件放入Input目录中； 按任意键以生成总体运维报告，它将出现在Output目录中。 检查配置文件在conf目录中，打开tsg.conf配置文件，配置如图所示。 如您不慎遗失该配置文件，可手动新建tsg.conf文件放入conf目录中。 title参数用于配置最终运维报告的标题。 header参数用于配置最终运维报告的页眉。 footer参数用于配置最终运维报告的页脚。 放入ESP文件在Input目录中，放入从各计算机中执行运维检查后的ESP文件（ESP文件产生在EasyOM运维工具箱的esp目录中）。 执行配置检查按任意键以使用软件进行配置检查，检查通过则显示OK字样。 执行Input目录检查按任意键以使用软件进行Input目录检查，检查通过则显示OK字样。 执行ESP文件检查和评价按任意键以使用软件进行ESP文件检查。软件要求用户对每个ESP文件对应的计算机进行评价，用户需针对每个ESP文件输入1-4打分，1代表运行良好，2代表运行正常，3代表运行基本正常，4代表运行异常。 依次对每个ESP进行评分，全部完成后软件显示总共有几个ESP文件。 输入巡检人姓名按任意键以进行总体运维报告生成，首先需要输入巡检人姓名。 执行报告生成键入回车，进行总体运维报告生成，完成后系统提示Report generated。 系统自动调用浏览器打开总体运维报告。 报告文件在Output目录中。 下载链接直接点击此处下载。 源代码本工具开源，大家可自由研究和使用，禁止用作商业用途～ 请大家前往我的GitHub克隆代码仓库获取源代码。 项目官网EasyOM项目官网：点此进入]]></content>
+      <categories>
+        <category>运维产品</category>
+      </categories>
+      <tags>
+        <tag>EasyOM</tag>
+        <tag>运维</tag>
+        <tag>Python</tag>
+        <tag>发布说明</tag>
+        <tag>开源</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[【培训资料】计算机网络及常用技术基础]]></title>
     <url>%2Fa%2Ff2847a81%2F</url>
     <content type="text"><![CDATA[]]></content>
@@ -8,9 +52,9 @@
         <category>网络</category>
       </categories>
       <tags>
+        <tag>培训</tag>
         <tag>网络</tag>
         <tag>计算机</tag>
-        <tag>培训</tag>
       </tags>
   </entry>
   <entry>
@@ -127,9 +171,9 @@
         <category>网络</category>
       </categories>
       <tags>
+        <tag>培训</tag>
         <tag>网络</tag>
         <tag>计算机</tag>
-        <tag>培训</tag>
       </tags>
   </entry>
   <entry>
@@ -140,9 +184,9 @@
         <category>计算机技术</category>
       </categories>
       <tags>
+        <tag>培训</tag>
         <tag>网络</tag>
         <tag>计算机</tag>
-        <tag>培训</tag>
       </tags>
   </entry>
   <entry>
@@ -153,9 +197,9 @@
         <category>网络</category>
       </categories>
       <tags>
+        <tag>培训</tag>
         <tag>网络</tag>
         <tag>计算机</tag>
-        <tag>培训</tag>
       </tags>
   </entry>
   <entry>
@@ -167,10 +211,10 @@
       </categories>
       <tags>
         <tag>Python</tag>
+        <tag>开源</tag>
         <tag>办公自动化</tag>
         <tag>全库质检</tag>
         <tag>DCTK</tag>
-        <tag>开源</tag>
       </tags>
   </entry>
   <entry>
