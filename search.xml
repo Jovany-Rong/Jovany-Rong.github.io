@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[【培训资料】计算机网络及常用技术基础]]></title>
+    <url>%2Fa%2Ff2847a81%2F</url>
+    <content type="text"><![CDATA[]]></content>
+      <categories>
+        <category>数据库</category>
+      </categories>
+      <tags>
+        <tag>数据库</tag>
+        <tag>计算机</tag>
+        <tag>培训</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Python在ArcGIS中的运用]]></title>
     <url>%2Fa%2Ffb5fae57%2F</url>
     <content type="text"><![CDATA[作者：田 旸（Tian Yang） 本文为授权转载，禁止任何人二次转载！ ArcGIS + Python，解放你的双手。 以下为6月27日软件工程中心Python学习小组内部培训资料，如对Python感兴趣，可联系技术及质量管理部加入。]]></content>
@@ -9,10 +22,10 @@
       </categories>
       <tags>
         <tag>Python</tag>
+        <tag>培训</tag>
         <tag>ArcPy</tag>
         <tag>ArcGIS</tag>
         <tag>二次开发</tag>
-        <tag>培训</tag>
       </tags>
   </entry>
   <entry>
@@ -24,9 +37,9 @@
       </categories>
       <tags>
         <tag>EasyOM</tag>
-        <tag>更新说明</tag>
         <tag>运维</tag>
         <tag>Python</tag>
+        <tag>更新说明</tag>
       </tags>
   </entry>
   <entry>
@@ -38,9 +51,9 @@
       </categories>
       <tags>
         <tag>EasyOM</tag>
+        <tag>发布说明</tag>
         <tag>运维</tag>
         <tag>Python</tag>
-        <tag>发布说明</tag>
         <tag>开源</tag>
       </tags>
   </entry>
@@ -52,9 +65,9 @@
         <category>网络</category>
       </categories>
       <tags>
+        <tag>计算机</tag>
         <tag>培训</tag>
         <tag>网络</tag>
-        <tag>计算机</tag>
       </tags>
   </entry>
   <entry>
@@ -80,9 +93,9 @@
       </categories>
       <tags>
         <tag>EasyOM</tag>
-        <tag>更新说明</tag>
         <tag>运维</tag>
         <tag>Python</tag>
+        <tag>更新说明</tag>
       </tags>
   </entry>
   <entry>
@@ -98,6 +111,11 @@
         <tag>Python</tag>
         <tag>使用手册</tag>
       </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>%2Fa%2F0%2F</url>
+    <content type="text"><![CDATA[Django是Python的Web应用模块中非常流行的一款。我的Django学习笔记系列博文将记录我学习使用Django的历程。 本系列博文将不定期更新，欢迎各位前来捧场。 本篇博文主要记录了在登录界面中使用Session的步骤。 添加登录动作的浏览器Session的设置和读取编辑 guest/sign/views.py 文件。 views.py 123456789101112131415161718# 登录动作def login_action(request): if request.method == 'POST': username = request.POST.get('username', '') password = request.POST.get('password', '') if username == 'admin' and password == '123': response = HttpResponseRedirect('/event_manage/') # response.set_cookie("user", username, 3600) # Add cookie request.session['user'] = username # Add session return response else: return render(request, 'index.html', &#123;'error': 'username or password error!'&#125;)# 会议管理def event_manage(request): # username = request.COOKIES.get("user", "") # Read cookie username = request.session.get("user", "") # Read session return render(request, 'event_manage.html', &#123;"user":username&#125;) 刷新页面重新登录。 页面存在报错，这是由于我们还没有创建django_session表。该表已经由Django替我们准备好，我们只需要将它们生成即可。 在guest目录中执行以下命令。 1$ python manage.py migrate 结果如下所示。]]></content>
   </entry>
   <entry>
     <title><![CDATA[我的Django学习笔记（三）：登录功能的简单实现]]></title>
@@ -171,9 +189,9 @@
         <category>网络</category>
       </categories>
       <tags>
+        <tag>计算机</tag>
         <tag>培训</tag>
         <tag>网络</tag>
-        <tag>计算机</tag>
       </tags>
   </entry>
   <entry>
@@ -184,9 +202,9 @@
         <category>计算机技术</category>
       </categories>
       <tags>
+        <tag>计算机</tag>
         <tag>培训</tag>
         <tag>网络</tag>
-        <tag>计算机</tag>
       </tags>
   </entry>
   <entry>
@@ -197,9 +215,9 @@
         <category>网络</category>
       </categories>
       <tags>
+        <tag>计算机</tag>
         <tag>培训</tag>
         <tag>网络</tag>
-        <tag>计算机</tag>
       </tags>
   </entry>
   <entry>
@@ -269,9 +287,9 @@
       </categories>
       <tags>
         <tag>EasyOM</tag>
-        <tag>更新说明</tag>
         <tag>运维</tag>
         <tag>Python</tag>
+        <tag>更新说明</tag>
       </tags>
   </entry>
 </search>
