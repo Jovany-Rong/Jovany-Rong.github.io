@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://rongchenfei.com/"/>
-  <updated>2019-07-04T06:04:14.979Z</updated>
+  <updated>2019-07-04T06:07:52.799Z</updated>
   <id>https://rongchenfei.com/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>【培训资料】计算机网络及常用技术基础</title>
+    <title>【培训资料】数据库基本介绍</title>
     <link href="https://rongchenfei.com/a/f2847a81/"/>
     <id>https://rongchenfei.com/a/f2847a81/</id>
     <published>2019-07-04T06:20:00.000Z</published>
-    <updated>2019-07-04T06:04:14.979Z</updated>
+    <updated>2019-07-04T06:07:52.799Z</updated>
     
     <content type="html"><![CDATA[<p><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g4nrdzsnd4j31hf0u07wh.jpg" alt></p><a id="more"></a><p><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g4nresbanoj31hf0u0b2a.jpg" alt></p><p><img src="http://ww1.sinaimg.cn/large/006tNc79gy1g4nrf7ffugj31hi0u01ky.jpg" alt></p><p><img src="http://ww1.sinaimg.cn/large/006tNc79gy1g4nrfuaxkaj31h90u07wi.jpg" alt></p><p><img src="http://ww1.sinaimg.cn/large/006tNc79gy1g4nrgmd8qaj31hf0u07wi.jpg" alt></p><p><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g4nrh4jxt3j31hd0u01ky.jpg" alt></p><p><img src="http://ww1.sinaimg.cn/large/006tNc79gy1g4nrhqfys1j31hd0u0b2a.jpg" alt></p><p><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g4nrisw6ccj31hi0u0b2a.jpg" alt></p><p><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g4nrja7ce4j31hg0u07wi.jpg" alt></p><p><img src="http://ww2.sinaimg.cn/large/006tNc79gy1g4nrju0ehfj31hf0u0b2a.jpg" alt></p><p><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g4nrkwb8gfj31he0u0b2a.jpg" alt></p><p><img src="http://ww2.sinaimg.cn/large/006tNc79gy1g4nrl6amjfj31hd0u0b2a.jpg" alt></p><p><img src="http://ww4.sinaimg.cn/large/006tNc79gy1g4nrln8651j31hd0u07wi.jpg" alt></p><p><img src="http://ww1.sinaimg.cn/large/006tNc79gy1g4nrnf8f9hj31hg0u0b2a.jpg" alt></p><p><img src="http://ww2.sinaimg.cn/large/006tNc79gy1g4nrp467ayj31he0u01ky.jpg" alt></p><p><img src="http://ww1.sinaimg.cn/large/006tNc79gy1g4nrpn0fd3j31hg0u0b2a.jpg" alt></p><p><img src="http://ww1.sinaimg.cn/large/006tNc79gy1g4nrqh5tz9j31hf0u07wi.jpg" alt></p><p><img src="http://ww2.sinaimg.cn/large/006tNc79gy1g4nrqz8fe7j31he0u0b2a.jpg" alt></p><p><img src="http://ww2.sinaimg.cn/large/006tNc79gy1g4nrriuuaij31he0u01ky.jpg" alt></p><p><img src="http://ww2.sinaimg.cn/large/006tNc79gy1g4nrstxpiaj31hg0u07wi.jpg" alt></p><p><img src="http://ww2.sinaimg.cn/large/006tNc79gy1g4nrtd2q9bj31hm0u07wh.jpg" alt></p>]]></content>
     
@@ -34,11 +34,11 @@
       <category term="数据库" scheme="https://rongchenfei.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
     
+      <category term="培训" scheme="https://rongchenfei.com/tags/%E5%9F%B9%E8%AE%AD/"/>
+    
       <category term="数据库" scheme="https://rongchenfei.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
       <category term="计算机" scheme="https://rongchenfei.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
-    
-      <category term="培训" scheme="https://rongchenfei.com/tags/%E5%9F%B9%E8%AE%AD/"/>
     
   </entry>
   
@@ -63,13 +63,13 @@
     
       <category term="Python" scheme="https://rongchenfei.com/tags/Python/"/>
     
-      <category term="培训" scheme="https://rongchenfei.com/tags/%E5%9F%B9%E8%AE%AD/"/>
-    
       <category term="ArcPy" scheme="https://rongchenfei.com/tags/ArcPy/"/>
     
       <category term="ArcGIS" scheme="https://rongchenfei.com/tags/ArcGIS/"/>
     
       <category term="二次开发" scheme="https://rongchenfei.com/tags/%E4%BA%8C%E6%AC%A1%E5%BC%80%E5%8F%91/"/>
+    
+      <category term="培训" scheme="https://rongchenfei.com/tags/%E5%9F%B9%E8%AE%AD/"/>
     
   </entry>
   
@@ -93,11 +93,11 @@
     
       <category term="EasyOM" scheme="https://rongchenfei.com/tags/EasyOM/"/>
     
+      <category term="更新说明" scheme="https://rongchenfei.com/tags/%E6%9B%B4%E6%96%B0%E8%AF%B4%E6%98%8E/"/>
+    
       <category term="运维" scheme="https://rongchenfei.com/tags/%E8%BF%90%E7%BB%B4/"/>
     
       <category term="Python" scheme="https://rongchenfei.com/tags/Python/"/>
-    
-      <category term="更新说明" scheme="https://rongchenfei.com/tags/%E6%9B%B4%E6%96%B0%E8%AF%B4%E6%98%8E/"/>
     
   </entry>
   
@@ -121,11 +121,11 @@
     
       <category term="EasyOM" scheme="https://rongchenfei.com/tags/EasyOM/"/>
     
-      <category term="发布说明" scheme="https://rongchenfei.com/tags/%E5%8F%91%E5%B8%83%E8%AF%B4%E6%98%8E/"/>
-    
       <category term="运维" scheme="https://rongchenfei.com/tags/%E8%BF%90%E7%BB%B4/"/>
     
       <category term="Python" scheme="https://rongchenfei.com/tags/Python/"/>
+    
+      <category term="发布说明" scheme="https://rongchenfei.com/tags/%E5%8F%91%E5%B8%83%E8%AF%B4%E6%98%8E/"/>
     
       <category term="开源" scheme="https://rongchenfei.com/tags/%E5%BC%80%E6%BA%90/"/>
     
@@ -149,9 +149,9 @@
       <category term="网络" scheme="https://rongchenfei.com/categories/%E7%BD%91%E7%BB%9C/"/>
     
     
-      <category term="计算机" scheme="https://rongchenfei.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
-    
       <category term="培训" scheme="https://rongchenfei.com/tags/%E5%9F%B9%E8%AE%AD/"/>
+    
+      <category term="计算机" scheme="https://rongchenfei.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
     
       <category term="网络" scheme="https://rongchenfei.com/tags/%E7%BD%91%E7%BB%9C/"/>
     
@@ -207,11 +207,11 @@
     
       <category term="EasyOM" scheme="https://rongchenfei.com/tags/EasyOM/"/>
     
+      <category term="更新说明" scheme="https://rongchenfei.com/tags/%E6%9B%B4%E6%96%B0%E8%AF%B4%E6%98%8E/"/>
+    
       <category term="运维" scheme="https://rongchenfei.com/tags/%E8%BF%90%E7%BB%B4/"/>
     
       <category term="Python" scheme="https://rongchenfei.com/tags/Python/"/>
-    
-      <category term="更新说明" scheme="https://rongchenfei.com/tags/%E6%9B%B4%E6%96%B0%E8%AF%B4%E6%98%8E/"/>
     
   </entry>
   
@@ -248,7 +248,7 @@
     <link href="https://rongchenfei.com/a/0/"/>
     <id>https://rongchenfei.com/a/0/</id>
     <published>2019-06-04T11:43:58.078Z</published>
-    <updated>2019-07-04T06:05:17.085Z</updated>
+    <updated>2019-07-04T06:06:08.105Z</updated>
     
     <content type="html"><![CDATA[<!-----title: 我的Django学习笔记（五）：登录界面中Session的使用copyright: truecategories: Pythontags:  - Python  - Django  - BS开发  - 学习笔记date: 2019-06-28 20:17:59-----><p>Django是Python的Web应用模块中非常流行的一款。<strong>我的Django学习笔记</strong>系列博文将记录我学习使用Django的历程。</p><p>本系列博文将不定期更新，欢迎各位前来捧场。</p><p>本篇博文主要记录了在登录界面中使用Session的步骤。</p><a id="more"></a><h1 id="添加登录动作的浏览器Session的设置和读取"><a href="#添加登录动作的浏览器Session的设置和读取" class="headerlink" title="添加登录动作的浏览器Session的设置和读取"></a>添加登录动作的浏览器Session的设置和读取</h1><p>编辑 <strong>guest/sign/views.py</strong> 文件。</p><p><em>views.py</em></p><figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># 登录动作</span></span><br><span class="line"><span class="function">def <span class="title">login_action</span>(<span class="params">request</span>):</span></span><br><span class="line"><span class="function">    <span class="keyword">if</span> request.method</span> == <span class="string">'POST'</span>:</span><br><span class="line">        username = request.POST.<span class="keyword">get</span>(<span class="string">'username'</span>, <span class="string">''</span>)</span><br><span class="line">        password = request.POST.<span class="keyword">get</span>(<span class="string">'password'</span>, <span class="string">''</span>)</span><br><span class="line">        <span class="keyword">if</span> username == <span class="string">'admin'</span> and password == <span class="string">'123'</span>:</span><br><span class="line">            response = HttpResponseRedirect(<span class="string">'/event_manage/'</span>)</span><br><span class="line">            <span class="meta"># response.set_cookie("user", username, 3600)  # Add cookie</span></span><br><span class="line">            request.session[<span class="string">'user'</span>] = username <span class="meta"># Add session</span></span><br><span class="line">            <span class="keyword">return</span> response</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">return</span> render(request, <span class="string">'index.html'</span>, &#123;<span class="string">'error'</span>: <span class="string">'username or password error!'</span>&#125;)</span><br><span class="line"></span><br><span class="line"><span class="meta"># 会议管理</span></span><br><span class="line"><span class="function">def <span class="title">event_manage</span>(<span class="params">request</span>):</span></span><br><span class="line"><span class="function">    # username</span> = request.COOKIES.<span class="keyword">get</span>(<span class="string">"user"</span>, <span class="string">""</span>) <span class="meta"># Read cookie</span></span><br><span class="line">    username = request.session.<span class="keyword">get</span>(<span class="string">"user"</span>, <span class="string">""</span>) <span class="meta"># Read session</span></span><br><span class="line">    <span class="keyword">return</span> render(request, <span class="string">'event_manage.html'</span>, &#123;<span class="string">"user"</span>:username&#125;)</span><br></pre></td></tr></table></figure><p>刷新页面重新登录。</p><p><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g4h50rmllsj31ik0qcjtf.jpg" alt></p><p>页面存在报错，这是由于我们还没有创建django_session表。该表已经由Django替我们准备好，我们只需要将它们生成即可。</p><p>在guest目录中执行以下命令。</p><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ python manage<span class="selector-class">.py</span> migrate</span><br></pre></td></tr></table></figure><p>结果如下所示。</p><p><img src="http://ww4.sinaimg.cn/large/006tNc79gy1g4h5mqycbyj30qi0na0u6.jpg" alt></p>]]></content>
     
@@ -438,9 +438,9 @@ date: 2019-06-28 20:17:59
       <category term="网络" scheme="https://rongchenfei.com/categories/%E7%BD%91%E7%BB%9C/"/>
     
     
-      <category term="计算机" scheme="https://rongchenfei.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
-    
       <category term="培训" scheme="https://rongchenfei.com/tags/%E5%9F%B9%E8%AE%AD/"/>
+    
+      <category term="计算机" scheme="https://rongchenfei.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
     
       <category term="网络" scheme="https://rongchenfei.com/tags/%E7%BD%91%E7%BB%9C/"/>
     
@@ -465,9 +465,9 @@ date: 2019-06-28 20:17:59
       <category term="计算机技术" scheme="https://rongchenfei.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="计算机" scheme="https://rongchenfei.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
-    
       <category term="培训" scheme="https://rongchenfei.com/tags/%E5%9F%B9%E8%AE%AD/"/>
+    
+      <category term="计算机" scheme="https://rongchenfei.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
     
       <category term="网络" scheme="https://rongchenfei.com/tags/%E7%BD%91%E7%BB%9C/"/>
     
@@ -492,9 +492,9 @@ date: 2019-06-28 20:17:59
       <category term="网络" scheme="https://rongchenfei.com/categories/%E7%BD%91%E7%BB%9C/"/>
     
     
-      <category term="计算机" scheme="https://rongchenfei.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
-    
       <category term="培训" scheme="https://rongchenfei.com/tags/%E5%9F%B9%E8%AE%AD/"/>
+    
+      <category term="计算机" scheme="https://rongchenfei.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
     
       <category term="网络" scheme="https://rongchenfei.com/tags/%E7%BD%91%E7%BB%9C/"/>
     

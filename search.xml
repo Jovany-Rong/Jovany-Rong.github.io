@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[【培训资料】计算机网络及常用技术基础]]></title>
+    <title><![CDATA[【培训资料】数据库基本介绍]]></title>
     <url>%2Fa%2Ff2847a81%2F</url>
     <content type="text"><![CDATA[]]></content>
       <categories>
         <category>数据库</category>
       </categories>
       <tags>
+        <tag>培训</tag>
         <tag>数据库</tag>
         <tag>计算机</tag>
-        <tag>培训</tag>
       </tags>
   </entry>
   <entry>
@@ -22,10 +22,10 @@
       </categories>
       <tags>
         <tag>Python</tag>
-        <tag>培训</tag>
         <tag>ArcPy</tag>
         <tag>ArcGIS</tag>
         <tag>二次开发</tag>
+        <tag>培训</tag>
       </tags>
   </entry>
   <entry>
@@ -37,9 +37,9 @@
       </categories>
       <tags>
         <tag>EasyOM</tag>
+        <tag>更新说明</tag>
         <tag>运维</tag>
         <tag>Python</tag>
-        <tag>更新说明</tag>
       </tags>
   </entry>
   <entry>
@@ -51,9 +51,9 @@
       </categories>
       <tags>
         <tag>EasyOM</tag>
-        <tag>发布说明</tag>
         <tag>运维</tag>
         <tag>Python</tag>
+        <tag>发布说明</tag>
         <tag>开源</tag>
       </tags>
   </entry>
@@ -65,8 +65,8 @@
         <category>网络</category>
       </categories>
       <tags>
-        <tag>计算机</tag>
         <tag>培训</tag>
+        <tag>计算机</tag>
         <tag>网络</tag>
       </tags>
   </entry>
@@ -93,9 +93,9 @@
       </categories>
       <tags>
         <tag>EasyOM</tag>
+        <tag>更新说明</tag>
         <tag>运维</tag>
         <tag>Python</tag>
-        <tag>更新说明</tag>
       </tags>
   </entry>
   <entry>
@@ -189,8 +189,8 @@
         <category>网络</category>
       </categories>
       <tags>
-        <tag>计算机</tag>
         <tag>培训</tag>
+        <tag>计算机</tag>
         <tag>网络</tag>
       </tags>
   </entry>
@@ -202,8 +202,8 @@
         <category>计算机技术</category>
       </categories>
       <tags>
-        <tag>计算机</tag>
         <tag>培训</tag>
+        <tag>计算机</tag>
         <tag>网络</tag>
       </tags>
   </entry>
@@ -215,8 +215,8 @@
         <category>网络</category>
       </categories>
       <tags>
-        <tag>计算机</tag>
         <tag>培训</tag>
+        <tag>计算机</tag>
         <tag>网络</tag>
       </tags>
   </entry>
@@ -287,9 +287,9 @@
       </categories>
       <tags>
         <tag>EasyOM</tag>
+        <tag>更新说明</tag>
         <tag>运维</tag>
         <tag>Python</tag>
-        <tag>更新说明</tag>
       </tags>
   </entry>
 </search>
